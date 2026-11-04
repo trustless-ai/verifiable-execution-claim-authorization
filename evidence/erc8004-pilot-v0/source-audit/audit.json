@@ -1,0 +1,32 @@
+{
+  "checked_at_utc": "2026-10-22T02:52:58.708642+00:00",
+  "main": "2e329fffbee103047d034b97056aea9e49cf1c58",
+  "parent": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+  "branch": "feat/agent-harness-erc8004-v0",
+  "pr9_unchanged": true,
+  "pr9_ci_conclusions": [
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS",
+    "SUCCESS"
+  ],
+  "source_lock_sha256": "4af4bae26a8d86cd3ea588f7b0bb506f925008868d21379c3db2c5cfa13ff1c7"
+}

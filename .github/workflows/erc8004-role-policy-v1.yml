@@ -1,0 +1,28 @@
+name: ERC8004 request-time role policy v1
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  exact-source-head:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.15.0'
+      - run: python -B tools/verify_artifacts.py
+      - run: python -B tools/agent_harness.py prepare
+      - run: python -B tools/erc8004/prepare.py
+      - run: python -B tools/erc8004_role_policy/validate.py
+      - run: python -B tools/verify_artifacts.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: erc8004-role-policy-v1
+          path: build/role-policy-v1/validation

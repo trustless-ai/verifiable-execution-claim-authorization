@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "source_head": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+  "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+  "scenarios": 5,
+  "guards": [
+    "scope",
+    "scenario",
+    "definitions",
+    "supported_contract"
+  ],
+  "modes": {
+    "normal": [
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "scope",
+        "mutant_exit": 1,
+        "mutant_sha256": "2d7594f96b9c3eec7e38e7e4709680485ab811f54eff1721a71780764c9367f6",
+        "new": "    statuses['scope'] = V  # review physical mutation",
+        "old": "    statuses['scope'] = check(same(claim.get('scope'), contract.get('scope')))  # MUTATE: scope",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "scope_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "scenario",
+        "mutant_exit": 1,
+        "mutant_sha256": "79a8a1a9860746b01380bb79d56703eda17ab9e9700949d50368e32dc26de227",
+        "new": "    statuses['scenario'] = V  # review physical mutation",
+        "old": "    statuses['scenario'] = check(same(claim.get('scenario'), contract.get('scenario')))  # MUTATE: scenario",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "scenario_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "definitions",
+        "mutant_exit": 1,
+        "mutant_sha256": "0e266832c777be43351119008b2f7c7fcfff435f39d25cc981e89673c8bb2013",
+        "new": "    statuses['definitions'] = V  # review physical mutation",
+        "old": "    statuses['definitions'] = check(all(catalog.get(k) == v for k, v in required.items() if k in catalog))  # MUTATE: definitions",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "definitions_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "supported_contract",
+        "mutant_exit": 1,
+        "mutant_sha256": "0fa63d88ca8d4aeab9f0749b105cb905d7671d7da1d460bf1e5371dddeb7e493",
+        "new": "    statuses['supported_contract'] = V  # review physical mutation",
+        "old": "    statuses['supported_contract'] = check(contract.get('schema') == 'claim-aware.external.v1' and contract.get('claim_type') == 'REVIEWED_ARTIFACT_IDENTITY' and contract.get('scope') == 'artifact-byte-identity' and bool(required))  # MUTATE: supported_contract",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "supported_contract_only"
+      }
+    ],
+    "optimized": [
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "scope",
+        "mutant_exit": 1,
+        "mutant_sha256": "2d7594f96b9c3eec7e38e7e4709680485ab811f54eff1721a71780764c9367f6",
+        "new": "    statuses['scope'] = V  # review physical mutation",
+        "old": "    statuses['scope'] = check(same(claim.get('scope'), contract.get('scope')))  # MUTATE: scope",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "scope_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "scenario",
+        "mutant_exit": 1,
+        "mutant_sha256": "79a8a1a9860746b01380bb79d56703eda17ab9e9700949d50368e32dc26de227",
+        "new": "    statuses['scenario'] = V  # review physical mutation",
+        "old": "    statuses['scenario'] = check(same(claim.get('scenario'), contract.get('scenario')))  # MUTATE: scenario",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "scenario_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "definitions",
+        "mutant_exit": 1,
+        "mutant_sha256": "0e266832c777be43351119008b2f7c7fcfff435f39d25cc981e89673c8bb2013",
+        "new": "    statuses['definitions'] = V  # review physical mutation",
+        "old": "    statuses['definitions'] = check(all(catalog.get(k) == v for k, v in required.items() if k in catalog))  # MUTATE: definitions",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "definitions_only"
+      },
+      {
+        "baseline_exit": 0,
+        "classification": "KILLED",
+        "guard": "supported_contract",
+        "mutant_exit": 1,
+        "mutant_sha256": "0fa63d88ca8d4aeab9f0749b105cb905d7671d7da1d460bf1e5371dddeb7e493",
+        "new": "    statuses['supported_contract'] = V  # review physical mutation",
+        "old": "    statuses['supported_contract'] = check(contract.get('schema') == 'claim-aware.external.v1' and contract.get('claim_type') == 'REVIEWED_ARTIFACT_IDENTITY' and contract.get('scope') == 'artifact-byte-identity' and bool(required))  # MUTATE: supported_contract",
+        "original_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "restored_exit": 0,
+        "restored_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+        "witness": "supported_contract_only"
+      }
+    ]
+  },
+  "behavioral_sha256": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+  "historical_probe_counts": {
+    "KILLED": 1,
+    "SURVIVED": 4
+  },
+  "independent_organizational_review": "NOT_COVERED"
+}

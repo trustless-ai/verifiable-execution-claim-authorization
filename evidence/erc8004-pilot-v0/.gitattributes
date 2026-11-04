@@ -1,0 +1,4 @@
+*.stdout -text -diff
+*.stderr -text -diff
+# Preserve exact physically mutated source bytes, including removed-check indentation.
+local-replay/mutations/**/implementation/** -text -whitespace

@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "id": "reserved_wallet_metadata",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "reserved_metadata",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "reserved_metadata"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_valid",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet"
+        },
+        "supply_receipt": true
+      }
+    }
+  ],
+  "profile": "erc8004-registry-observation-v0",
+  "schema": "agent-harness.request.v0"
+}

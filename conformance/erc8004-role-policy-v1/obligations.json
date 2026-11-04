@@ -1,0 +1,58 @@
+{
+  "R1": {
+    "clause": "R1",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Request-time validator equal to owner is self-attested: UNVERIFIABLE.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R2": {
+    "clause": "R2",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Request-time isApprovedForAll(owner, validator) is self-attested: UNVERIFIABLE.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R3": {
+    "clause": "R3",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Request-time getApproved(agentId) equal to validator is self-attested: UNVERIFIABLE.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R4": {
+    "clause": "R4",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Only roles at the recorded request block govern this bounded claim; later changes do not alter it.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R5": {
+    "clause": "R5",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Only LAB_VALIDATOR_ROLE_SEPARATION with exact policy v1 is admitted.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R6": {
+    "clause": "R6",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Missing or malformed request-time evidence cannot establish role separation.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R7": {
+    "clause": "R7",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Contradictory request-block, subject, validator or request-hash binding is REFUTED.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  },
+  "R8": {
+    "clause": "R8",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Reuse v0 subject/domain/execution admission; actual designated-validator response and permitted updates.",
+    "source": "research/erc8004-role-policy-v1/README.md"
+  }
+}

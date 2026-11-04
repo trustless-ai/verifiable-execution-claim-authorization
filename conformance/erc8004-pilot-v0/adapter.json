@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "{repo}/tools/erc8004/adapter.py",
+    "--implementation-root",
+    "{implementation}/build/erc8004/implementation"
+  ]
+}

@@ -1,0 +1,25 @@
+diff --git a/conformance/agent-harness-v0/README.md b/conformance/agent-harness-v0/README.md
+index e608f90..956d00b 100644
+--- a/conformance/agent-harness-v0/README.md
++++ b/conformance/agent-harness-v0/README.md
+@@ -20,0 +21,12 @@ Run from the repository root with Python 3.12 and Node 22.15.0:
++Use a **full Git clone**. Historical integrity verification reads
++`2e329fffbee103047d034b97056aea9e49cf1c58:artifacts.sha256.json`; a depth-one
++checkout of the PR head does not contain that object. In an existing shallow
++clone, fetch the required base explicitly before running validation:
++
++```sh
++git fetch origin 2e329fffbee103047d034b97056aea9e49cf1c58
++```
++
++GitHub Actions already uses `fetch-depth: 0`. Missing history is a reproduction
++prerequisite failure, not a backend-conformance failure.
++
+@@ -38,0 +51 @@ The CLI returns **0** only for a completed matching suite, **1** for a witnessed
++- [Supplemental reviewer controls and reproduction](../agent-harness-review-v0/README.md)
+diff --git a/research/harness-v0/LIMITATIONS.md b/research/harness-v0/LIMITATIONS.md
+index c7c962b..2f9cb84 100644
+--- a/research/harness-v0/LIMITATIONS.md
++++ b/research/harness-v0/LIMITATIONS.md
+@@ -10,0 +11 @@
++- The original 18 vectors do not distinguish deletion of the separate `scope`, `scenario`, `definitions`, or `supported_contract` checks. [Supplemental review controls](../../conformance/agent-harness-review-v0/README.md) preserve that survival result and provide one isolated counterexample per check. These checks are not redundant over the expanded finite domain. The original 12-kill report is historical and is not rewritten or presented as complete guard coverage.

@@ -1,0 +1,20 @@
+{
+  "adapter_argv": [
+    "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021/tools/erc8004/adapter.py",
+    "--implementation-root",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021/build/erc8004/implementation"
+  ],
+  "adapter_config_sha256": "0f5588c0c2d42220af047c762e44f4b146b818e32d8e968cd9e9d98c7473450f",
+  "adapter_exit_code": 2,
+  "authorization_credential": false,
+  "backend_conformance": "UNVERIFIABLE",
+  "error": "ValueError: adapter exited without a completed observation: 2",
+  "exit_code": 2,
+  "request_sha256": "f3d70be107b7370c91164bb53b37aad3261fdb463d0aa1b973d79a682019a2a8",
+  "rows": [],
+  "schema": "agent-harness.report.v0",
+  "suite_sha256": "f1d3f128c09b3150de0c4dbfa5676c41a528f686894e84f40daf2e272141c321",
+  "vectors_sha256": "99627e3bf919788c8cbc04073d8232de439a04c77ac0b3b809a2309d613b7bc5"
+}

@@ -1,0 +1,25 @@
+{
+  "research_base": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+  "implementation": {
+    "repository": "erc-8004/erc-8004-contracts",
+    "commit": "b9e466c250744a7e06b13dff9d3c2844ed64f825",
+    "files": {
+      "contracts/IdentityRegistryUpgradeable.sol": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "contracts/ValidationRegistryUpgradeable.sol": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+      "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+      "test/core.ts": "eabdb3147274efbdd913f0acd37d4a08dc0dc58643e01f571d3698b77f1a5ca5",
+      "test/upgradeable.ts": "2e2fb1c0eade7f876e56eeab9ae616a6ac069270029ae2708ad30011592e68b5",
+      "hardhat.config.ts": "aee2bf179a5eb58de5644c506361777b449c7e4ad1f77847a0d5938a342c7b5e",
+      "package.json": "acf10fe4652833b386709a7006d66dc01af8dc554770e2803d925e7e4066326d",
+      "package-lock.json": "c869ae3bde4d17067998631756dcb0bfb0dda8f5153ea64e75b041fabe449e5c"
+    }
+  },
+  "specification": {
+    "repository": "ethereum/ERCs",
+    "commit": "503591a6e80e6e1affdd6403341e25269141f046",
+    "path": "ERCS/erc-8004.md",
+    "sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+    "status": "Draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "comparisons": [
+    {
+      "added": {
+        ".github/workflows/agent-harness-review.yml": "88e8779bbc1da48fd81ed8ec05ab84fc43e5909ac4d3073127866811308b486e",
+        "conformance/agent-harness-review-v0/README.md": "1a9421d55a79b03976baffb4cc26cdee555c3e0bb5782b027edc82d53d760288",
+        "conformance/agent-harness-review-v0/obligations.json": "8e88b01d9e36348513d351bbd926f6855aca6069d920161483b271e68cda7f47",
+        "conformance/agent-harness-review-v0/suite.json": "177c79517f464130866a8ad722109cb3bb89dd420652b2edd4f4882200b16474",
+        "conformance/agent-harness-review-v0/vectors.json": "8093950c39310e2591699885e6c224c130d920f5872e8c1659186b7f58ea58ff",
+        "evidence/harness-review-v0/README.md": "2a1c66edcadabd27b9d714edf865a61364c781651698041cd8ce2d6b7b54d23f",
+        "evidence/harness-review-v0/archive.json": "231d9def9f1c6f1f989359cea5000ebfb68f5f5a5e2098a35ff7fece271fffca",
+        "evidence/harness-review-v0/replay.zip": "1a7fe7cad3e8c278f070ba6726010f7ed1b1078232b860cfdfdcb849c32d7182",
+        "research/harness-v0/REVIEW_FOLLOWUP.md": "bf18dcd23f9200ee098333495f2c3d279d8830c68d862d4280410b0efa0c1f2b",
+        "tests/harness_review/test_classification.py": "e8099b573e69c06d4176bb5a551d23f9abc6c2ed0b9ec86102f5177b71837c69",
+        "tools/harness_v0/review_controls.py": "9f03d312c24628334afd8899eb917b7e321f0c415c2b81e1503f88bb5000053d",
+        "tools/harness_v0/review_validate.py": "a74db5d0e420aba6e989e634de0c29acc5071cb9b26dde694f2860f043394881",
+        "tools/harness_v0/review_vectors.py": "7527e8b20194fe0c792d428a6b5ce2c8eb622f43f47d2be539f5deb133abeb39"
+      },
+      "after_count": 12206,
+      "before_count": 12193,
+      "changed": {
+        "conformance/agent-harness-v0/README.md": {
+          "after": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+          "before": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66"
+        },
+        "research/harness-v0/LIMITATIONS.md": {
+          "after": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+          "before": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8"
+        }
+      },
+      "from": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+      "removed": [],
+      "to": "e5263f47325a81b0647f3de3a7bc36ad858aea5a"
+    },
+    {
+      "added": {},
+      "after_count": 12206,
+      "before_count": 12206,
+      "changed": {},
+      "from": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+      "removed": [],
+      "to": "25f7c45f20cfd4f892f7387cd3d3842105d8b214"
+    },
+    {
+      "added": {
+        ".github/workflows/erc8004-role-policy-v1.yml": "288e39031e9487937b4c731c6996dd28413349c7a038176d1da10e737cf5cce1",
+        "conformance/erc8004-role-policy-v1/adapter.json": "8a13ee90dd5e9805ed7821c06f9543e3ae8a8f68566f84a03f240629f7c4bba5",
+        "conformance/erc8004-role-policy-v1/obligations.json": "2cd1fd38a04e718cd50f113ab46ebe0b897432e58f19fd27a5f4b5fd46892f5c",
+        "conformance/erc8004-role-policy-v1/source-lock.json": "f649333121f4cbb8b890060c18ab638127ea8ea2bc313f9de81c87e2b3ec01e4",
+        "conformance/erc8004-role-policy-v1/suite.json": "1ecaf1fe0b080ba3d55c477e5b4cbd2633d150844a4653b69989d5015ab23746",
+        "conformance/erc8004-role-policy-v1/vectors.json": "e61ccbe59faa86951010b78ba58f96b2fba1a1daf1e4832088e4512570cd0d94",
+        "evidence/erc8004-role-policy-v1/EVIDENCE.zip": "eeb81a761feed81d4e322b0315b53702ca66693fb765989bd9f57262079442a1",
+        "evidence/erc8004-role-policy-v1/README.md": "c7373d621edfddc247de902d2091fa7bf03af85232bec565ec21cc9cd5a2dcdf",
+        "evidence/erc8004-role-policy-v1/SHA256.json": "5265b1095d076a6f2156ffb1100a561f9369bde45748461676800df35e0f3b7b",
+        "evidence/erc8004-role-policy-v1/SUMMARY.json": "13db022cefee0ea193147ebea23f227508a43b4b019d2663b6e83e8a64d79b8e",
+        "research/erc8004-role-policy-v1/README.md": "2597093ea74facfde674dcc87df40f2c0629ff476fe57bf50a3acb0b54402329",
+        "research/erc8004-role-policy-v1/RESULTS.md": "f209717d4a3d21457f7a698216d55e924cfbded98d5cb9864620a088289f38de",
+        "tests/erc8004_role_policy/test_controls.py": "fb4dfbc3834f194e294723774b63625da173c24137cff661926ccc1a7297bef6",
+        "tools/erc8004_role_policy/adapter.py": "783e1c746d4b8ea1251d13669e6cee6e4260999615519980bbf476a497e6ada6",
+        "tools/erc8004_role_policy/build_vectors.py": "fbf321222605ba965f3b4278cce602b90d9d81dc9e057d4d21060c6fa3b585be",
+        "tools/erc8004_role_policy/evm.mjs": "dfb7ffc437f8cdb7b00ac76e5074d2861a5bc4b45f1cf9a51ceddf5166bc1d74",
+        "tools/erc8004_role_policy/integrity.py": "9cd483e851895e0447d3b09e7caa478b51e20b2af06e4bff3b16572dd74dbe43",
+        "tools/erc8004_role_policy/mutations.py": "a4c33c6a4238f7c71f57ac70f06c0b41fd751ee054fdc0e483f6a5e3133bfb36",
+        "tools/erc8004_role_policy/package_evidence.py": "483fedf41ab77ec4e6736546500b8cdd934f0aba16b3987cb7d063d88ab8a5b1",
+        "tools/erc8004_role_policy/policy.py": "542f8727396a78962d17a15d1361173c3a119f111945a847ae92a7e40334f8b3",
+        "tools/erc8004_role_policy/scenarios.mjs": "49639c6e2c99bc3d619099ce43ce95507737e0fb83d389ae4f56648f05653eb5",
+        "tools/erc8004_role_policy/validate.py": "c3a933bfded0ef90ef8f2b5973509c038c3caddf1531c09ccf2f304e960a0c61"
+      },
+      "after_count": 12689,
+      "before_count": 12667,
+      "changed": {},
+      "from": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+      "removed": [],
+      "to": "aee0f9fe9aab1c90807846a6e37999be27265af2"
+    },
+    {
+      "added": {
+        ".github/workflows/agent-harness-review.yml": "88e8779bbc1da48fd81ed8ec05ab84fc43e5909ac4d3073127866811308b486e",
+        "conformance/agent-harness-review-v0/README.md": "1a9421d55a79b03976baffb4cc26cdee555c3e0bb5782b027edc82d53d760288",
+        "conformance/agent-harness-review-v0/obligations.json": "8e88b01d9e36348513d351bbd926f6855aca6069d920161483b271e68cda7f47",
+        "conformance/agent-harness-review-v0/suite.json": "177c79517f464130866a8ad722109cb3bb89dd420652b2edd4f4882200b16474",
+        "conformance/agent-harness-review-v0/vectors.json": "8093950c39310e2591699885e6c224c130d920f5872e8c1659186b7f58ea58ff",
+        "evidence/harness-review-v0/README.md": "2a1c66edcadabd27b9d714edf865a61364c781651698041cd8ce2d6b7b54d23f",
+        "evidence/harness-review-v0/archive.json": "231d9def9f1c6f1f989359cea5000ebfb68f5f5a5e2098a35ff7fece271fffca",
+        "evidence/harness-review-v0/replay.zip": "1a7fe7cad3e8c278f070ba6726010f7ed1b1078232b860cfdfdcb849c32d7182",
+        "research/harness-v0/REVIEW_FOLLOWUP.md": "bf18dcd23f9200ee098333495f2c3d279d8830c68d862d4280410b0efa0c1f2b",
+        "tests/harness_review/test_classification.py": "e8099b573e69c06d4176bb5a551d23f9abc6c2ed0b9ec86102f5177b71837c69",
+        "tools/harness_v0/review_controls.py": "9f03d312c24628334afd8899eb917b7e321f0c415c2b81e1503f88bb5000053d",
+        "tools/harness_v0/review_validate.py": "a74db5d0e420aba6e989e634de0c29acc5071cb9b26dde694f2860f043394881",
+        "tools/harness_v0/review_vectors.py": "7527e8b20194fe0c792d428a6b5ce2c8eb622f43f47d2be539f5deb133abeb39"
+      },
+      "after_count": 12702,
+      "before_count": 12689,
+      "changed": {
+        "conformance/agent-harness-v0/README.md": {
+          "after": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+          "before": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66"
+        },
+        "research/harness-v0/LIMITATIONS.md": {
+          "after": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+          "before": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8"
+        }
+      },
+      "from": "aee0f9fe9aab1c90807846a6e37999be27265af2",
+      "removed": [],
+      "to": "a6e0c6011a92c78b34ed929e992e444912a891cb"
+    }
+  ],
+  "historical_manifest_sha256": {
+    "0e17c97e896916b4d9505072cc9ebe2018329b01": "8b8db7a4ca33d452f5c8695c78130dcc6b8ee1f8573545a7de12d5eff8b8d820",
+    "25f7c45f20cfd4f892f7387cd3d3842105d8b214": "0c461c1296c1a5f11206eb904b76d1c4ad19ff7ab6d5fc353a2c62fd84f96c50",
+    "80c91a09095eca362dbfb69d39d0c01fc31130cf": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+    "a6e0c6011a92c78b34ed929e992e444912a891cb": "09016434d5cdc4a43223a1b2155bf4bed1079bbabff971c437dc70947c39535e",
+    "aee0f9fe9aab1c90807846a6e37999be27265af2": "e45ec4bf9822f2eea0ac84fd598730adadb1186447983b860574033d638abefd",
+    "e5263f47325a81b0647f3de3a7bc36ad858aea5a": "0c461c1296c1a5f11206eb904b76d1c4ad19ff7ab6d5fc353a2c62fd84f96c50"
+  },
+  "pr11_and_pr9_trees_equal": true
+}

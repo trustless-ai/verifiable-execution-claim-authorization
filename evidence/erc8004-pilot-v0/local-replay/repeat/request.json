@@ -1,0 +1,568 @@
+{
+  "cases": [
+    {
+      "id": "uri_owner",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "uri_operator",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 1,
+          "agent_id": 0,
+          "approve": true,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "uri_stranger",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 3,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "old_owner_after_transfer",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri",
+          "transfer_first": true
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_valid",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_wrong_signer",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet",
+          "signature_actor": 3
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_wrong_chain",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet",
+          "signature_chain": 31338
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_wrong_registry",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet",
+          "signature_registry": "other"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wallet_expired",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "expired": true,
+          "kind": "set_wallet"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "transfer_clears_wallet",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "transfer",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "transfer"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "reserved_wallet_metadata",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "reserved_metadata",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "reserved_metadata"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "request_owner",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "request_operator",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 1,
+          "agent_id": 0,
+          "approve": true,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "request_stranger",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 3,
+          "agent_id": 0,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "request_duplicate",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "duplicate": true,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "response_validator",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "response_update_permitted",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "update": true
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "response_stranger",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 3,
+          "agent_id": 0,
+          "kind": "respond_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "response_unknown_request",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "unknown_request": true
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "unsupported_claim",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "TASK_COMPLETED"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "stale_policy",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v-1",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "unconsumed_output_hash",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wrong_subject",
+      "input": {
+        "claim": {
+          "agent_id": 1,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wrong_operation",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "release_payment",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wrong_chain_scope",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 1,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "wrong_registry_scope",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "unrelated",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "missing_receipt",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_uri"
+        },
+        "supply_receipt": false
+      }
+    },
+    {
+      "id": "validation_promoted_to_execution",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "TASK_COMPLETED"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation"
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "validation_promoted_to_payment",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "PAYMENT_AUTHORIZED"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation"
+        },
+        "supply_receipt": true
+      }
+    }
+  ],
+  "profile": "erc8004-registry-observation-v0",
+  "schema": "agent-harness.request.v0"
+}

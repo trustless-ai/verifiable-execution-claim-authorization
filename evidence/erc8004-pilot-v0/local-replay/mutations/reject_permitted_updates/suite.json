@@ -1,0 +1,11 @@
+{
+  "id": "reject_permitted_updates",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "309ac3498ca4040b71982bc5629650ba46e480bbdc9ab898e6548bfa1845c869"
+  }
+}

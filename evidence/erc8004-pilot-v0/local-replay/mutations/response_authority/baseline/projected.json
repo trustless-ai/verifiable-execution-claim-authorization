@@ -1,0 +1,32 @@
+{
+  "response_stranger": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "operation_status": "REJECTED",
+      "state": "RESPONSE_ABSENT"
+    }
+  },
+  "response_validator": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "agent_id": 0,
+        "chain_id": 31337,
+        "operation": "respond_validation",
+        "operation_sha256": "fc54c3fd3fc96e3d2b1cfc71b049485c79635eab3fa310f77292b7443b2ae200",
+        "policy": "erc8004-registry-observation-v0",
+        "registry_role": "validation",
+        "type": "LAB_REGISTRY_TRANSITION"
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "operation_status": "ACCEPTED",
+      "state": "RESPONSE_RECORDED"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "wallet_expired": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "agent_id": 0,
+        "chain_id": 31337,
+        "operation": "set_wallet",
+        "operation_sha256": "d1312d8d34a75d768477df180c9ba0cae973af2c465bb6c65bf02e88c7a4068a",
+        "policy": "erc8004-registry-observation-v0",
+        "registry_role": "identity",
+        "type": "LAB_REGISTRY_TRANSITION"
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "operation_status": "ACCEPTED",
+      "state": "WALLET_SET"
+    }
+  },
+  "wallet_valid": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "agent_id": 0,
+        "chain_id": 31337,
+        "operation": "set_wallet",
+        "operation_sha256": "7bde574a0742bc6b29c24c20c3018b0ab65bd5f444b4276f4be5a3a771c59449",
+        "policy": "erc8004-registry-observation-v0",
+        "registry_role": "identity",
+        "type": "LAB_REGISTRY_TRANSITION"
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "operation_status": "ACCEPTED",
+      "state": "WALLET_SET"
+    }
+  }
+}

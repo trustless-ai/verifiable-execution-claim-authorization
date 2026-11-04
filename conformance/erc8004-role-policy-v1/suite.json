@@ -1,0 +1,11 @@
+{
+  "id": "erc8004-validator-role-separation-v1",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "2cd1fd38a04e718cd50f113ab46ebe0b897432e58f19fd27a5f4b5fd46892f5c"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "e61ccbe59faa86951010b78ba58f96b2fba1a1daf1e4832088e4512570cd0d94"
+  }
+}

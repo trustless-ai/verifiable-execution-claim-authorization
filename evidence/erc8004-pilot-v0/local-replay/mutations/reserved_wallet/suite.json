@@ -1,0 +1,11 @@
+{
+  "id": "reserved_wallet",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "e3cc3e6eaffff56d6b88adb5a0725ace26b580674ecd3435866190448d1a04de"
+  }
+}

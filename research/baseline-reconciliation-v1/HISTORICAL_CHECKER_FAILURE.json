@@ -1,0 +1,15 @@
+{
+  "historical_checker_commit": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+  "historical_checker_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+  "mode": "read-only execution of exact historical source against composed checkout",
+  "result": {
+    "passed": false,
+    "mismatches": [
+      "baseline:conformance/agent-harness-v0/README.md",
+      "baseline:research/harness-v0/LIMITATIONS.md"
+    ],
+    "unchanged_baseline_files": 12193,
+    "evidence_files": 451
+  },
+  "expected_failure_confirmed": true
+}

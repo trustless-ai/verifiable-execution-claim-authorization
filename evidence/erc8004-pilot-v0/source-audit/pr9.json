@@ -1,0 +1,228 @@
+{
+  "baseRefOid": "2e329fffbee103047d034b97056aea9e49cf1c58",
+  "headRefOid": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+  "isDraft": true,
+  "state": "OPEN",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:10:17Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795838/job/119598143441",
+      "name": "reusable-pilot",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Agent conformance harness pilot"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:29:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865303/job/119585638754",
+      "name": "reusable-pilot",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Agent conformance harness pilot"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:18:20Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795830/job/119598143745",
+      "name": "v4_1-admission",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Checker independence and C binding v4.1"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:37:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865208/job/119585638499",
+      "name": "v4_1-admission",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Checker independence and C binding v4.1"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:19:56Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795931/job/119598143852",
+      "name": "joint-admission",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Claim-aware integration independent replay"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:35:08Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865331/job/119585640721",
+      "name": "joint-admission",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Claim-aware integration independent replay"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:21:26Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795727/job/119598143437",
+      "name": "escrow",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Claim-aware verdict escrow independent replay"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:38:04Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865205/job/119585638433",
+      "name": "escrow",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Claim-aware verdict escrow independent replay"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:12:13Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795843/job/119598145361",
+      "name": "external-consumer",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "ERC8404 external consumer compatibility"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:31:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865237/job/119585638815",
+      "name": "external-consumer",
+      "startedAt": "2026-10-22T01:28:25Z",
+      "status": "COMPLETED",
+      "workflowName": "ERC8404 external consumer compatibility"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:11:25Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795851/job/119598143716",
+      "name": "native-and-crypto-replay",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Real artifact composition v2"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:30:55Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865305/job/119585638776",
+      "name": "native-and-crypto-replay",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Real artifact composition v2"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:11:44Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795826/job/119598143574",
+      "name": "public-artifacts-and-composition",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Real evidence chain v3"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:31:10Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865260/job/119585638795",
+      "name": "public-artifacts-and-composition",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Real evidence chain v3"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:09:36Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795833/job/119598143524",
+      "name": "offline (3.12)",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Reproduce research"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:28:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865174/job/119585638730",
+      "name": "offline (3.12)",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Reproduce research"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:09:40Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795763/job/119598143352",
+      "name": "formal-and-public-signature",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Typed composition research v1"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:28:40Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865193/job/119585638958",
+      "name": "formal-and-public-signature",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Typed composition research v1"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:14:50Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795799/job/119598143527",
+      "name": "coverage-and-composition",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Verification obligation coverage v4"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:33:34Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865178/job/119585638481",
+      "name": "coverage-and-composition",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Verification obligation coverage v4"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T02:09:37Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39709795833/job/119598143717",
+      "name": "offline (3.13)",
+      "startedAt": "2026-10-22T02:09:21Z",
+      "status": "COMPLETED",
+      "workflowName": "Reproduce research"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-22T01:28:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions/runs/39705865174/job/119585638485",
+      "name": "offline (3.13)",
+      "startedAt": "2026-10-22T01:28:24Z",
+      "status": "COMPLETED",
+      "workflowName": "Reproduce research"
+    }
+  ]
+}

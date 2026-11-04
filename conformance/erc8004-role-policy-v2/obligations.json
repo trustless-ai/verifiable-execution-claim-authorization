@@ -1,0 +1,51 @@
+{
+  "V2-ADMISSION": {
+    "clause": "V2-ADMISSION",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Exact v2 claim with unchanged v0/v1 admission; no independent-controller or judgment-truth claim.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-AVAILABILITY": {
+    "clause": "V2-AVAILABILITY",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Missing, malformed or unverified request-role evidence cannot authorize.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-BINDING": {
+    "clause": "V2-BINDING",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Bind all four exact eth_call inputs/results to identity registry, agent, validator, request, chain and receipt block; contradictions are REFUTED.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-ROLES": {
+    "clause": "V2-ROLES",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "No observed request-block owner/global-operator/token-approval/agentWallet overlap; zero wallet is an established empty role, not missing evidence.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-SIGNATURE": {
+    "clause": "V2-SIGNATURE",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "IMPLEMENTATION_SPECIFIC",
+    "requirement": "Pinned setAgentWallet requires new-wallet EIP-712/1271 signature and an authorized caller. These vectors execute EIP-712 EOA path only.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-TIME": {
+    "clause": "V2-TIME",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Request-block roles govern; subsequent changes cannot replace them.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  },
+  "V2-TRANSFER": {
+    "clause": "V2-TRANSFER",
+    "coverage": "finite explicit witnesses; not a new normative ERC requirement",
+    "kind": "IMPLEMENTATION_SPECIFIC",
+    "requirement": "Pinned IdentityRegistryUpgradeable._update clears agentWallet on transfer.",
+    "source": "research/erc8004-role-policy-v2/README.md"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "policy_claim_type",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "1f9d0328371f4097140f2ee2840b97ecb1fe1f1646fdcd32653f76e509de2839"
+  }
+}

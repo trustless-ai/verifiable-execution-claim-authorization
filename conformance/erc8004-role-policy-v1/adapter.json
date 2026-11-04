@@ -1,0 +1,7 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "{repo}/tools/erc8004_role_policy/adapter.py"
+  ]
+}

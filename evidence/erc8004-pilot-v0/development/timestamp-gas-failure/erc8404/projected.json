@@ -1,0 +1,288 @@
+{
+  "contradictory_receipt": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "rvr.gate.result_projection_mismatch",
+      "decision_status": "REFUTED",
+      "receipt_status": "REFUTED",
+      "recomputation_status": null,
+      "verification_outcome": null
+    }
+  },
+  "cross_component_loss": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "downstream_promotion": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "invalid_signature": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "mismatched_contract": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "missing_contract_preimage": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "UNVERIFIABLE"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "UNVERIFIABLE",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "missing_independence_coverage": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "missing_judgment": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "UNVERIFIABLE"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "UNVERIFIABLE",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "missing_payload": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "UNVERIFIABLE"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "UNVERIFIABLE",
+      "receipt_status": "UNVERIFIABLE",
+      "recomputation_status": "CANNOT_RECOMPUTE",
+      "verification_outcome": null
+    }
+  },
+  "permitted_review": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+        "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+        "limits": [
+          "artifact identity and authenticated review only",
+          "no inference truth, external execution or judgment correctness"
+        ],
+        "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+        "scenario": "lab-artifact-review-v1",
+        "unconsumed_claim_fields": [],
+        "verified_claim_scope": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        }
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "VERIFIED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "self_judgment": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "separation_not_required": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+        "contract_sha256": "662b5f2c8607d705bef3a401ed047b6fdbc213f8e0555a60f87c4a0efa399845",
+        "limits": [
+          "artifact identity and authenticated review only",
+          "no inference truth, external execution or judgment correctness"
+        ],
+        "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+        "scenario": "lab-artifact-review-v1",
+        "unconsumed_claim_fields": [],
+        "verified_claim_scope": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        }
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "VERIFIED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "tampered_admission": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "VERIFIED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "unsupported_claim": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "wrong_authority": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "wrong_signed_policy": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "wrong_signed_scope": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  },
+  "wrong_subject": {
+    "authorization": {
+      "authorized": false,
+      "scope": null,
+      "status": "REFUTED"
+    },
+    "behavior": {
+      "core_gate": "ACCEPTED",
+      "decision_status": "REFUTED",
+      "receipt_status": "VERIFIED",
+      "recomputation_status": "REPRODUCED",
+      "verification_outcome": "VERIFIED"
+    }
+  }
+}

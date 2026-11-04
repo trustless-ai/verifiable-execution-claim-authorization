@@ -1,0 +1,18 @@
+uri_authority KILLED
+wallet_signature KILLED
+wallet_deadline KILLED
+transfer_reset KILLED
+reserved_wallet KILLED
+request_authority KILLED
+request_duplicate KILLED
+response_authority KILLED
+reject_permitted_updates KILLED
+policy_claim_type KILLED
+policy_policy KILLED
+policy_fields KILLED
+policy_subject KILLED
+policy_operation KILLED
+policy_domain KILLED
+policy_availability KILLED
+policy_execution KILLED
+{"KILLED": 17, "SURVIVED": 0, "CRASHED": 0, "NOT_APPLIED": 0, "UNVERIFIABLE": 0}

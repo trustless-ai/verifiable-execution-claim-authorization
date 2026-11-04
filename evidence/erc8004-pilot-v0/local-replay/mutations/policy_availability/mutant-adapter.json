@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\mutations\\policy_availability\\mutant_adapter.py",
+    "--implementation-root",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\implementation"
+  ]
+}

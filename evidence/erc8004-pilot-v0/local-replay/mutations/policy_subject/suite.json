@@ -1,0 +1,11 @@
+{
+  "id": "policy_subject",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "f25dd3a2afd31613da6614327e2dabf368397d8fbe9c3dc6658a7033c7ee3b93"
+  }
+}

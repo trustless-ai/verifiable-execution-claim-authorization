@@ -1,0 +1,81 @@
+{
+  "profile": "erc8004-registry-observation-v0",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "state": "WALLET_UNCHANGED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "expired": true,
+          "kind": "set_wallet"
+        },
+        "supply_receipt": true
+      },
+      "name": "wallet_expired",
+      "obligations": [
+        "N2",
+        "I1"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "set_wallet",
+            "operation_sha256": "7bde574a0742bc6b29c24c20c3018b0ab65bd5f444b4276f4be5a3a771c59449",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "identity",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "WALLET_SET"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_wallet",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "set_wallet"
+        },
+        "supply_receipt": true
+      },
+      "name": "wallet_valid",
+      "obligations": [
+        "N2"
+      ]
+    }
+  ]
+}

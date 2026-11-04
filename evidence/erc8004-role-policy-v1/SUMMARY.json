@@ -1,0 +1,61 @@
+{
+  "archive_sha256": "eeb81a761feed81d4e322b0315b53702ca66693fb765989bd9f57262079442a1",
+  "evidence_source": "LOCAL_AUTHOR_EXECUTION",
+  "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+  "historical_replay": {
+    "cases": 29,
+    "conformant": 29,
+    "mutations_normal": {
+      "CRASHED": 0,
+      "KILLED": 17,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "UNVERIFIABLE": 0
+    },
+    "mutations_optimized": {
+      "CRASHED": 0,
+      "KILLED": 17,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "UNVERIFIABLE": 0
+    },
+    "semantic_determinism": true
+  },
+  "independent_reviewer_acceptance": "NOT_COVERED",
+  "members": 1820,
+  "merge_integration": "NOT_COVERED",
+  "new_policy": {
+    "behavioral_sha256": {
+      "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+      "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+      "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+    },
+    "cases": 26,
+    "conformant": 26,
+    "controls": {
+      "normal": 18,
+      "optimized": 18
+    },
+    "expectation_free_requests": 45,
+    "independent_controller": "NOT_COVERED",
+    "independent_reviewer_replay": "NOT_COVERED",
+    "mutation_modes_equal": true,
+    "node": "v22.15.0",
+    "passed": true,
+    "physical_mutations": {
+      "CONTROL_BROKEN": 0,
+      "CRASHED": 0,
+      "KILLED": 7,
+      "MISSING_OUTPUT": 0,
+      "NO_OP": 0,
+      "RESTORATION_FAILED": 0,
+      "SURVIVED": 0,
+      "UNVERIFIABLE": 0
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "schema": "erc8004-role-policy.validation.v1"
+  },
+  "preliminary_runs": "Not final passes: shared-cache negative-control collision and corrected response snapshot labels; raw results retained separately.",
+  "schema": "erc8004-role-policy.evidence.v1"
+}
