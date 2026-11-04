@@ -1,0 +1,80 @@
+{
+  "profile": "erc8004-registry-observation-v0",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "duplicate": true,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      },
+      "name": "request_duplicate",
+      "obligations": [
+        "I2"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request_validation",
+            "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 0,
+          "agent_id": 0,
+          "kind": "request_validation"
+        },
+        "supply_receipt": true
+      },
+      "name": "request_owner",
+      "obligations": [
+        "N5"
+      ]
+    }
+  ]
+}

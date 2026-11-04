@@ -1,0 +1,65 @@
+[
+  {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-B",
+      "tools/erc8004/integrity.py"
+    ],
+    "exit_code": 0,
+    "name": "integrity-before",
+    "seconds": 26.509199400024954,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "cdda784c5fe6e25b28fec8054fb60caf4cfcec71dfe80ded49d50f4698c94bd4"
+  },
+  {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/harness_v0",
+      "-v"
+    ],
+    "exit_code": 0,
+    "name": "transport-regression",
+    "seconds": 1.0783781000063755,
+    "stderr_sha256": "87e97e4a2e5cb430d3df6db66cdc6d4d4cb9359fc61cee3c375006e6ea7a5e1a",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-B",
+      "tools/agent_harness.py",
+      "run",
+      "--out",
+      "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation\\erc8404"
+    ],
+    "exit_code": 0,
+    "name": "erc8404-pilot-regression",
+    "seconds": 8.294523200020194,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+  },
+  {
+    "argv": [
+      "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-B",
+      "tools/agent_harness.py",
+      "run",
+      "--suite",
+      "conformance/erc8004-pilot-v0/suite.json",
+      "--adapter",
+      "conformance/erc8004-pilot-v0/adapter.json",
+      "--out",
+      "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation\\normal"
+    ],
+    "exit_code": 2,
+    "name": "erc8004-normal",
+    "seconds": 8.10025149997091,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "dc93065bc7fd8a1382935444bb80e8c9e157bad19cadc174d2fbca92957e107b"
+  }
+]

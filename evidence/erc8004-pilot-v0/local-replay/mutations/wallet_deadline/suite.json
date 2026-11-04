@@ -1,0 +1,11 @@
+{
+  "id": "wallet_deadline",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "388fbf298d038e158c7943765fe66e8b05c08e549ffcc166c3b9cdd9a675092f"
+  }
+}

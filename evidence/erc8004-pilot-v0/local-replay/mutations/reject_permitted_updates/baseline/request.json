@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "id": "response_update_permitted",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "update": true
+        },
+        "supply_receipt": true
+      }
+    },
+    {
+      "id": "response_validator",
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 2,
+          "agent_id": 0,
+          "kind": "respond_validation"
+        },
+        "supply_receipt": true
+      }
+    }
+  ],
+  "profile": "erc8004-registry-observation-v0",
+  "schema": "agent-harness.request.v0"
+}

@@ -1,0 +1,185 @@
+{
+  "authorization_counts": {
+    "REFUTED": 20,
+    "UNVERIFIABLE": 1,
+    "VERIFIED": 8
+  },
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "integrity-before",
+      "seconds": 2.899012500012759,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cdda784c5fe6e25b28fec8054fb60caf4cfcec71dfe80ded49d50f4698c94bd4"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-regression",
+      "seconds": 0.9734347999910824,
+      "stderr_sha256": "5aaa2c3304f0b43accb7db05151462337349eb1f2675c0dec094aade774f95a7",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "run",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\erc8404"
+      ],
+      "exit_code": 0,
+      "name": "erc8404-pilot-regression",
+      "seconds": 8.244401100033429,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "run",
+        "--suite",
+        "conformance/erc8004-pilot-v0/suite.json",
+        "--adapter",
+        "conformance/erc8004-pilot-v0/adapter.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\normal"
+      ],
+      "exit_code": 0,
+      "name": "erc8004-normal",
+      "seconds": 9.59048240003176,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "run",
+        "--suite",
+        "conformance/erc8004-pilot-v0/suite.json",
+        "--adapter",
+        "conformance/erc8004-pilot-v0/adapter.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\repeat"
+      ],
+      "exit_code": 0,
+      "name": "erc8004-repeat",
+      "seconds": 9.568029200017918,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "tools/agent_harness.py",
+        "run",
+        "--suite",
+        "conformance/erc8004-pilot-v0/suite.json",
+        "--adapter",
+        "conformance/erc8004-pilot-v0/adapter.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\optimized"
+      ],
+      "exit_code": 0,
+      "name": "erc8004-optimized",
+      "seconds": 9.865475200000219,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004/mutations.py",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\mutations"
+      ],
+      "exit_code": 0,
+      "name": "physical-mutations",
+      "seconds": 311.0190425000037,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "1bac23119a8108fb9e4e24bf778a90de89cf976fe8d1400fc4d9badde40e83a8"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/erc8004",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "negative-infrastructure",
+      "seconds": 6.405503000016324,
+      "stderr_sha256": "878f7a0d1fd3094b483ff5e01f8d01be5c3970961c3c0ff52b5e62c946775209",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "core-conformance",
+      "seconds": 0.20797360001597553,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "integrity-after",
+      "seconds": 2.867975800007116,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "cdda784c5fe6e25b28fec8054fb60caf4cfcec71dfe80ded49d50f4698c94bd4"
+    }
+  ],
+  "conformant": 29,
+  "external_execution_verified": false,
+  "guarantee": "LABORATORY_VERIFIED",
+  "mutations": {
+    "CRASHED": 0,
+    "KILLED": 17,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "passed": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "scenarios": 29,
+  "schema": "erc8004.validation.v0",
+  "semantic_determinism": true,
+  "source_lock_sha256": "4af4bae26a8d86cd3ea588f7b0bb506f925008868d21379c3db2c5cfa13ff1c7",
+  "universal_erc_conformance": false
+}

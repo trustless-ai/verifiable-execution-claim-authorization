@@ -1,0 +1,121 @@
+{
+  "I1": {
+    "clause": "Pinned IdentityRegistry setAgentWallet",
+    "coverage": "finite explicit witnesses only",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "The implementation checks signature deadline and EIP-712 domain.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "I2": {
+    "clause": "Pinned ValidationRegistry validationRequest",
+    "coverage": "finite explicit witnesses only",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "The implementation rejects a duplicate requestHash.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "N1": {
+    "clause": "Identity Registry",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Agent owner or approved operator may update the agent URI; unrelated actors may not.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N2": {
+    "clause": "On-chain metadata",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Changing agentWallet requires proof of control of the new wallet.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N3": {
+    "clause": "On-chain metadata",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Transfer clears the agentWallet.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N4": {
+    "clause": "On-chain metadata",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "agentWallet cannot be set using generic metadata.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N5": {
+    "clause": "Validation Request",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Only the owner or operator may request validation.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N6": {
+    "clause": "Validation Response",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Only the designated validator may respond to its request.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "N7": {
+    "clause": "Validation Response",
+    "coverage": "finite explicit witnesses only",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Multiple responses to the same request are permitted.",
+    "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+  },
+  "P1": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Only LAB_REGISTRY_TRANSITION is admitted; no task truth or payment authorization.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P2": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "The requested policy version must equal this scenario policy.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P3": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Unknown claim fields are rejected, not silently consumed.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P4": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Claim agent_id must match the actual operation subject.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P5": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Claim operation must match the executed operation.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P6": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Claim chain ID and registry role must match the executed domain.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P7": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "A required unavailable transaction receipt makes the claim UNVERIFIABLE.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  },
+  "P8": {
+    "clause": "Laboratory observation policy v0",
+    "coverage": "finite explicit witnesses only",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "An actually reverted transaction cannot support a successful transition claim.",
+    "source": "research/erc8004-pilot-v0/PROFILE.md"
+  }
+}

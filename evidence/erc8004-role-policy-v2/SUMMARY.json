@@ -1,0 +1,610 @@
+{
+  "baseline_controls": {
+    "normal": 16,
+    "optimized": 16
+  },
+  "boundary": {
+    "evidence_source": "LOCAL_AUTHOR_ACTUAL_PINNED_CONTRACT_EXECUTION",
+    "interpretation": "New versioned research-policy coverage; not an upstream ERC vulnerability.",
+    "passed": true,
+    "results": {
+      "agent_wallet_self": {
+        "request_block": "0x29bd71206313ea34de658f4cabe2dc9bcfe0456f71bd4771b598292e778d5420",
+        "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+        "v1": {
+          "reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "status": "VERIFIED"
+        },
+        "v2": {
+          "reason": "SELF_ATTESTED_AGENT_WALLET",
+          "status": "UNVERIFIABLE"
+        },
+        "validator": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+      },
+      "owner_self": {
+        "request_block": "0x9458d51807afa4e71a691fd31bf328a10b21bc787d2b5d4e2a9942a8de2ace0b",
+        "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "v1": {
+          "reason": "SELF_ATTESTED_OWNER",
+          "status": "UNVERIFIABLE"
+        },
+        "v2": {
+          "reason": "SELF_ATTESTED_OWNER",
+          "status": "UNVERIFIABLE"
+        },
+        "validator": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "separate_validator": {
+        "request_block": "0x9b44073ec52523d0d82ee60da053082fbe3173e7fc656f2ef23b50daaca70966",
+        "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "v1": {
+          "reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "status": "VERIFIED"
+        },
+        "v2": {
+          "reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "status": "VERIFIED"
+        },
+        "validator": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+      }
+    },
+    "runtime": {
+      "chain_id": 31337,
+      "compiler_input_sha256": "ad00063ea85bf02ed1bfe0f1d44982c05a49f5261a5ed9c1838dd661e340f5fb",
+      "deployment_method": "upstream HardhatMinimalUUPS bootstrap -> real UUPS registry implementation; local EDR only",
+      "evm": "shanghai",
+      "hardhat": "3.0.6",
+      "identity_codehash": "0x31cd8cc7d83842e8a7585c4185ddfdf81173bd9497503e46f0a85d878ec7cf9a",
+      "identity_implementation": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "node": "v22.15.0",
+      "solc": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+      "source_sha256": {
+        "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+        "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+        "contracts/IdentityRegistryUpgradeable.sol": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "contracts/ValidationRegistryUpgradeable.sol": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882"
+      },
+      "validation_codehash": "0x900aa6325ee78d51999c8c6a89597e1c267457a8eebfecf2040b0d32d7e4d828",
+      "validation_implementation": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+    },
+    "schema": "erc8004.agent-wallet-boundary.v2"
+  },
+  "candidate": {
+    "base": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+    "composed_parent": "e0433f832821e2de4c0079633bda03ffbfdebd47",
+    "copied": {
+      ".github/workflows/erc8004-role-policy-v2.yml": "df72c598dd48a9d7bb18993acd88ea2053f093ebfed1d5d5aef70c0e3c5f39d4",
+      "conformance/erc8004-role-policy-v2/adapter.json": "ff6199c0f5bbf5547fe82a348e602a233946c652d94c4b69986e19de550b3397",
+      "conformance/erc8004-role-policy-v2/obligations.json": "c8d61b8b621a5b2bfcca0b6c24c11496d7239f4c93b6bfc33439017db97286d1",
+      "conformance/erc8004-role-policy-v2/role-evidence.schema.json": "f3c4b66251e3a9e89578c8fbad3530bb2b35934ae036be558af10e663f38fec0",
+      "conformance/erc8004-role-policy-v2/source-lock.json": "4988a03b57dedb7f60f570646b533b6988955329753482940984018dd73ee4d1",
+      "conformance/erc8004-role-policy-v2/suite.json": "3a1be4093b541cac2b5784974676ecdde4abeab4685aa0dbfb5c9e86bad5f0c1",
+      "conformance/erc8004-role-policy-v2/vectors.json": "8723d8e934ba6cb2bd8f802ec86bad1ad26510761b5d51fbed13f5f760ed23a2",
+      "research/erc8004-role-policy-v2/README.md": "b25fcbb6fc44f898abab77fc391ecf6776a69d304a9921a004d41dcc37af2fd4",
+      "tests/erc8004_role_policy_v2/test_controls.py": "9ad639fc357cb6630d2ad98a03817c7f510e2c7bffa1c3fd3d92c8bf2dc031d6",
+      "tools/erc8004_role_policy_v2/adapter.py": "d31ac9fcba1a308825afc0d46433aee05e17eecce63663170f42f327fd643561",
+      "tools/erc8004_role_policy_v2/build_vectors.py": "4e68db156dbb7fcd36e8731d11da375581e47a4beafd011ad6320e7910104965",
+      "tools/erc8004_role_policy_v2/evm.mjs": "920fda9410f0527d0347724b069797febf700bb546eb80419fe1b376fb887d15",
+      "tools/erc8004_role_policy_v2/integrity.py": "f466b7abb125ee1bd13ddd714299e1ec18e93794d9f1ede53f4d84f3de5df683",
+      "tools/erc8004_role_policy_v2/mutations.py": "b7b56a0a7a6f9729af9e762d088112b7989a864941bc9ee64a07aa9931e70b5a",
+      "tools/erc8004_role_policy_v2/policy.py": "a9a492dc848f20b4c26dd304af044bc178b6aa43ccb1bd9a5c5db8baf4a93252",
+      "tools/erc8004_role_policy_v2/reproduce_v1.py": "831a8739177e6ec42cffd57e16d0178e6c6c1947b6be9660c107d3aceb4d5814",
+      "tools/erc8004_role_policy_v2/scenarios.mjs": "acfc2abcbe3fda060940d30cb3ae9d5c5259116c6330cc731f10f52c337c9b35",
+      "tools/erc8004_role_policy_v2/validate.py": "0f4ceb187d089a38f383e4486950db20760e67cad9222abc4d0d693438aa6ced"
+    },
+    "source_parent": "4799a7260d8f99e489541cffe471e53c50411459"
+  },
+  "captured_utc": "2026-10-24T12:09:10.486921+00:00",
+  "case_populations": {
+    "claim_admission_controls": 6,
+    "distinct_operation_configurations": 22,
+    "evidence_fault_cases": 22,
+    "policy_cases": 50
+  },
+  "erc8404": {
+    "cases": 18,
+    "determinism": {
+      "behavioral_sha256": {
+        "normal": "1c12db717dc43d6b9568b902089cde8906e53951aa2ccf22e4b04404620a106b",
+        "optimized": "1c12db717dc43d6b9568b902089cde8906e53951aa2ccf22e4b04404620a106b",
+        "repeat": "1c12db717dc43d6b9568b902089cde8906e53951aa2ccf22e4b04404620a106b"
+      },
+      "complete_observation_sha256": {
+        "normal": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc",
+        "optimized": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc",
+        "repeat": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc"
+      }
+    },
+    "mutations_normal": {
+      "KILLED": 12
+    },
+    "mutations_optimized": {
+      "KILLED": 12
+    }
+  },
+  "evidence_source": "AUTHOR_OPERATED_WINDOWS_CANDIDATE_EXECUTION",
+  "fresh_committed_checkout_and_ci": "Recorded separately after commit; not asserted by this candidate archive.",
+  "independent_human_or_organizational_control": "NOT_COVERED",
+  "independent_review_of_final_head": "NOT_COVERED",
+  "passed": true,
+  "pr11": {
+    "behavioral_sha256": {
+      "normal/normal": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+      "normal/repeat": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+      "optimized/normal": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+      "optimized/repeat": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc"
+    },
+    "cases": 5,
+    "guards": [
+      "scope",
+      "scenario",
+      "definitions",
+      "supported_contract"
+    ],
+    "historical_probe_comparison": {
+      "KILLED": 1,
+      "SURVIVED": 4
+    },
+    "physical_mutants": 4
+  },
+  "pr_base": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+  "public_chain_authentication": "NOT_COVERED",
+  "recommendation": "READY_FOR_INDEPENDENT_REVIEW",
+  "runs": {
+    "composition": {
+      "legacy": {
+        "authorization_counts": {
+          "REFUTED": 20,
+          "UNVERIFIABLE": 1,
+          "VERIFIED": 8
+        },
+        "conformant": 29,
+        "mutations": {
+          "CRASHED": 0,
+          "KILLED": 17,
+          "NOT_APPLIED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "passed": true,
+        "scenarios": 29
+      },
+      "legacy_determinism": {
+        "behavioral_sha256": {
+          "normal": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+          "optimized": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+          "repeat": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211"
+        },
+        "complete_observation_sha256": {
+          "normal": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af",
+          "optimized": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af",
+          "repeat": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af"
+        }
+      },
+      "preservation": {
+        "baseline_reconciliation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "PR11_DOCUMENTS",
+          "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 13,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {
+            "conformance/agent-harness-v0/README.md": {
+              "historical_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+              "required_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04"
+            },
+            "research/harness-v0/LIMITATIONS.md": {
+              "historical_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+              "required_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882"
+            },
+            "tools/erc8004/integrity.py": {
+              "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+              "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+            }
+          },
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12664
+        },
+        "historical_base": "4799a7260d8f99e489541cffe471e53c50411459",
+        "historical_files": 12703,
+        "historical_inventory_sha256": "7fd8b6b6f00c5f5d71fe8c335d55097babcd14761710b88874c9c39493c5b2e6",
+        "mismatches": [],
+        "passed": true,
+        "schema": "erc8004-role-policy.preservation.v2",
+        "unchanged_historical_files": 12701,
+        "v0": {
+          "evidence_files": 451,
+          "mismatches": [],
+          "passed": true,
+          "preservation": {
+            "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+            "conformance_claim": false,
+            "document_state": "PR11_DOCUMENTS",
+            "historical_base": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+            "historical_files": 12193,
+            "historical_inventory_sha256": "8b8db7a4ca33d452f5c8695c78130dcc6b8ee1f8573545a7de12d5eff8b8d820",
+            "mismatches": [],
+            "passed": true,
+            "pr11_payload_files": 13,
+            "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+            "reviewed_transitions": {
+              "conformance/agent-harness-v0/README.md": {
+                "historical_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+                "required_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04"
+              },
+              "research/harness-v0/LIMITATIONS.md": {
+                "historical_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+                "required_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882"
+              }
+            },
+            "schema": "veca-pr11-baseline-reconciliation-v1",
+            "unchanged_baseline_files": 12191
+          },
+          "unchanged_baseline_files": 12191
+        },
+        "v1": {
+          "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "preservation": {
+            "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+            "conformance_claim": false,
+            "document_state": "PR11_DOCUMENTS",
+            "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+            "historical_files": 12667,
+            "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+            "mismatches": [],
+            "passed": true,
+            "pr11_payload_files": 13,
+            "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+            "reviewed_transitions": {
+              "conformance/agent-harness-v0/README.md": {
+                "historical_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+                "required_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04"
+              },
+              "research/harness-v0/LIMITATIONS.md": {
+                "historical_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+                "required_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882"
+              },
+              "tools/erc8004/integrity.py": {
+                "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+                "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+              }
+            },
+            "schema": "veca-pr11-baseline-reconciliation-v1",
+            "unchanged_baseline_files": 12664
+          },
+          "schema": "erc8004-role-policy.preservation.v1"
+        }
+      },
+      "v1": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "cases": 26,
+        "conformant": 26,
+        "controls": {
+          "normal": 18,
+          "optimized": 18
+        },
+        "expectation_free_requests": 45,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 7,
+          "MISSING_OUTPUT": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "schema": "erc8004-role-policy.validation.v1",
+        "snapshot_receipt_bindings": true
+      },
+      "v1_complete_determinism": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "complete_observation_sha256": {
+          "normal": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387",
+          "optimized": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387",
+          "repeat": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387"
+        }
+      },
+      "v2": {
+        "authorization_counts": {
+          "REFUTED": 19,
+          "UNVERIFIABLE": 22,
+          "VERIFIED": 9
+        },
+        "behavioral_sha256": {
+          "normal": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "optimized": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "repeat": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22"
+        },
+        "boundary_modes_equal": true,
+        "cases": 50,
+        "complete_observation_sha256": {
+          "normal": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "optimized": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "repeat": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9"
+        },
+        "conformant": 50,
+        "controls": {
+          "normal": 36,
+          "optimized": 36
+        },
+        "distinct_inputs": 50,
+        "expectation_free_requests": 35,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 5,
+          "MISSING_OUTPUT": 0,
+          "NOT_APPLIED": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "public_chain_authentication": "NOT_COVERED",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "request_response_role_captures_audited": 300,
+        "schema": "erc8004-role-policy.validation.v2",
+        "wallet_updates_audited": 45
+      },
+      "v2_complete_determinism": {
+        "behavioral_sha256": {
+          "normal": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "optimized": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "repeat": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22"
+        },
+        "complete_observation_sha256": {
+          "normal": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "optimized": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "repeat": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9"
+        }
+      }
+    },
+    "source": {
+      "legacy": {
+        "authorization_counts": {
+          "REFUTED": 20,
+          "UNVERIFIABLE": 1,
+          "VERIFIED": 8
+        },
+        "conformant": 29,
+        "mutations": {
+          "CRASHED": 0,
+          "KILLED": 17,
+          "NOT_APPLIED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "passed": true,
+        "scenarios": 29
+      },
+      "legacy_determinism": {
+        "behavioral_sha256": {
+          "normal": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+          "optimized": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+          "repeat": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211"
+        },
+        "complete_observation_sha256": {
+          "normal": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af",
+          "optimized": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af",
+          "repeat": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af"
+        }
+      },
+      "preservation": {
+        "baseline_reconciliation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "ORIGINAL_DOCUMENTS",
+          "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 0,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {
+            "tools/erc8004/integrity.py": {
+              "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+              "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+            }
+          },
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12666
+        },
+        "historical_base": "4799a7260d8f99e489541cffe471e53c50411459",
+        "historical_files": 12703,
+        "historical_inventory_sha256": "7fd8b6b6f00c5f5d71fe8c335d55097babcd14761710b88874c9c39493c5b2e6",
+        "mismatches": [],
+        "passed": true,
+        "schema": "erc8004-role-policy.preservation.v2",
+        "unchanged_historical_files": 12703,
+        "v0": {
+          "evidence_files": 451,
+          "mismatches": [],
+          "passed": true,
+          "preservation": {
+            "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+            "conformance_claim": false,
+            "document_state": "ORIGINAL_DOCUMENTS",
+            "historical_base": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+            "historical_files": 12193,
+            "historical_inventory_sha256": "8b8db7a4ca33d452f5c8695c78130dcc6b8ee1f8573545a7de12d5eff8b8d820",
+            "mismatches": [],
+            "passed": true,
+            "pr11_payload_files": 0,
+            "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+            "reviewed_transitions": {},
+            "schema": "veca-pr11-baseline-reconciliation-v1",
+            "unchanged_baseline_files": 12193
+          },
+          "unchanged_baseline_files": 12193
+        },
+        "v1": {
+          "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "preservation": {
+            "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+            "conformance_claim": false,
+            "document_state": "ORIGINAL_DOCUMENTS",
+            "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+            "historical_files": 12667,
+            "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+            "mismatches": [],
+            "passed": true,
+            "pr11_payload_files": 0,
+            "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+            "reviewed_transitions": {
+              "tools/erc8004/integrity.py": {
+                "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+                "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+              }
+            },
+            "schema": "veca-pr11-baseline-reconciliation-v1",
+            "unchanged_baseline_files": 12666
+          },
+          "schema": "erc8004-role-policy.preservation.v1"
+        }
+      },
+      "v1": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "cases": 26,
+        "conformant": 26,
+        "controls": {
+          "normal": 18,
+          "optimized": 18
+        },
+        "expectation_free_requests": 45,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 7,
+          "MISSING_OUTPUT": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "schema": "erc8004-role-policy.validation.v1",
+        "snapshot_receipt_bindings": true
+      },
+      "v1_complete_determinism": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "complete_observation_sha256": {
+          "normal": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387",
+          "optimized": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387",
+          "repeat": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387"
+        }
+      },
+      "v2": {
+        "authorization_counts": {
+          "REFUTED": 19,
+          "UNVERIFIABLE": 22,
+          "VERIFIED": 9
+        },
+        "behavioral_sha256": {
+          "normal": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "optimized": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "repeat": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22"
+        },
+        "boundary_modes_equal": true,
+        "cases": 50,
+        "complete_observation_sha256": {
+          "normal": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "optimized": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "repeat": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9"
+        },
+        "conformant": 50,
+        "controls": {
+          "normal": 36,
+          "optimized": 36
+        },
+        "distinct_inputs": 50,
+        "expectation_free_requests": 35,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 5,
+          "MISSING_OUTPUT": 0,
+          "NOT_APPLIED": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "public_chain_authentication": "NOT_COVERED",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "request_response_role_captures_audited": 300,
+        "schema": "erc8004-role-policy.validation.v2",
+        "wallet_updates_audited": 45
+      },
+      "v2_complete_determinism": {
+        "behavioral_sha256": {
+          "normal": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "optimized": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "repeat": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22"
+        },
+        "complete_observation_sha256": {
+          "normal": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "optimized": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "repeat": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9"
+        }
+      }
+    }
+  },
+  "schema": "erc8004.role-policy-evidence.v2",
+  "source_parent": "4799a7260d8f99e489541cffe471e53c50411459"
+}

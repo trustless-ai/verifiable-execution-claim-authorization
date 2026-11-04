@@ -1,0 +1,396 @@
+{
+  "adapter_argv": [
+    "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\tools\\erc8004\\adapter.py",
+    "--implementation-root",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\mutations\\uri_authority\\implementation"
+  ],
+  "adapter_config_sha256": "fc03a01854844e9f9e90508b11953eed7553456919297335687c12df7ebe625b",
+  "adapter_exit_code": 0,
+  "authorization_credential": false,
+  "backend_conformance": "FAIL",
+  "exit_code": 1,
+  "grader": {
+    "detail": "1/2 vector(s) did not reproduce: uri_stranger: expected {\"authorization\":{\"authorized\":false,\"scope\":null,\"status\":\" got {\"authorization\":{\"authorized\":true,\"scope\":{\"agent_id\":0,\"c",
+    "kind": "SUITE"
+  },
+  "observation_sha256": "69a198a6a72b5708982fc89e59ea7a603632f33ed404ba8fdbf5b5ad8ab4ede0",
+  "request_sha256": "21eaa509a386e194423c41356950d423962789eb6ed3e8e28cf168780cb92b87",
+  "rows": [
+    {
+      "backend_conformance": "FAIL",
+      "evidence": {
+        "assumptions": [
+          "trusted local EVM and adapter execution",
+          "finite research policy adequacy"
+        ],
+        "authorization_credential": false,
+        "authorization_scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "operation_sha256": "0043e91f2410795a7f0ad423f824cefa361d7fd2a823d92084880a10d8e45645",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+          "registry_role": "identity",
+          "transaction_hash": "0xaa773e533c37af6d2f2a957f5aa2e82c36a1afb8d7941767f467b2ed0f3db154",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "execution": {
+          "actors": [
+            "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+          ],
+          "agent_id": 0,
+          "chain_id": 31337,
+          "receipt": {
+            "blockHash": "0xc4040e2c200388046e9961b06cd3d2c25469b5b8d773b301504951272703eb30",
+            "blockNumber": "0xa",
+            "contractAddress": null,
+            "cumulativeGasUsed": "0xc357",
+            "effectiveGasPrice": "0x150fbefd",
+            "from": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+            "gasUsed": "0xc357",
+            "logs": [
+              {
+                "address": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+                "blockHash": "0xc4040e2c200388046e9961b06cd3d2c25469b5b8d773b301504951272703eb30",
+                "blockNumber": "0xa",
+                "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "logIndex": "0x0",
+                "removed": false,
+                "topics": [
+                  "0xf8e1a15aba9398e019f0b49df1a4fde98ee17ae345cb5f6b5e2c27f5033e8ce7"
+                ],
+                "transactionHash": "0xaa773e533c37af6d2f2a957f5aa2e82c36a1afb8d7941767f467b2ed0f3db154",
+                "transactionIndex": "0x0"
+              },
+              {
+                "address": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+                "blockHash": "0xc4040e2c200388046e9961b06cd3d2c25469b5b8d773b301504951272703eb30",
+                "blockNumber": "0xa",
+                "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000035646174613a6170706c69636174696f6e2f6a736f6e3b6261736536342c65794a755957316c496a6f6963476c736233516966513d3d0000000000000000000000",
+                "logIndex": "0x1",
+                "removed": false,
+                "topics": [
+                  "0x3a2c7fffc2cba7582c690e3b82c453ea02a308326a98a3ad7576c606336409fb",
+                  "0x0000000000000000000000000000000000000000000000000000000000000000",
+                  "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+                ],
+                "transactionHash": "0xaa773e533c37af6d2f2a957f5aa2e82c36a1afb8d7941767f467b2ed0f3db154",
+                "transactionIndex": "0x0"
+              }
+            ],
+            "logsBloom": "0x00000000000000000000200000000000000000002000000000000000000000000000000000000000000000000400000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000800000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000002000000000000000000000000000008000000000000000000000000000001000400000000000000000000000000020000000000000000000200010000000000000000000000000800000000000000000",
+            "status": "0x1",
+            "to": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+            "transactionHash": "0xaa773e533c37af6d2f2a957f5aa2e82c36a1afb8d7941767f467b2ed0f3db154",
+            "transactionIndex": "0x0",
+            "type": "0x2"
+          },
+          "registry_address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+          "registry_role": "identity",
+          "request_hash": "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535",
+          "request_payload_hex": "0x7b226167656e74223a302c226a6f62223a226c61626f7261746f72792d76616c69646174696f6e227d",
+          "response_hash": "0xeacdd5fd778497e3ad61a0bcbe934b07d042655cc88fbc509979f83b10c095c8",
+          "signature": null,
+          "state": "URI_UPDATED",
+          "status": "ACCEPTED",
+          "transaction": {
+            "accessList": [],
+            "blockHash": "0xc4040e2c200388046e9961b06cd3d2c25469b5b8d773b301504951272703eb30",
+            "blockNumber": "0xa",
+            "chainId": "0x7a69",
+            "from": "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+            "gas": "0x2dc6c0",
+            "gasPrice": "0x150fbefd",
+            "hash": "0xaa773e533c37af6d2f2a957f5aa2e82c36a1afb8d7941767f467b2ed0f3db154",
+            "input": "0x0af28bd3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000035646174613a6170706c69636174696f6e2f6a736f6e3b6261736536342c65794a755957316c496a6f6963476c736233516966513d3d0000000000000000000000",
+            "maxFeePerGas": "0x150fbefd",
+            "maxPriorityFeePerGas": "0x50b47d5",
+            "nonce": "0x0",
+            "r": "0x5f36f954df0aad08ecc5f5f805e705f2b20fb90c7bd0867cb3dd3f51304eec1c",
+            "s": "0x1668961560f7b6badc510fe447c86e25c9d102de7ab1d2f7d2c9e92ef8019df1",
+            "to": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+            "transactionIndex": "0x0",
+            "type": "0x2",
+            "v": "0x0",
+            "value": "0x0"
+          }
+        },
+        "guarantee": "LABORATORY_VERIFIED",
+        "runtime": {
+          "chain_id": 31337,
+          "compiler_input_sha256": "2af2f71116c24e7cda9e102d889c6bd7ef447e1d51db6dc11a966b69e2634a43",
+          "deployment_method": "upstream HardhatMinimalUUPS bootstrap -> real UUPS registry implementation; local EDR only",
+          "evm": "shanghai",
+          "hardhat": "3.0.6",
+          "identity_codehash": "0xedaa08e055f336a91f03c7d7721218d3b0c3b083173761d4fe489cd78f4d790a",
+          "identity_implementation": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "node": "v22.15.0",
+          "solc": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+          "source_sha256": {
+            "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+            "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+            "contracts/IdentityRegistryUpgradeable.sol": "34ff6943b967929a449dfbe789c436866c06db3e13fdaebb6e2d2b417f202888",
+            "contracts/ValidationRegistryUpgradeable.sol": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882"
+          },
+          "validation_codehash": "0x900aa6325ee78d51999c8c6a89597e1c267457a8eebfecf2040b0d32d7e4d828",
+          "validation_implementation": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": true,
+        "scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "operation_sha256": "0043e91f2410795a7f0ad423f824cefa361d7fd2a823d92084880a10d8e45645",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "status": "VERIFIED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "state": "URI_UNCHANGED"
+        }
+      },
+      "id": "uri_stranger",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "set_uri",
+            "operation_sha256": "0043e91f2410795a7f0ad423f824cefa361d7fd2a823d92084880a10d8e45645",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "identity",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "URI_UPDATED"
+        }
+      },
+      "requirements": {
+        "N1": {
+          "clause": "Identity Registry",
+          "coverage": "finite explicit witnesses only",
+          "kind": "NORMATIVE_SPECIFICATION",
+          "requirement": "Agent owner or approved operator may update the agent URI; unrelated actors may not.",
+          "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+        },
+        "P8": {
+          "clause": "Laboratory observation policy v0",
+          "coverage": "finite explicit witnesses only",
+          "kind": "RESEARCH_POLICY",
+          "requirement": "An actually reverted transaction cannot support a successful transition claim.",
+          "source": "research/erc8004-pilot-v0/PROFILE.md"
+        }
+      }
+    },
+    {
+      "backend_conformance": "PASS",
+      "evidence": {
+        "assumptions": [
+          "trusted local EVM and adapter execution",
+          "finite research policy adequacy"
+        ],
+        "authorization_credential": false,
+        "authorization_scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "operation_sha256": "2f27a10beaafd5212b218b448f35b5335adafa9c2b2e82ce4afc21e73d0cdd7d",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+          "registry_role": "identity",
+          "transaction_hash": "0x3f692607a1d8a8d2e18274f07e6985085668f48d6fb5d6fe88da9b1bba21ed5d",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "execution": {
+          "actors": [
+            "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+          ],
+          "agent_id": 0,
+          "chain_id": 31337,
+          "receipt": {
+            "blockHash": "0x214f9763cae060d229e23f57e80e7bdf9e057e6361b63a22559ab72a658e35aa",
+            "blockNumber": "0xa",
+            "contractAddress": null,
+            "cumulativeGasUsed": "0xc357",
+            "effectiveGasPrice": "0x150fbefd",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gasUsed": "0xc357",
+            "logs": [
+              {
+                "address": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+                "blockHash": "0x214f9763cae060d229e23f57e80e7bdf9e057e6361b63a22559ab72a658e35aa",
+                "blockNumber": "0xa",
+                "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "logIndex": "0x0",
+                "removed": false,
+                "topics": [
+                  "0xf8e1a15aba9398e019f0b49df1a4fde98ee17ae345cb5f6b5e2c27f5033e8ce7"
+                ],
+                "transactionHash": "0x3f692607a1d8a8d2e18274f07e6985085668f48d6fb5d6fe88da9b1bba21ed5d",
+                "transactionIndex": "0x0"
+              },
+              {
+                "address": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+                "blockHash": "0x214f9763cae060d229e23f57e80e7bdf9e057e6361b63a22559ab72a658e35aa",
+                "blockNumber": "0xa",
+                "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000035646174613a6170706c69636174696f6e2f6a736f6e3b6261736536342c65794a755957316c496a6f6963476c736233516966513d3d0000000000000000000000",
+                "logIndex": "0x1",
+                "removed": false,
+                "topics": [
+                  "0x3a2c7fffc2cba7582c690e3b82c453ea02a308326a98a3ad7576c606336409fb",
+                  "0x0000000000000000000000000000000000000000000000000000000000000000",
+                  "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+                ],
+                "transactionHash": "0x3f692607a1d8a8d2e18274f07e6985085668f48d6fb5d6fe88da9b1bba21ed5d",
+                "transactionIndex": "0x0"
+              }
+            ],
+            "logsBloom": "0x00000000000000000000200000000000000000002000000000000000000000000000000000000000000000000400000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000100000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000008000000000000000200000000000001000000000002000000000000000000020000000000000000000200000000000000000000000000000800000000000000000",
+            "status": "0x1",
+            "to": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+            "transactionHash": "0x3f692607a1d8a8d2e18274f07e6985085668f48d6fb5d6fe88da9b1bba21ed5d",
+            "transactionIndex": "0x0",
+            "type": "0x2"
+          },
+          "registry_address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+          "registry_role": "identity",
+          "request_hash": "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535",
+          "request_payload_hex": "0x7b226167656e74223a302c226a6f62223a226c61626f7261746f72792d76616c69646174696f6e227d",
+          "response_hash": "0xeacdd5fd778497e3ad61a0bcbe934b07d042655cc88fbc509979f83b10c095c8",
+          "signature": null,
+          "state": "URI_UPDATED",
+          "status": "ACCEPTED",
+          "transaction": {
+            "accessList": [],
+            "blockHash": "0x214f9763cae060d229e23f57e80e7bdf9e057e6361b63a22559ab72a658e35aa",
+            "blockNumber": "0xa",
+            "chainId": "0x7a69",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gas": "0x2dc6c0",
+            "gasPrice": "0x150fbefd",
+            "hash": "0x3f692607a1d8a8d2e18274f07e6985085668f48d6fb5d6fe88da9b1bba21ed5d",
+            "input": "0x0af28bd3000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000035646174613a6170706c69636174696f6e2f6a736f6e3b6261736536342c65794a755957316c496a6f6963476c736233516966513d3d0000000000000000000000",
+            "maxFeePerGas": "0x150fbefd",
+            "maxPriorityFeePerGas": "0x50b47d5",
+            "nonce": "0x9",
+            "r": "0x6b4fe821a924181984574978b60c7ce4530307a05fea0cf9cd8bd74c9c4d08fe",
+            "s": "0x77e40d0662510fd81e994d9f632b848a50f3db8c6ccbc98dfae20903f52e493e",
+            "to": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+            "transactionIndex": "0x0",
+            "type": "0x2",
+            "v": "0x1",
+            "value": "0x0"
+          }
+        },
+        "guarantee": "LABORATORY_VERIFIED",
+        "runtime": {
+          "chain_id": 31337,
+          "compiler_input_sha256": "2af2f71116c24e7cda9e102d889c6bd7ef447e1d51db6dc11a966b69e2634a43",
+          "deployment_method": "upstream HardhatMinimalUUPS bootstrap -> real UUPS registry implementation; local EDR only",
+          "evm": "shanghai",
+          "hardhat": "3.0.6",
+          "identity_codehash": "0xedaa08e055f336a91f03c7d7721218d3b0c3b083173761d4fe489cd78f4d790a",
+          "identity_implementation": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "node": "v22.15.0",
+          "solc": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+          "source_sha256": {
+            "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+            "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+            "contracts/IdentityRegistryUpgradeable.sol": "34ff6943b967929a449dfbe789c436866c06db3e13fdaebb6e2d2b417f202888",
+            "contracts/ValidationRegistryUpgradeable.sol": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882"
+          },
+          "validation_codehash": "0x900aa6325ee78d51999c8c6a89597e1c267457a8eebfecf2040b0d32d7e4d828",
+          "validation_implementation": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": true,
+        "scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "set_uri",
+          "operation_sha256": "2f27a10beaafd5212b218b448f35b5335adafa9c2b2e82ce4afc21e73d0cdd7d",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "status": "VERIFIED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "set_uri",
+            "operation_sha256": "2f27a10beaafd5212b218b448f35b5335adafa9c2b2e82ce4afc21e73d0cdd7d",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "identity",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "URI_UPDATED"
+        }
+      },
+      "id": "uri_owner",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "set_uri",
+            "operation_sha256": "2f27a10beaafd5212b218b448f35b5335adafa9c2b2e82ce4afc21e73d0cdd7d",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "identity",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "URI_UPDATED"
+        }
+      },
+      "requirements": {
+        "N1": {
+          "clause": "Identity Registry",
+          "coverage": "finite explicit witnesses only",
+          "kind": "NORMATIVE_SPECIFICATION",
+          "requirement": "Agent owner or approved operator may update the agent URI; unrelated actors may not.",
+          "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+        }
+      }
+    }
+  ],
+  "schema": "agent-harness.report.v0",
+  "suite_sha256": "2f741bc3b29c2e76c007691c7521efb1bf346ec148962da928bc37d6c7cde6e2",
+  "vectors_sha256": "138cb76e39c1e0be7c1f9ceddc6df55d439b44d24abc8221e64d4f186e6204ad"
+}

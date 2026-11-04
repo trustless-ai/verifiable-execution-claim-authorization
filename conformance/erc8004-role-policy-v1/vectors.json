@@ -1,0 +1,995 @@
+{
+  "profile": "erc8004-validator-role-separation-v1",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "e5dd60f2c2911a3a2e79921e6e8834c7c33cee048da8c3f35f925ee75a4f2637",
+            "policy": "erc8004-validator-role-separation-v1",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "separate_validator",
+      "obligations": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 0,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 0
+        }
+      },
+      "name": "owner_self",
+      "obligations": [
+        "R1"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "operator",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "operator_self",
+      "obligations": [
+        "R2"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "approved",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "approved_self",
+      "obligations": [
+        "R3"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 0,
+          "after": "transfer_away",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 0
+        }
+      },
+      "name": "owner_transfers_away",
+      "obligations": [
+        "R1",
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "revoke_operator",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "operator",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "operator_revoked",
+      "obligations": [
+        "R2",
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "revoke_approved",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "approved",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "approved_revoked",
+      "obligations": [
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "6543735a8d2936fb21bfe874abd8d23c2f1ab344a6da3a743933ce347b72d40a",
+            "policy": "erc8004-validator-role-separation-v1",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "grant_operator",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "later_operator",
+      "obligations": [
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "e3e44291aa7f047a054ca5df77b4d91eed3cd820ee16af36f825ee2f2bf5d327",
+            "policy": "erc8004-validator-role-separation-v1",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "grant_approved",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "later_approved",
+      "obligations": [
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "225709eed94af830c9ef1a9f0034d3685134b885dc89d2a38446169aad11656a",
+            "policy": "erc8004-validator-role-separation-v1",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "transfer_to_validator",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "later_owner",
+      "obligations": [
+        "R4"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "f62c60bc4a8ac9541bbdce6b2b78c3a2f5996b6c823bdaee5607fa7616ce19f5",
+            "policy": "erc8004-validator-role-separation-v1",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": true,
+          "validator": 1
+        }
+      },
+      "name": "separate_update",
+      "obligations": [
+        "R4",
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "state": "RESPONSE_ABSENT"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 2,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_responder",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_version",
+      "obligations": [
+        "R5"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_claim",
+      "obligations": [
+        "R5"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "TASK_COMPLETED"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "task_truth",
+      "obligations": [
+        "R5"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 1,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_claim_subject",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 1,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_chain",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "identity",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_registry",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "independent": true,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "extra_claim_field",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "release_payment",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_operation_claim",
+      "obligations": [
+        "R8"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_roles",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "missing_roles",
+      "obligations": [
+        "R6"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "malformed_roles",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "malformed_roles",
+      "obligations": [
+        "R6"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_block",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_block",
+      "obligations": [
+        "R7"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_subject",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "wrong_subject",
+      "obligations": [
+        "R7"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_request_receipt",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "missing_request_receipt",
+      "obligations": [
+        "R6"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "RESPONSE_RECORDED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_response_receipt",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "kind": "respond_validation",
+          "role": "none",
+          "update": false,
+          "validator": 1
+        }
+      },
+      "name": "missing_response_receipt",
+      "obligations": [
+        "R8"
+      ]
+    }
+  ]
+}

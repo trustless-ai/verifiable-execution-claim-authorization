@@ -1,0 +1,19 @@
+{
+  "grader_lock": "conformance/agent-harness-v0/source-lock.json",
+  "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+  "implementation_lock": "conformance/erc8004-pilot-v0/source-lock.json",
+  "reused_files": {
+    "conformance/agent-harness-v0/source-lock.json": "bf559d4b1a2433ce5b9913b6ec5fffb2e436bbf3c14e274b95c69b1f9a15bbe6",
+    "conformance/erc8004-pilot-v0/obligations.json": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da",
+    "conformance/erc8004-pilot-v0/package-lock.json": "b9f988d86e752d80ad9834abd92753f49d2d82a34ab3b3f4b5bd641879156995",
+    "conformance/erc8004-pilot-v0/source-lock.json": "4af4bae26a8d86cd3ea588f7b0bb506f925008868d21379c3db2c5cfa13ff1c7",
+    "conformance/erc8004-pilot-v0/suite.json": "f1d3f128c09b3150de0c4dbfa5676c41a528f686894e84f40daf2e272141c321",
+    "conformance/erc8004-pilot-v0/vectors.json": "99627e3bf919788c8cbc04073d8232de439a04c77ac0b3b809a2309d613b7bc5",
+    "tools/agent_harness.py": "5b1368c1ed80032b953bc886dce1eea98e54820462a45de68ba3c07cb1af2eb6",
+    "tools/erc8004/adapter.py": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+    "tools/erc8004/evm.mjs": "995e957138979c936a29d1251c357a3ca2e8d8a09b46aa48ab2dec7221be1193",
+    "tools/erc8004/mutations.py": "71fcdfb20deb6d046de372c4116c6efeffd38d0a2a80e6e352957b0c63a6895c"
+  },
+  "schema": "erc8004-role-policy.sources.v1",
+  "source_composition": "frozen compiler/deployment/receipt helpers plus additive scenario loop; no Solidity changes"
+}

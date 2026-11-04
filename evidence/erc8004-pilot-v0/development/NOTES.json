@@ -1,0 +1,10 @@
+{
+  "classification": "LABORATORY_INFRASTRUCTURE_CORRECTIONS",
+  "events": [
+    "A premature run before dependency preparation finished returned NOT_COVERED with exit 2; no PASS claimed.",
+    "Initial source hashes reflected Windows checkout CRLF conversion. Final lock uses immutable Git blobs, fetched and verified independently.",
+    "Deterministic timestamp stepping changed setup gas use. One setup transaction reverted with insufficient estimated gas; explicit laboratory gas limits fixed it. Failed run retained, not classified as an upstream conformance finding.",
+    "The final missing-receipt control removes the actual receipt from supplied evidence before authorization; it is not a trusted boolean verification flag."
+  ],
+  "final_source_lock_sha256": "4af4bae26a8d86cd3ea588f7b0bb506f925008868d21379c3db2c5cfa13ff1c7"
+}

@@ -1,0 +1,98 @@
+{
+  "refs": {
+    "original_harness": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+    "historical_pilot": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+    "pr11": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+    "integrated_pr9": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+    "current_pr10": "aee0f9fe9aab1c90807846a6e37999be27265af2",
+    "github_test_merge": "a6e0c6011a92c78b34ed929e992e444912a891cb"
+  },
+  "files": {
+    "conformance/agent-harness-v0/README.md": {
+      "original_harness": {
+        "commit": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+        "git_blob": "e608f905b77f542c0c00c939de41d1ce20c4408d",
+        "sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+        "bytes": 2734
+      },
+      "historical_pilot": {
+        "commit": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+        "git_blob": "e608f905b77f542c0c00c939de41d1ce20c4408d",
+        "sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+        "bytes": 2734
+      },
+      "pr11": {
+        "commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "git_blob": "956d00b32b618024169928142727b3709a674d9c",
+        "sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+        "bytes": 3322
+      },
+      "integrated_pr9": {
+        "commit": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+        "git_blob": "956d00b32b618024169928142727b3709a674d9c",
+        "sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+        "bytes": 3322
+      },
+      "current_pr10": {
+        "commit": "aee0f9fe9aab1c90807846a6e37999be27265af2",
+        "git_blob": "e608f905b77f542c0c00c939de41d1ce20c4408d",
+        "sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+        "bytes": 2734
+      },
+      "github_test_merge": {
+        "commit": "a6e0c6011a92c78b34ed929e992e444912a891cb",
+        "git_blob": "956d00b32b618024169928142727b3709a674d9c",
+        "sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+        "bytes": 3322
+      }
+    },
+    "research/harness-v0/LIMITATIONS.md": {
+      "original_harness": {
+        "commit": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+        "git_blob": "c7c962b73d9a99b962e070af5add8548f43f2eea",
+        "sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+        "bytes": 3321
+      },
+      "historical_pilot": {
+        "commit": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+        "git_blob": "c7c962b73d9a99b962e070af5add8548f43f2eea",
+        "sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+        "bytes": 3321
+      },
+      "pr11": {
+        "commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "git_blob": "2f9cb84e0fae9560be1945782e12f337abda6a1b",
+        "sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+        "bytes": 3792
+      },
+      "integrated_pr9": {
+        "commit": "25f7c45f20cfd4f892f7387cd3d3842105d8b214",
+        "git_blob": "2f9cb84e0fae9560be1945782e12f337abda6a1b",
+        "sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+        "bytes": 3792
+      },
+      "current_pr10": {
+        "commit": "aee0f9fe9aab1c90807846a6e37999be27265af2",
+        "git_blob": "c7c962b73d9a99b962e070af5add8548f43f2eea",
+        "sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+        "bytes": 3321
+      },
+      "github_test_merge": {
+        "commit": "a6e0c6011a92c78b34ed929e992e444912a891cb",
+        "git_blob": "2f9cb84e0fae9560be1945782e12f337abda6a1b",
+        "sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+        "bytes": 3792
+      }
+    }
+  },
+  "history": {
+    "conformance/agent-harness-v0/README.md": [
+      "e5263f47325a81b0647f3de3a7bc36ad858aea5a test: isolate four reviewer-identified harness coverage gaps",
+      "b80f0ec6592642226e504025cf6785ed1b1bf797 feat: add reusable reporter profile and executable RVR conformance pilot"
+    ],
+    "research/harness-v0/LIMITATIONS.md": [
+      "e5263f47325a81b0647f3de3a7bc36ad858aea5a test: isolate four reviewer-identified harness coverage gaps",
+      "b80f0ec6592642226e504025cf6785ed1b1bf797 feat: add reusable reporter profile and executable RVR conformance pilot"
+    ]
+  }
+}

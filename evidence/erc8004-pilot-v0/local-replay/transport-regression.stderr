@@ -1,0 +1,18 @@
+test_correct_negative_is_conformant (test_transport.Transport.test_correct_negative_is_conformant) ... ok
+test_crash_is_not_refutation_or_pass (test_transport.Transport.test_crash_is_not_refutation_or_pass) ... ok
+test_dependency_tamper_fails_closed (test_transport.Transport.test_dependency_tamper_fails_closed) ... ok
+test_duplicate_member_never_passes (test_transport.Transport.test_duplicate_member_never_passes) ... ok
+test_empty_corpus_never_passes (test_transport.Transport.test_empty_corpus_never_passes) ... ok
+test_empty_output_never_passes (test_transport.Transport.test_empty_output_never_passes) ... ok
+test_expectations_are_not_sent (test_transport.Transport.test_expectations_are_not_sent) ... ok
+test_extra_row_never_passes (test_transport.Transport.test_extra_row_never_passes) ... ok
+test_inconsistent_authorization_is_observable (test_transport.Transport.test_inconsistent_authorization_is_observable) ... ok
+test_missing_adapter_fails_closed (test_transport.Transport.test_missing_adapter_fails_closed) ... ok
+test_missing_row_never_passes (test_transport.Transport.test_missing_row_never_passes) ... ok
+test_stale_suite_pin_fails_closed (test_transport.Transport.test_stale_suite_pin_fails_closed) ... ok
+test_wrong_value_fails (test_transport.Transport.test_wrong_value_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.726s
+
+OK

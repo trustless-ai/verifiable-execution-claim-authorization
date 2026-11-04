@@ -1,0 +1,40 @@
+{
+  "request_duplicate": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "agent_id": 0,
+        "chain_id": 31337,
+        "operation": "request_validation",
+        "operation_sha256": "a111c2d818855e972f979fa25e4bb80de2a201c14e92783f3889d256cffa1d60",
+        "policy": "erc8004-registry-observation-v0",
+        "registry_role": "validation",
+        "type": "LAB_REGISTRY_TRANSITION"
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "operation_status": "ACCEPTED",
+      "state": "REQUEST_RECORDED"
+    }
+  },
+  "request_owner": {
+    "authorization": {
+      "authorized": true,
+      "scope": {
+        "agent_id": 0,
+        "chain_id": 31337,
+        "operation": "request_validation",
+        "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+        "policy": "erc8004-registry-observation-v0",
+        "registry_role": "validation",
+        "type": "LAB_REGISTRY_TRANSITION"
+      },
+      "status": "VERIFIED"
+    },
+    "behavior": {
+      "operation_status": "ACCEPTED",
+      "state": "REQUEST_RECORDED"
+    }
+  }
+}

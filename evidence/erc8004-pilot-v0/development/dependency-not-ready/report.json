@@ -1,0 +1,8 @@
+{
+  "authorization_credential": false,
+  "backend_conformance": "NOT_COVERED",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021\\\\build\\\\agent-harness-v0\\\\recompute-kit\\\\LICENSE'",
+  "exit_code": 2,
+  "rows": [],
+  "schema": "agent-harness.report.v0"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "wallet_signature",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "4481f4ac8362b02a8041bdf96b5c030a813e44f5d43d6d62ee48834b8635f6da"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "323db90c4f5b26b7eca02c0fbfd86db004b84ec54d9b710091cb000b36223c14"
+  }
+}

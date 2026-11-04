@@ -1,0 +1,2133 @@
+{
+  "profile": "erc8004-validator-role-separation-v2",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "80ccf1455d3cf442f5b362cb30a98c8bdb55a1ebce3b8a18b0213c142e607776",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "separate_validator",
+      "obligations": [
+        "V2-ROLES",
+        "V2-BINDING",
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_validator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "agent_wallet_self",
+      "obligations": [
+        "V2-ROLES",
+        "V2-SIGNATURE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_OWNER",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 0,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 0
+        }
+      },
+      "name": "owner_self",
+      "obligations": [
+        "V2-ROLES"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_OPERATOR",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "operator",
+          "validator": 1
+        }
+      },
+      "name": "operator_self",
+      "obligations": [
+        "V2-ROLES"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_TOKEN_APPROVED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "approved",
+          "validator": 1
+        }
+      },
+      "name": "approved_self",
+      "obligations": [
+        "V2-ROLES"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "2ffdb705cfb14dcbd7c5fd2025ed5462c1a4baa1e9f950c0f1e8a93ac3a062dd",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "response_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_other",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_other",
+      "obligations": [
+        "V2-ROLES"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "52a39688da30e9ffc6eb262438b64df823c3e13e4d945700c1a33b0e4e817f66",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "response_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED",
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_validator_then_other",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_changes_before",
+      "obligations": [
+        "V2-TIME",
+        "V2-SIGNATURE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED",
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "wallet_other",
+          "agent_id": 0,
+          "before": "wallet_validator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_changes_after",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "eed892a688e0ff9bfc2bc2e2c00c236756026ef889adfce4490e05eb0a1fe037",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "wallet_validator",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_becomes_validator_after",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x0000000000000000000000000000000000000000",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "unset_wallet",
+          "agent_id": 0,
+          "before": "wallet_validator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_unset_after",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "fbba031b19c957ad92ade2cac65c3edcf22824cf7aab4a1835f31b2f3dc471b9",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0x0000000000000000000000000000000000000000",
+          "response_wallet": "0x0000000000000000000000000000000000000000",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_then_transfer",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_cleared_before_request",
+      "obligations": [
+        "V2-TRANSFER"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x0000000000000000000000000000000000000000",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "transfer_away",
+          "agent_id": 0,
+          "before": "wallet_validator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_cleared_after_request",
+      "obligations": [
+        "V2-TIME",
+        "V2-TRANSFER"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "f11012ce94d04b13fbf6de95f42323c790e888b9be2c5c827d333dc7e0490b02",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "REJECTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "invalid_wallet_signature",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "invalid_signature",
+      "obligations": [
+        "V2-SIGNATURE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_by_operator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_by_operator",
+      "obligations": [
+        "V2-SIGNATURE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_AGENT_WALLET",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "wallet_by_approved",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wallet_by_approved",
+      "obligations": [
+        "V2-SIGNATURE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_OPERATOR",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "revoke_operator",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "operator",
+          "validator": 1
+        }
+      },
+      "name": "operator_revoked",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "e15f42a4b61c8d4cdef713d475e4ee350b0b399ecf8ef5d20559f74a86db5617",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "grant_operator",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "later_operator",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_TOKEN_APPROVED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "revoke_approved",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "approved",
+          "validator": 1
+        }
+      },
+      "name": "approved_revoked",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "6343afdbef924b6656d81ef3dac0668eab3a320b0fcf60ad10a9a27ed80a69f4",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "grant_approved",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "later_approved",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "SELF_ATTESTED_OWNER",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0x0000000000000000000000000000000000000000",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 0,
+          "after": "transfer_away",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 0
+        }
+      },
+      "name": "owner_transfers_away",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond_validation",
+            "operation_sha256": "e0eb5b9d3a16ba1efa466594ed62c26220236ac831df54d2fbd9e4c060d5a1e2",
+            "policy": "erc8004-validator-role-separation-v2",
+            "registry_role": "validation",
+            "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "REQUEST_TIME_ROLE_SEPARATION",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0x0000000000000000000000000000000000000000",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "transfer_to_validator",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "later_owner",
+      "obligations": [
+        "V2-TIME"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_ABSENT",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 2,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_responder",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "WRONG_POLICY",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v1",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_version",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "WRONG_CLAIM",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "TASK_COMPLETED"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_claim",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 1,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_claim_subject",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 1,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_chain",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "identity",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_registry",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "independence": true,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "extra_claim_field",
+      "obligations": [
+        "V2-ADMISSION"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MISSING_AGENT_WALLET",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_wallet",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_wallet",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MALFORMED_AGENT_WALLET",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "malformed_wallet",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "malformed_wallet",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "contradictory_wallet",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "contradictory_wallet",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_wallet_block",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_wallet_block",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_wallet_agent",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_wallet_agent",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_wallet_registry",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_wallet_registry",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MISSING_ROLE_CALLS",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_calls",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_calls",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MISSING_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_wallet_call",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_wallet_call",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MALFORMED_ROLE_CALL",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "malformed_wallet_result",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "malformed_wallet_result",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "UNVERIFIED_ROLE_CALLS",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "unverified_calls",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "unverified_calls",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_call_chain",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_call_chain",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_call_block_hash",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_call_block_hash",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_call_subject",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_call_subject",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_call_validator",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_call_validator",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_call_request",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_call_request",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_REQUEST_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_block",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_block",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_REQUEST_BINDING",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "wrong_subject",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "wrong_subject",
+      "obligations": [
+        "V2-BINDING"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MISSING_REQUEST_ROLES",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_roles",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_roles",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MALFORMED_REQUEST_ROLES",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "malformed_roles",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "malformed_roles",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "MISSING_REQUEST_RECEIPT",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_request_receipt",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_request_receipt",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "TRANSITION_NOT_ESTABLISHED",
+          "request_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "response_wallet": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": []
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "missing_response_receipt",
+        "operation": {
+          "actor": 1,
+          "after": "none",
+          "agent_id": 0,
+          "before": "none",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "missing_response_receipt",
+      "obligations": [
+        "V2-AVAILABILITY"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "policy_reason": "CONTRADICTORY_ROLE_CALL",
+          "request_wallet": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "response_wallet": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "state": "RESPONSE_RECORDED",
+          "wallet_update_statuses": [
+            "ACCEPTED",
+            "ACCEPTED"
+          ]
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond_validation",
+          "policy": "erc8004-validator-role-separation-v2",
+          "registry_role": "validation",
+          "type": "LAB_VALIDATOR_ROLE_SEPARATION"
+        },
+        "evidence_control": "substituted_wallet_result",
+        "operation": {
+          "actor": 1,
+          "after": "wallet_other",
+          "agent_id": 0,
+          "before": "wallet_validator",
+          "kind": "respond_validation",
+          "role": "none",
+          "validator": 1
+        }
+      },
+      "name": "substituted_wallet_result",
+      "obligations": [
+        "V2-BINDING",
+        "V2-TIME"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "author_parent": "aee0f9fe9aab1c90807846a6e37999be27265af2",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+  },
+  "harness": {
+    "authorization_counts": {
+      "REFUTED": 13,
+      "UNVERIFIABLE": 3,
+      "VERIFIED": 2
+    },
+    "conformant_scenarios": 18,
+    "deterministic_normal_repeat_optimized": true,
+    "mutations": {
+      "KILLED": 12
+    },
+    "passed": true,
+    "scenario_count": 18
+  },
+  "historical_manifest_and_evidence_rewritten": false,
+  "independent_organizational_replay": "NOT_COVERED",
+  "integration_parent": "a6e0c6011a92c78b34ed929e992e444912a891cb",
+  "merge_authorization": false,
+  "observed_utc": "2026-10-24T01:56:34.313155+00:00",
+  "original_18_probe_comparison": {
+    "KILLED": 1,
+    "SURVIVED": 4
+  },
+  "passed": true,
+  "schema": "veca.baseline-reconciliation.execution.v1",
+  "source_and_composed_runs": {
+    "author": {
+      "baseline_controls": {
+        "normal": 16,
+        "optimized": 16
+      },
+      "legacy": {
+        "conformant": 29,
+        "mutations": {
+          "CRASHED": 0,
+          "KILLED": 17,
+          "NOT_APPLIED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "passed": true,
+        "scenarios": 29,
+        "semantic_determinism": true
+      },
+      "legacy_behavioral_sha256": {
+        "normal": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+        "optimized": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+        "repeat": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211"
+      },
+      "legacy_integrity": {
+        "evidence_files": 451,
+        "mismatches": [],
+        "passed": true,
+        "preservation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "ORIGINAL_DOCUMENTS",
+          "historical_base": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+          "historical_files": 12193,
+          "historical_inventory_sha256": "8b8db7a4ca33d452f5c8695c78130dcc6b8ee1f8573545a7de12d5eff8b8d820",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 0,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {},
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12193
+        },
+        "unchanged_baseline_files": 12193
+      },
+      "role_integrity": {
+        "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+        "historical_files": 12667,
+        "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+        "mismatches": [],
+        "passed": true,
+        "preservation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "ORIGINAL_DOCUMENTS",
+          "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 0,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {
+            "tools/erc8004/integrity.py": {
+              "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+              "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+            }
+          },
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12666
+        },
+        "schema": "erc8004-role-policy.preservation.v1"
+      },
+      "roles": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "cases": 26,
+        "conformant": 26,
+        "controls": {
+          "normal": 18,
+          "optimized": 18
+        },
+        "expectation_free_requests": 45,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 7,
+          "MISSING_OUTPUT": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "schema": "erc8004-role-policy.validation.v1",
+        "snapshot_receipt_bindings": true
+      }
+    },
+    "integration": {
+      "baseline_controls": {
+        "normal": 16,
+        "optimized": 16
+      },
+      "legacy": {
+        "conformant": 29,
+        "mutations": {
+          "CRASHED": 0,
+          "KILLED": 17,
+          "NOT_APPLIED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "passed": true,
+        "scenarios": 29,
+        "semantic_determinism": true
+      },
+      "legacy_behavioral_sha256": {
+        "normal": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+        "optimized": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+        "repeat": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211"
+      },
+      "legacy_integrity": {
+        "evidence_files": 451,
+        "mismatches": [],
+        "passed": true,
+        "preservation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "PR11_DOCUMENTS",
+          "historical_base": "0e17c97e896916b4d9505072cc9ebe2018329b01",
+          "historical_files": 12193,
+          "historical_inventory_sha256": "8b8db7a4ca33d452f5c8695c78130dcc6b8ee1f8573545a7de12d5eff8b8d820",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 13,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {
+            "conformance/agent-harness-v0/README.md": {
+              "historical_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+              "required_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04"
+            },
+            "research/harness-v0/LIMITATIONS.md": {
+              "historical_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+              "required_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882"
+            }
+          },
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12191
+        },
+        "unchanged_baseline_files": 12191
+      },
+      "role_integrity": {
+        "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+        "historical_files": 12667,
+        "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+        "mismatches": [],
+        "passed": true,
+        "preservation": {
+          "checker_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+          "conformance_claim": false,
+          "document_state": "PR11_DOCUMENTS",
+          "historical_base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+          "historical_files": 12667,
+          "historical_inventory_sha256": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+          "mismatches": [],
+          "passed": true,
+          "pr11_payload_files": 13,
+          "pr11_source": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+          "reviewed_transitions": {
+            "conformance/agent-harness-v0/README.md": {
+              "historical_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+              "required_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04"
+            },
+            "research/harness-v0/LIMITATIONS.md": {
+              "historical_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+              "required_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882"
+            },
+            "tools/erc8004/integrity.py": {
+              "historical_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+              "required_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7"
+            }
+          },
+          "schema": "veca-pr11-baseline-reconciliation-v1",
+          "unchanged_baseline_files": 12664
+        },
+        "schema": "erc8004-role-policy.preservation.v1"
+      },
+      "roles": {
+        "behavioral_sha256": {
+          "normal": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "optimized": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "repeat": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        },
+        "cases": 26,
+        "conformant": 26,
+        "controls": {
+          "normal": 18,
+          "optimized": 18
+        },
+        "expectation_free_requests": 45,
+        "independent_controller": "NOT_COVERED",
+        "independent_reviewer_replay": "NOT_COVERED",
+        "mutation_modes_equal": true,
+        "node": "v22.15.0",
+        "passed": true,
+        "physical_mutations": {
+          "CONTROL_BROKEN": 0,
+          "CRASHED": 0,
+          "KILLED": 7,
+          "MISSING_OUTPUT": 0,
+          "NO_OP": 0,
+          "RESTORATION_FAILED": 0,
+          "SURVIVED": 0,
+          "UNVERIFIABLE": 0
+        },
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "schema": "erc8004-role-policy.validation.v1",
+        "snapshot_receipt_bindings": true
+      }
+    }
+  },
+  "supplemental_behavioral_sha256": {
+    "normal/normal": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+    "normal/repeat": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+    "optimized/normal": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc",
+    "optimized/repeat": "aa134ea900784fbb4f69d972babafa1b579b64e16771de554f906ef47dd909cc"
+  },
+  "supplemental_guards": [
+    "scope",
+    "scenario",
+    "definitions",
+    "supported_contract"
+  ],
+  "supplemental_mutations": {
+    "normal": {
+      "KILLED": 4
+    },
+    "optimized": {
+      "KILLED": 4
+    }
+  },
+  "tested_candidate_code_sha256": {
+    ".github/workflows/baseline-reconciliation.yml": "474f2b41a3356e689677f2afa2cf2b297dcdb6f3521406282e1179fffd4dadcb",
+    "tests/baseline_reconciliation/test_policy.py": "ca9ec1b25ce0c99393a97b98bd685000789c362c0eca330f3ac9c97c4512cddf",
+    "tools/baseline_reconciliation/policy.py": "bfc449a774963374629ae5a03a86301d2362e774c70d8735ed44f03490e60e70",
+    "tools/erc8004/integrity.py": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+    "tools/erc8004_role_policy/integrity.py": "25204074b10d124020a5190fe553b141a2e7261d7b0182d26f8226d1e52020b5"
+  }
+}

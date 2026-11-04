@@ -1,0 +1,10 @@
+test_crash_is_not_pass (test_infrastructure.InfrastructureTests.test_crash_is_not_pass) ... ok
+test_empty_report_is_not_pass (test_infrastructure.InfrastructureTests.test_empty_report_is_not_pass) ... ok
+test_missing_adapter_is_not_pass (test_infrastructure.InfrastructureTests.test_missing_adapter_is_not_pass) ... ok
+test_missing_source_is_detected (test_infrastructure.InfrastructureTests.test_missing_source_is_detected) ... ok
+test_source_drift_is_detected (test_infrastructure.InfrastructureTests.test_source_drift_is_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 6.154s
+
+OK

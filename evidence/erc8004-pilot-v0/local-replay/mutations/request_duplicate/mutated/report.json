@@ -1,0 +1,365 @@
+{
+  "adapter_argv": [
+    "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "-B",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\tools\\erc8004\\adapter.py",
+    "--implementation-root",
+    "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-pilot-20261021\\build\\erc8004\\validation-final\\mutations\\request_duplicate\\implementation"
+  ],
+  "adapter_config_sha256": "12aaa266c427ca3cb8c6a1b144627a793b5569d578fd1c50d5f1107960f69177",
+  "adapter_exit_code": 0,
+  "authorization_credential": false,
+  "backend_conformance": "FAIL",
+  "exit_code": 1,
+  "grader": {
+    "detail": "1/2 vector(s) did not reproduce: request_duplicate: expected {\"authorization\":{\"authorized\":false,\"scope\":null,\"status\":\" got {\"authorization\":{\"authorized\":true,\"scope\":{\"agent_id\":0,\"c",
+    "kind": "SUITE"
+  },
+  "observation_sha256": "a19e163a45e7f7f3dff2cfa459da8a476a89811855b4be7d7d5623af8be3e995",
+  "request_sha256": "dd400037507eb39106e58389fbc2dde33c223c075220c31f2fbb9fdc393d140f",
+  "rows": [
+    {
+      "backend_conformance": "FAIL",
+      "evidence": {
+        "assumptions": [
+          "trusted local EVM and adapter execution",
+          "finite research policy adequacy"
+        ],
+        "authorization_credential": false,
+        "authorization_scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "operation_sha256": "a111c2d818855e972f979fa25e4bb80de2a201c14e92783f3889d256cffa1d60",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "registry_role": "validation",
+          "transaction_hash": "0xa92aed10a57789d6fef66b9361ada924fc0fa05557074f57aa47ca6ccc1c2dbc",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "execution": {
+          "actors": [
+            "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+          ],
+          "agent_id": 0,
+          "chain_id": 31337,
+          "receipt": {
+            "blockHash": "0x377df0c6acf347a19f45ca0ce82a446ce30977d84f708dcf3d1b18edf2877f13",
+            "blockNumber": "0xb",
+            "contractAddress": null,
+            "cumulativeGasUsed": "0x1cb4e",
+            "effectiveGasPrice": "0x12766ddf",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gasUsed": "0x1cb4e",
+            "logs": [
+              {
+                "address": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+                "blockHash": "0x377df0c6acf347a19f45ca0ce82a446ce30977d84f708dcf3d1b18edf2877f13",
+                "blockNumber": "0xb",
+                "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000011697066733a2f2f6c61626f7261746f7279000000000000000000000000000000",
+                "logIndex": "0x0",
+                "removed": false,
+                "topics": [
+                  "0x530436c3634a98e1e626b0898be2f1e9980cc1bd2a78c07a0aba52d0a48a5059",
+                  "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+                  "0x0000000000000000000000000000000000000000000000000000000000000000",
+                  "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535"
+                ],
+                "transactionHash": "0xa92aed10a57789d6fef66b9361ada924fc0fa05557074f57aa47ca6ccc1c2dbc",
+                "transactionIndex": "0x0"
+              }
+            ],
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000800000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000a00000004000000000000000000000000000000000000000000000000000000000000020000000000000000000000020000000000000000020000000000000000000000040000000080000000001000000000100000000000000",
+            "status": "0x1",
+            "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+            "transactionHash": "0xa92aed10a57789d6fef66b9361ada924fc0fa05557074f57aa47ca6ccc1c2dbc",
+            "transactionIndex": "0x0",
+            "type": "0x2"
+          },
+          "registry_address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "registry_role": "validation",
+          "request_hash": "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535",
+          "request_payload_hex": "0x7b226167656e74223a302c226a6f62223a226c61626f7261746f72792d76616c69646174696f6e227d",
+          "response_hash": "0xeacdd5fd778497e3ad61a0bcbe934b07d042655cc88fbc509979f83b10c095c8",
+          "signature": null,
+          "state": "REQUEST_RECORDED",
+          "status": "ACCEPTED",
+          "transaction": {
+            "accessList": [],
+            "blockHash": "0x377df0c6acf347a19f45ca0ce82a446ce30977d84f708dcf3d1b18edf2877f13",
+            "blockNumber": "0xb",
+            "chainId": "0x7a69",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gas": "0x2dc6c0",
+            "gasPrice": "0x12766ddf",
+            "hash": "0xa92aed10a57789d6fef66b9361ada924fc0fa05557074f57aa47ca6ccc1c2dbc",
+            "input": "0xaaf400c40000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000804ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c5350000000000000000000000000000000000000000000000000000000000000011697066733a2f2f6c61626f7261746f7279000000000000000000000000000000",
+            "maxFeePerGas": "0x12766ddf",
+            "maxPriorityFeePerGas": "0x46ba43b",
+            "nonce": "0xa",
+            "r": "0xef8c187ba5d2aa18df41df91806de89fd71467f2db285e22c1dba022c300a68c",
+            "s": "0x69fbb0c21a62f0c86d4c2cf195f3a97904ac2a1534f520bb71d7150e1a9dd55c",
+            "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+            "transactionIndex": "0x0",
+            "type": "0x2",
+            "v": "0x1",
+            "value": "0x0"
+          }
+        },
+        "guarantee": "LABORATORY_VERIFIED",
+        "runtime": {
+          "chain_id": 31337,
+          "compiler_input_sha256": "56219c96512c6e329878e0f12e9467aa6cc65d890cb7cbb5f94619312f0f44bf",
+          "deployment_method": "upstream HardhatMinimalUUPS bootstrap -> real UUPS registry implementation; local EDR only",
+          "evm": "shanghai",
+          "hardhat": "3.0.6",
+          "identity_codehash": "0x31cd8cc7d83842e8a7585c4185ddfdf81173bd9497503e46f0a85d878ec7cf9a",
+          "identity_implementation": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "node": "v22.15.0",
+          "solc": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+          "source_sha256": {
+            "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+            "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+            "contracts/IdentityRegistryUpgradeable.sol": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+            "contracts/ValidationRegistryUpgradeable.sol": "472b7de0d10861afbfa564f56de2dea47585ca2b3a4514a5cd63165c6e8c6d67"
+          },
+          "validation_codehash": "0x96034f28fadc31ff75e7caef4f0ca1be97c16f2dcbb9694bfc28c845d0ffd68c",
+          "validation_implementation": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": true,
+        "scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "operation_sha256": "a111c2d818855e972f979fa25e4bb80de2a201c14e92783f3889d256cffa1d60",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "status": "VERIFIED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "operation_status": "REJECTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "id": "request_duplicate",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request_validation",
+            "operation_sha256": "a111c2d818855e972f979fa25e4bb80de2a201c14e92783f3889d256cffa1d60",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "requirements": {
+        "I2": {
+          "clause": "Pinned ValidationRegistry validationRequest",
+          "coverage": "finite explicit witnesses only",
+          "kind": "IMPLEMENTATION_BEHAVIOR",
+          "requirement": "The implementation rejects a duplicate requestHash.",
+          "source": "research/erc8004-pilot-v0/PROFILE.md"
+        }
+      }
+    },
+    {
+      "backend_conformance": "PASS",
+      "evidence": {
+        "assumptions": [
+          "trusted local EVM and adapter execution",
+          "finite research policy adequacy"
+        ],
+        "authorization_credential": false,
+        "authorization_scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "registry_role": "validation",
+          "transaction_hash": "0x87700efde748e473c99a3487faed4fcc6b5d3bd914558b9d360b6e237004ea92",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "execution": {
+          "actors": [
+            "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+          ],
+          "agent_id": 0,
+          "chain_id": 31337,
+          "receipt": {
+            "blockHash": "0x8f99aeccede17450f8d1b451591275e23463064418441cf90a0b860d9eb480c5",
+            "blockNumber": "0xa",
+            "contractAddress": null,
+            "cumulativeGasUsed": "0x2e16e",
+            "effectiveGasPrice": "0x150ff066",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gasUsed": "0x2e16e",
+            "logs": [
+              {
+                "address": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+                "blockHash": "0x8f99aeccede17450f8d1b451591275e23463064418441cf90a0b860d9eb480c5",
+                "blockNumber": "0xa",
+                "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000011697066733a2f2f6c61626f7261746f7279000000000000000000000000000000",
+                "logIndex": "0x0",
+                "removed": false,
+                "topics": [
+                  "0x530436c3634a98e1e626b0898be2f1e9980cc1bd2a78c07a0aba52d0a48a5059",
+                  "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+                  "0x0000000000000000000000000000000000000000000000000000000000000000",
+                  "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535"
+                ],
+                "transactionHash": "0x87700efde748e473c99a3487faed4fcc6b5d3bd914558b9d360b6e237004ea92",
+                "transactionIndex": "0x0"
+              }
+            ],
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000800000800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000a00000004000000000000000000000000000000000000000000000000000000000000020000000000000000000000020000000000000000020000000000000000000000040000000080000000001000000000100000000000000",
+            "status": "0x1",
+            "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+            "transactionHash": "0x87700efde748e473c99a3487faed4fcc6b5d3bd914558b9d360b6e237004ea92",
+            "transactionIndex": "0x0",
+            "type": "0x2"
+          },
+          "registry_address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+          "registry_role": "validation",
+          "request_hash": "0x4ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c535",
+          "request_payload_hex": "0x7b226167656e74223a302c226a6f62223a226c61626f7261746f72792d76616c69646174696f6e227d",
+          "response_hash": "0xeacdd5fd778497e3ad61a0bcbe934b07d042655cc88fbc509979f83b10c095c8",
+          "signature": null,
+          "state": "REQUEST_RECORDED",
+          "status": "ACCEPTED",
+          "transaction": {
+            "accessList": [],
+            "blockHash": "0x8f99aeccede17450f8d1b451591275e23463064418441cf90a0b860d9eb480c5",
+            "blockNumber": "0xa",
+            "chainId": "0x7a69",
+            "from": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "gas": "0x2dc6c0",
+            "gasPrice": "0x150ff066",
+            "hash": "0x87700efde748e473c99a3487faed4fcc6b5d3bd914558b9d360b6e237004ea92",
+            "input": "0xaaf400c40000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000804ec9f1da00279e17b2e869e36158556c016afa3a5074d329da882f7f2b38c5350000000000000000000000000000000000000000000000000000000000000011697066733a2f2f6c61626f7261746f7279000000000000000000000000000000",
+            "maxFeePerGas": "0x150ff066",
+            "maxPriorityFeePerGas": "0x50b53aa",
+            "nonce": "0x9",
+            "r": "0x941f0ea48cbb784b96482a9bce2f727b47d6e02f67d620bebb92ac6412ded86e",
+            "s": "0x447c611c6724673516bb40325db22eb7b299f265848d1fd580a56795bffbd90b",
+            "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+            "transactionIndex": "0x0",
+            "type": "0x2",
+            "v": "0x0",
+            "value": "0x0"
+          }
+        },
+        "guarantee": "LABORATORY_VERIFIED",
+        "runtime": {
+          "chain_id": 31337,
+          "compiler_input_sha256": "56219c96512c6e329878e0f12e9467aa6cc65d890cb7cbb5f94619312f0f44bf",
+          "deployment_method": "upstream HardhatMinimalUUPS bootstrap -> real UUPS registry implementation; local EDR only",
+          "evm": "shanghai",
+          "hardhat": "3.0.6",
+          "identity_codehash": "0x31cd8cc7d83842e8a7585c4185ddfdf81173bd9497503e46f0a85d878ec7cf9a",
+          "identity_implementation": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "node": "v22.15.0",
+          "solc": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+          "source_sha256": {
+            "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+            "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+            "contracts/IdentityRegistryUpgradeable.sol": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+            "contracts/ValidationRegistryUpgradeable.sol": "472b7de0d10861afbfa564f56de2dea47585ca2b3a4514a5cd63165c6e8c6d67"
+          },
+          "validation_codehash": "0x96034f28fadc31ff75e7caef4f0ca1be97c16f2dcbb9694bfc28c845d0ffd68c",
+          "validation_implementation": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+        }
+      },
+      "evidence_supported_authorization": {
+        "authorized": true,
+        "scope": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request_validation",
+          "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "status": "VERIFIED"
+      },
+      "expected_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request_validation",
+            "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "id": "request_owner",
+      "observed_behavior": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request_validation",
+            "operation_sha256": "d6b650c8ef9dc5f89a31cff1b9c1e2eb76a44f139308c7aeba9492283f1f9a14",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "operation_status": "ACCEPTED",
+          "state": "REQUEST_RECORDED"
+        }
+      },
+      "requirements": {
+        "N5": {
+          "clause": "Validation Request",
+          "coverage": "finite explicit witnesses only",
+          "kind": "NORMATIVE_SPECIFICATION",
+          "requirement": "Only the owner or operator may request validation.",
+          "source": "https://github.com/ethereum/ERCs/blob/503591a6e80e6e1affdd6403341e25269141f046/ERCS/erc-8004.md"
+        }
+      }
+    }
+  ],
+  "schema": "agent-harness.report.v0",
+  "suite_sha256": "f002b6db1faaaa616031359f3c474ed841c91b411e32d3d84998badce88c9698",
+  "vectors_sha256": "e97be852d3c410d5533ca6e87027d89dc731d348f27349cee09d7e92c920f2c3"
+}
