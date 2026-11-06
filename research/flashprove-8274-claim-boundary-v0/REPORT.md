@@ -1,3 +1,28 @@
+# Review finalization v1 addendum
+
+This follow-up resolves the inventory refusal without modifying the root checker
+or any of its exclusions. All 12,739 old entries retain their exact hashes; new
+entries are restricted to this research directory. Original manifests are copied
+byte-identically and checked against their Git blobs. The frozen RVR Core and old
+mutation classifications remain unchanged.
+
+Full candidate replay is defined in `review_v1/replay.py`: 54 scenarios, 15 tests,
+29 physical mutations and 6 non-kill controls in normal, repeat and Python -O;
+8 additional inventory controls and 3 counterexamples with 3 result-tamper controls
+in each mode. Every gate must actually execute before publication. Exact executed
+outputs are emitted as `results.json` plus stdout/stderr and command receipts.
+
+The three counterexamples, source pins, minimal inputs, threat assumptions,
+remediation proposals and negative regressions are in `review_v1/COUNTEREXAMPLES.md`.
+`review_v1/REVIEW.md` contains the reviewer checklist. No real SP1 soundness failure
+or implemented positive attestation is claimed. External review remains separate.
+
+The original a730515 report below is retained as a dated historical record, not a
+claim about this candidate's current inventory or latest replay. A post-commit
+evidence archive records the exact tested HEAD without self-referential hashes.
+
+---
+
 # Independent FlashProve claim-boundary experiment
 
 Verdict: **READY_FOR_INDEPENDENT_REVIEW**, scoped to this local research experiment.

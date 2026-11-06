@@ -1,0 +1,29 @@
+{
+  "files": {
+    "INTEGRATION_PLAN.md": "357fa565f96a4dd00e25a6fe7403655b4c62e70141e0f8a85eeb2d6de059784b",
+    "MUTATION_REPORT.md": "15eb6be5b63dd45694bac8cff96a16993f87fd162ef00667e953514fd909842e",
+    "README.md": "336ca8dbb6419327a142e1e6a2bdbd0ea25b3cee3faf894ae073fa364f6bf8d1",
+    "REPORT.md": "475ef32ad7d68de94a54d365189735b80c77d137cad6d933b057fde1a7080863",
+    "SOURCE_PINS.json": "2179a06c63b8d61b08996bdd1cf1767ffa7c04d3594a96283b3eb23ef6faeec5",
+    "adapter.json": "2790bbdbaee771103aecbc386f86a28c2007699b537dcee296b413ef77952e9e",
+    "adapter.py": "39acf6d5c6f8e8965b0b930a67c605063095a2e28d707cbd11d74233012e3738",
+    "evidence/archive.json": "618922ff46aaf3afcbdfb86eee4f74dea3e7a72598c2697e168ec1856c96661f",
+    "evidence/mutation-results.json": "352aacc831867e8958f8e9203af86881bdb07dd4b3527ae4eb1ec415d280040c",
+    "evidence/privacy-scan.json": "de6e601df634a8eb14dac7376761f6dd258c40728c74cb2c6d89a4bb92be81e0",
+    "evidence/raw-evidence.zip": "1f49081229300e0e4967b7bdd24dbf2ddebac222dae6f6e5bd4ba56fc62c8cc5",
+    "evidence/results.json": "fb39a4d5eb7b15af2e7d01138643b072f4be5775fb841437730c0ae8e20731f1",
+    "evm.mjs": "6a639090fac3aea64a7e1ec968f927ceadfd243ab373571a2763a034b571845a",
+    "generate_vectors.py": "9759e5bfbf01e97d322fb4b1591c910d54a1cba176a41c9366db39e2b754476a",
+    "mutations.py": "bdd1abe114268c162f223da8402575872da82ea050ab6bc14baab53569a6481f",
+    "obligations.json": "709856981b1a4a50d3ccb6923e619faa8ced86c3d93b784916b1ae9a37a39a2f",
+    "policy.py": "351edd51b5decabcb4f89410a2b657ad08b7de9d30406ee3c5c3e7d84af0e9a1",
+    "prepare.py": "ba57fbf618862d25c1b33155c742ab8fd3718fa8b7a80956a91ddc31150ed8e0",
+    "preservation.py": "c7631bb905a724e66ab650dc506bae9c129939ecaa728ccbf12ae3d27440c7cf",
+    "suite.json": "1ec05abd6a179270a733e4f9a3ff74378229207fcaecd5c68df732a0272894ee",
+    "tests.py": "7ecb150114ce331e354547061b085b04066dd668c4946f753bad5d8f53770e8b",
+    "validate.py": "3fdfbe79f881f86f4fcfa09765a560c72d77084e2795ae65daab5d8f7f5c40ab",
+    "vectors.json": "1fcb2a38223fac1937c57ed3f94fbd03696f54b0128407d030721a04e86deaf1",
+    "verify_evidence.py": "adade23f7cf708d6484881a7771d360cc554247d27760c018152e6d7d19f9f71"
+  },
+  "schema": "flashprove-research-inventory-v0"
+}

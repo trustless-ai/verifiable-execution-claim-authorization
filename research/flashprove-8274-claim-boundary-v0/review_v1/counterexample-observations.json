@@ -1,0 +1,1279 @@
+{
+  "captured_utc": "2026-11-06T03:24:16.720027+00:00",
+  "findings": {
+    "A": {
+      "expected": {
+        "configuration_profile_collision": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "UNVERIFIABLE"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": null,
+              "outer": null,
+              "outer_profile_equal": true,
+              "same_committee_profile": true,
+              "same_threshold_profile": false
+            },
+            "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+          }
+        }
+      },
+      "inputs": {
+        "cases": [
+          {
+            "id": "configuration_profile_collision",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "attestation",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "kind": "profiles",
+                "route": "attestation"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          }
+        ],
+        "profile": "flashprove-erc8274-claim-boundary-v0",
+        "schema": "agent-harness.request.v0"
+      },
+      "native_observations": {
+        "observations": {
+          "configuration_profile_collision": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "UNVERIFIABLE"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": null,
+                "outer": null,
+                "outer_profile_equal": true,
+                "same_committee_profile": true,
+                "same_threshold_profile": false
+              },
+              "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "committees": [
+                [
+                  "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                  "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+                ],
+                [
+                  "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+                  "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
+                ]
+              ],
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "other_profile": "0x297589ef0c069f61cd4903e887603382205ecd7609eb6efaed3e7d7fd986953d",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "profile": "0x297589ef0c069f61cd4903e887603382205ecd7609eb6efaed3e7d7fd986953d",
+              "provenance": "UPSTREAM_SIGNATURE_TODO",
+              "route": "attestation",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": null,
+                "outer": null,
+                "outer_profile_equal": true,
+                "same_committee_profile": true,
+                "same_threshold_profile": false
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "threshold": 2
+            }
+          }
+        },
+        "schema": "agent-harness.observation.v0"
+      }
+    },
+    "B": {
+      "expected": {
+        "caller_impersonates_agent": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "CALLER_NOT_AGENT"
+          }
+        },
+        "unknown_native_agent": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                false
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": false,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "AGENT_MISMATCH"
+          }
+        },
+        "zk_mock_positive": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "UNVERIFIABLE"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+          }
+        }
+      },
+      "inputs": {
+        "cases": [
+          {
+            "id": "zk_mock_positive",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "unknown_native_agent",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "agent": "0x7777777777777777777777777777777777777777777777777777777777777777",
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "caller_impersonates_agent",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "actor": 1,
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          }
+        ],
+        "profile": "flashprove-erc8274-claim-boundary-v0",
+        "schema": "agent-harness.request.v0"
+      },
+      "native_observations": {
+        "observations": {
+          "caller_impersonates_agent": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "CALLER_NOT_AGENT"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+              "caller_bound": false,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x9b9b7b7fbaa814446bc73934b90f1a88ceced108ef1d2847dbda3dc39128e2e4",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "unknown_native_agent": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  false
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": false,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "AGENT_MISMATCH"
+            },
+            "evidence": {
+              "agent_id": "0x7777777777777777777777777777777777777777777777777777777777777777",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  false
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": false,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": false,
+              "threshold": 2,
+              "verification_digest": "0x3bdd865a8107af91432850ea3066e3ad47a8e145a4ad59828684dd283928c6c6",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "zk_mock_positive": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "UNVERIFIABLE"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x9b9b7b7fbaa814446bc73934b90f1a88ceced108ef1d2847dbda3dc39128e2e4",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          }
+        },
+        "schema": "agent-harness.observation.v0"
+      }
+    },
+    "C": {
+      "expected": {
+        "repeat_same_task": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true,
+                false
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": false,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "LAB_NATIVE_CALL_REJECTED"
+          }
+        },
+        "reuse_proof_fresh_task": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true,
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "TASK_MISMATCH"
+          }
+        },
+        "reuse_proof_other_chain": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "CHAIN_MISMATCH"
+          }
+        },
+        "reuse_proof_other_contract": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "REFUTED"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "REFUTED",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "CONTRACT_MISMATCH"
+          }
+        },
+        "zk_mock_positive": {
+          "authorization": {
+            "authorized": false,
+            "scope": null,
+            "status": "UNVERIFIABLE"
+          },
+          "behavior": {
+            "guarantees": {
+              "ACTION_AUTHORIZED": "UNVERIFIABLE",
+              "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+              "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+              "ORDER_EXECUTED": "UNVERIFIABLE",
+              "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+            },
+            "native": {
+              "calls": [
+                true
+              ],
+              "chain_digest_equal": null,
+              "constructor_accepted": null,
+              "contract_digest_equal": null,
+              "distinct_signers": null,
+              "inner": true,
+              "outer": true,
+              "outer_profile_equal": null,
+              "same_committee_profile": null,
+              "same_threshold_profile": null
+            },
+            "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+          }
+        }
+      },
+      "inputs": {
+        "cases": [
+          {
+            "id": "zk_mock_positive",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "repeat_same_task",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "kind": "call",
+                "repeat": "same",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "reuse_proof_fresh_task",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "kind": "call",
+                "repeat": "fresh",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "reuse_proof_other_contract",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "instance": "other",
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          },
+          {
+            "id": "reuse_proof_other_chain",
+            "input": {
+              "claim": {
+                "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+                "chain_id": 31337,
+                "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+                "instance": "selected",
+                "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+                "requested_guarantee": "CLAIM_AUTHORIZED",
+                "route": "zk",
+                "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+              },
+              "operation": {
+                "chain": 31338,
+                "kind": "call",
+                "route": "zk"
+              },
+              "policy_fixture": "lab-v0"
+            }
+          }
+        ],
+        "profile": "flashprove-erc8274-claim-boundary-v0",
+        "schema": "agent-harness.request.v0"
+      },
+      "native_observations": {
+        "observations": {
+          "repeat_same_task": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true,
+                  false
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": false,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "LAB_NATIVE_CALL_REJECTED"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true,
+                  false
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": false,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x7e74bf4782360d9385641b5dc6468a5840526cdde6414a711c746b519099b22a",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "reuse_proof_fresh_task": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true,
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "TASK_MISMATCH"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true,
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x7777777777777777777777777777777777777777777777777777777777777777",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x190f871f618269b65bb543736e0116b52c8cc478e600d5119f47d2198f58dfda",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "reuse_proof_other_chain": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "CHAIN_MISMATCH"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31338,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x50441c9fac12c0708222287e0647cd7a36e9306c79698873e44f3f15870413cb",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "reuse_proof_other_contract": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "REFUTED"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "REFUTED",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "CONTRACT_MISMATCH"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "other",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x4289c50a1c859b0cab968e3fd5fead6959c8bafe29e87864582ce85e62273faf",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          },
+          "zk_mock_positive": {
+            "authorization": {
+              "authorized": false,
+              "scope": null,
+              "status": "UNVERIFIABLE"
+            },
+            "behavior": {
+              "guarantees": {
+                "ACTION_AUTHORIZED": "UNVERIFIABLE",
+                "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+                "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+                "ORDER_EXECUTED": "UNVERIFIABLE",
+                "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+              },
+              "native": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+            },
+            "evidence": {
+              "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+              "caller": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+              "caller_bound": true,
+              "chain_id": 31337,
+              "committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "committee_bound": true,
+              "contract": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+              "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+              "instance": "selected",
+              "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+              "proof_sha256": "0x4ec2a698366f47eb0956f975912375e554e6fd597904fab3b2d45332ea91f276",
+              "provenance": "UPSTREAM_MOCK_SP1",
+              "public_values": "0x4650563100010000010000000000000044444444444444444444444444444444444444444444444444444444444444442222222222222222222222222222222222222222222222222222222222222222333333333333333333333333333333333333333333333333333333333333333300000000000000000000000000000000",
+              "route": "zk",
+              "selected_committee": [
+                "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+                "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+              ],
+              "summary": {
+                "calls": [
+                  true
+                ],
+                "chain_digest_equal": null,
+                "constructor_accepted": null,
+                "contract_digest_equal": null,
+                "distinct_signers": null,
+                "inner": true,
+                "outer": true,
+                "outer_profile_equal": null,
+                "same_committee_profile": null,
+                "same_threshold_profile": null
+              },
+              "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666",
+              "task_used": true,
+              "threshold": 2,
+              "verification_digest": "0x9b9b7b7fbaa814446bc73934b90f1a88ceced108ef1d2847dbda3dc39128e2e4",
+              "verifier": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+            }
+          }
+        },
+        "schema": "agent-harness.observation.v0"
+      }
+    }
+  },
+  "original_vectors_sha256": "1fcb2a38223fac1937c57ed3f94fbd03696f54b0128407d030721a04e86deaf1",
+  "results": {
+    "findings": [
+      {
+        "checks": {
+          "different_committees": true,
+          "equal_profile": true,
+          "positive_threshold_discriminator": true
+        },
+        "finding": "A",
+        "grader_exit": 0,
+        "native_exit": 0,
+        "native_stdout_sha256": "5f706db6809751ec8a1e6457429a6eaf2a55d4f3e278b180b67619680ae9e653",
+        "negative_control": {
+          "checks": {
+            "different_committees": true,
+            "equal_profile": false,
+            "positive_threshold_discriminator": true
+          },
+          "finding": "A",
+          "passed": false
+        },
+        "negative_control_passed": true,
+        "passed": true,
+        "request_sha256": "eb37bb3e41b224cba1ce6ea579051b8510d51113129890787a6ddb7bb7d69f4a",
+        "source_commit": "ea1b613625513a658942af4bc79867d1c77412cd"
+      },
+      {
+        "checks": {
+          "both_native_accepted": true,
+          "consumer_refused_caller": true,
+          "different_caller": true,
+          "same_agent_id": true,
+          "same_contract": true,
+          "same_proof": true,
+          "unknown_agent_refused": true
+        },
+        "finding": "B",
+        "grader_exit": 0,
+        "native_exit": 0,
+        "native_stdout_sha256": "0e2001e54cd6c0c7e0591d5a28a08f2cb4af09df9b1f45641758e51fedb93d69",
+        "negative_control": {
+          "checks": {
+            "both_native_accepted": true,
+            "consumer_refused_caller": true,
+            "different_caller": false,
+            "same_agent_id": true,
+            "same_contract": true,
+            "same_proof": true,
+            "unknown_agent_refused": true
+          },
+          "finding": "B",
+          "passed": false
+        },
+        "negative_control_passed": true,
+        "passed": true,
+        "request_sha256": "1f9ea888b1fb723acfa6a8d5dc37ff2854cb18f4f017b0c668fea20098bf682b",
+        "source_commit": "ea1b613625513a658942af4bc79867d1c77412cd"
+      },
+      {
+        "checks": {
+          "different_chain": true,
+          "different_instance": true,
+          "different_task": true,
+          "fresh_task_accepted": true,
+          "mock_explicit": true,
+          "other_chain_accepted": true,
+          "other_instance_accepted": true,
+          "same_address_across_chains": true,
+          "same_proof_bytes": true,
+          "same_task_refused": true
+        },
+        "finding": "C",
+        "grader_exit": 0,
+        "native_exit": 0,
+        "native_stdout_sha256": "68569d6f03ed0fe2f7e919cdd1a1a62ff9aded6382ad22bd66a096f8caa40700",
+        "negative_control": {
+          "checks": {
+            "different_chain": true,
+            "different_instance": true,
+            "different_task": true,
+            "fresh_task_accepted": true,
+            "mock_explicit": true,
+            "other_chain_accepted": true,
+            "other_instance_accepted": true,
+            "same_address_across_chains": true,
+            "same_proof_bytes": false,
+            "same_task_refused": true
+          },
+          "finding": "C",
+          "passed": false
+        },
+        "negative_control_passed": true,
+        "passed": true,
+        "request_sha256": "3c6638e2ee43654ed255dab1ce6e0acc41618aa793aa0f49570795a4b9c6a2e6",
+        "source_commit": "ea1b613625513a658942af4bc79867d1c77412cd"
+      }
+    ],
+    "passed": true
+  },
+  "source_commit": "ea1b613625513a658942af4bc79867d1c77412cd",
+  "stage": "precommit real execution; exact-commit publication replay is separate"
+}

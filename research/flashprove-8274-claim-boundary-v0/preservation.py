@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 from prepare import ROOT, HERE, verify
+from review_v1.integrity import check as registration_check
 
 
 def sha(data): return hashlib.sha256(data).hexdigest()
@@ -19,22 +20,21 @@ def inspect():
     mismatches=[name for name,digest in saved.items() if not (ROOT/name).is_file() or sha((ROOT/name).read_bytes())!=digest]
     core=json.loads((ROOT/'fixtures/erc8404/core-lock.json').read_bytes())
     core_bad=[name for name,digest in core.items() if sha((ROOT/'evidence/erc8404/core'/name).read_bytes())!=digest]
-    base_paths=git('ls-tree','-r','--name-only',base).decode().splitlines()
     # git diff catches tracked changes, but old manifest proves actual byte identity.
     changed=git('diff','--name-only',base,'--','.').decode().splitlines()
-    unexpected=[name for name in changed if not name.startswith('research/flashprove-8274-claim-boundary-v0/')]
+    unexpected=[name for name in changed if name!='artifacts.sha256.json' and not name.startswith('research/flashprove-8274-claim-boundary-v0/')]
     inventory_proc=subprocess.run(['python','-B','tools/verify_artifacts.py'],cwd=ROOT,capture_output=True)
     inventory=json.loads(inventory_proc.stdout)
-    known_additions=all(n.startswith('research/flashprove-8274-claim-boundary-v0/') and n not in saved for n in inventory['mismatches'])
-    manifest_unchanged=(ROOT/'artifacts.sha256.json').read_bytes()==old_manifest
+    registration=registration_check()
+    manifest_preserved=(HERE/'review_v1/baseline-inventory.json').read_bytes()==old_manifest
     report={'base':base,'core_files':len(core),'core_mismatches':core_bad,
             'historical_files':len(saved),'historical_mismatches':mismatches,
-            'existing_manifest_sha256':sha(old_manifest),'existing_manifest_unchanged':manifest_unchanged,
+            'existing_manifest_sha256':sha(old_manifest),'historical_manifest_preserved':manifest_preserved,
             'unexpected_diff':unexpected,'unchanged_root_inventory_exit':inventory_proc.returncode,
-            'unchanged_root_inventory_result':inventory,'only_new_unregistered_additions':known_additions,
-            'registration_status':'NOT_INTEGRATED; existing manifest intentionally unchanged',
+            'unchanged_root_inventory_result':inventory,'additive_registration':registration,
+            'registration_status':'REGISTERED_ADDITIVELY',
             'source_pins':verify()}
-    report['preservation_passed']=not mismatches and not core_bad and not unexpected and manifest_unchanged and known_additions
+    report['preservation_passed']=not mismatches and not core_bad and not unexpected and manifest_preserved and registration['passed'] and inventory_proc.returncode==0 and inventory['passed']
     return report
 
 

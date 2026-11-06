@@ -18,6 +18,14 @@ def verify(source=CACHE):
         if hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
             raise ValueError('SOURCE_DRIFT: ' + name)
     for name, digest in pins['veca_reuse'].items():
+        if name == 'artifacts.sha256.json':
+            # This pin remains the historical base identity, not a replacement
+            # digest. The current inventory must extend it without changing entries.
+            from review_v1.integrity import require
+            registration = require()
+            if registration['baseline_inventory_sha256'] != digest:
+                raise ValueError('HISTORICAL_INVENTORY_DRIFT')
+            continue
         if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != digest:
             raise ValueError('REUSE_DRIFT: ' + name)
     return len(pins['flashprove']['files']), len(pins['veca_reuse'])

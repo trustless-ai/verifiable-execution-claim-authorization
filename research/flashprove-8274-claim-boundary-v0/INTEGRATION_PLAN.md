@@ -1,3 +1,20 @@
+# Authorized finalization v1
+
+The owner authorized additive inventory registration and publication of this same
+branch after all gates pass. Step 5 of the original plan below is now implemented:
+current inventory extension only, historical snapshots and every old digest preserved,
+root checker unchanged, eight explicit integrity controls. New replay/counterexample
+commands are documented in `review_v1/REVIEW.md`. No new PR or merge is authorized.
+
+PR #12/#13, main, Jimmy's repository and frozen ERC-8404 remain untouched. Existing
+GitHub workflows are unchanged; remote CI results must be observed, not presumed.
+The new research replay is explicitly executable locally; no absent dedicated
+FlashProve CI job is described as green.
+
+The original integration plan remains below for provenance.
+
+---
+
 # Integration plan
 
 This branch is an additive research review surface. No push, PR, merge, live

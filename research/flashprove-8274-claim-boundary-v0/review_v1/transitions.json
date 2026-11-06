@@ -1,0 +1,32 @@
+{
+  "INTEGRATION_PLAN.md": {
+    "after": "39c1e82647bbf51b2089ce4ec119f6a77fd3c8b2f16b922b4df9b0c0808a2951",
+    "before": "357fa565f96a4dd00e25a6fe7403655b4c62e70141e0f8a85eeb2d6de059784b",
+    "reason": "Record authorized inventory resolution without changing historical integration work."
+  },
+  "MUTATION_REPORT.md": {
+    "after": "a68453c3e76a2139fb330f3710aa0f6f314a5fe16325e3bcd3aa793fb4276518",
+    "before": "15eb6be5b63dd45694bac8cff96a16993f87fd162ef00667e953514fd909842e",
+    "reason": "Document exact normal/repeat/optimized replay contract; retain old evidence."
+  },
+  "README.md": {
+    "after": "b415bab99b5d0a25a862ace4529719524d91c56de2a54b2e33bfc81fe4f088b8",
+    "before": "336ca8dbb6419327a142e1e6a2bdbd0ea25b3cee3faf894ae073fa364f6bf8d1",
+    "reason": "Versioned finalization addendum; retain original a730515 narrative."
+  },
+  "REPORT.md": {
+    "after": "b79b645540aa77be2115bb92d0acedbdec76d8233dbb789b73d02c024c9744f6",
+    "before": "475ef32ad7d68de94a54d365189735b80c77d137cad6d933b057fde1a7080863",
+    "reason": "Versioned review and counterexample addendum; retain original report."
+  },
+  "prepare.py": {
+    "after": "b3e30be806f1e99222c5a26f449b240b68d0060d9cb2bc028c1e4c6334dc37fa",
+    "before": "ba57fbf618862d25c1b33155c742ab8fd3718fa8b7a80956a91ddc31150ed8e0",
+    "reason": "Distinguish the preserved historical root-manifest identity from its additive current extension."
+  },
+  "preservation.py": {
+    "after": "d5bace57996d65156148d049e9dfa32430bbcafd6e6eec9debc6b0eb92258d36",
+    "before": "c7631bb905a724e66ab650dc506bae9c129939ecaa728ccbf12ae3d27440c7cf",
+    "reason": "Require a green unchanged root checker and a bounded additive registration."
+  }
+}

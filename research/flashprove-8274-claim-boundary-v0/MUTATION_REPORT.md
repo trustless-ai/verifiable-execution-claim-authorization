@@ -1,3 +1,17 @@
+# Review finalization v1 addendum
+
+The original 29-entry physical catalog and 6 non-kill classifiers remain byte-identical.
+The finalization replay runs all of them normally, repeatedly and with Python -O
+from a clean exact-commit checkout. `review_v1/replay.py` refuses publication-grade
+success if any count, result, restoration or deterministic comparison differs.
+The separate inventory and counterexample controls are not added to the 29 kills.
+
+The original executed mutation report below remains historical evidence. Current
+run commands, actual exits, old/new predicates, healthy controls and deterministic
+results are retained in the new replay directory and deterministic archive.
+
+---
+
 # Physical mutation report
 
 29 primary mutants: 19 consumer-policy mutations and 10 upstream-Solidity

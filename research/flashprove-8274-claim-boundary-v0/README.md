@@ -1,3 +1,28 @@
+# Review finalization v1
+
+The a730515 experiment is now registered additively in the current root inventory.
+Run `python -B tools/verify_artifacts.py`: exit 0 is required. The original root
+manifest and original research manifest are preserved byte-identically in
+`review_v1/baseline-inventory.json` and `review_v1/original-research-inventory.json`
+and at their original Git commits. No historical digest is regenerated.
+
+See [review_v1/REVIEW.md](review_v1/REVIEW.md) for exact cold replay instructions,
+expected gates and artifact construction, and
+[review_v1/COUNTEREXAMPLES.md](review_v1/COUNTEREXAMPLES.md) for the three findings.
+The original 54 scenarios, 15 tests, 29 physical mutants, 6 classifier controls,
+consumer policy, EVM bridge, source pins and evidence ZIP remain unchanged.
+
+The root and research SHA256SUMS files are current inventories. Their historical
+versions remain independently hash-checked; the old root pin in SOURCE_PINS.json
+is explicitly checked against its historical snapshot, not silently replaced.
+Only six named research implementation/document transitions are permitted.
+
+The original report below describes the first local commit and its then-unregistered
+state. Those historical red-inventory statements are superseded only by this
+versioned registration; original evidence is not rewritten.
+
+---
+
 # FlashProve ERC-8274 claim boundary v0
 
 Independent, finite VECA research experiment by Pavlo Tvardovskyi. Not normative,

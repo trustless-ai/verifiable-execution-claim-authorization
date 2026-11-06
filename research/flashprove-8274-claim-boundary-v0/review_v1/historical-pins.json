@@ -1,0 +1,12 @@
+{
+  "baseline-inventory.json": {
+    "commit": "999e7047df15585f8ce0629081a1369a4942353f",
+    "path": "artifacts.sha256.json",
+    "sha256": "5e20a46f3004a4afa869ca014accc7505cb9a3c7ae0536fb7c8cc9909700b30a"
+  },
+  "original-research-inventory.json": {
+    "commit": "a730515a0d7cfc04f52d137d44f3e92f99f972ee",
+    "path": "research/flashprove-8274-claim-boundary-v0/SHA256SUMS.json",
+    "sha256": "75ac489fb940a1491d9b1d45f784e0e99bad741f2d2d1efdd2dbeb6a67eebe1b"
+  }
+}
