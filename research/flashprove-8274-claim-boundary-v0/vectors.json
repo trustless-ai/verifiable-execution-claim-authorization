@@ -1,0 +1,2944 @@
+{
+  "profile": "flashprove-erc8274-claim-boundary-v0",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "zk_mock_positive",
+      "obligations": [
+        "zk_mock_positive"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "POLICY_NOT_ESTABLISHED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": null
+      },
+      "name": "missing_policy",
+      "obligations": [
+        "missing_policy"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "POLICY_NOT_ESTABLISHED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "content-supplied-authority"
+      },
+      "name": "unknown_policy",
+      "obligations": [
+        "unknown_policy"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ROUTE_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_route_claim",
+      "obligations": [
+        "wrong_route_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "CHAIN_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 1,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_chain_claim",
+      "obligations": [
+        "wrong_chain_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "CONTRACT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "other",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_contract_claim",
+      "obligations": [
+        "wrong_contract_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "AGENT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_agent_claim",
+      "obligations": [
+        "wrong_agent_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "TASK_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x7777777777777777777777777777777777777777777777777777777777777777"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_task_claim",
+      "obligations": [
+        "wrong_task_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "INPUT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_input_claim",
+      "obligations": [
+        "wrong_input_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "OUTPUT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_output_claim",
+      "obligations": [
+        "wrong_output_claim"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "INPUT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "input": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_input_call",
+      "obligations": [
+        "wrong_input_call"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "OUTPUT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "output": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_output_call",
+      "obligations": [
+        "wrong_output_call"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "cid": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_commitment",
+      "obligations": [
+        "wrong_commitment"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk",
+          "verdict": 2
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "unaccepted_verdict",
+      "obligations": [
+        "unaccepted_verdict"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk",
+          "status": 1
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "failed_call_status",
+      "obligations": [
+        "failed_call_status"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "metadata": "wrong",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "wrong_inner_metadata",
+      "obligations": [
+        "wrong_inner_metadata"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "metadata": "short",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "short_inner_metadata",
+      "obligations": [
+        "short_inner_metadata"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "proof": "empty",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "zk_proof_empty",
+      "obligations": [
+        "zk_proof_empty"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "proof": "bad",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "zk_proof_bad",
+      "obligations": [
+        "zk_proof_bad"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "proof": "malformed",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "zk_proof_malformed",
+      "obligations": [
+        "zk_proof_malformed"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "pv": "magic",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "public_values_magic",
+      "obligations": [
+        "public_values_magic"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "pv": "version",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "public_values_version",
+      "obligations": [
+        "public_values_version"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "pv": "reserved",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "public_values_reserved",
+      "obligations": [
+        "public_values_reserved"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "pv": "short",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "public_values_short",
+      "obligations": [
+        "public_values_short"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "AGENT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "agent": "0x7777777777777777777777777777777777777777777777777777777777777777",
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "unknown_native_agent",
+      "obligations": [
+        "unknown_native_agent"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "CALLER_NOT_AGENT"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "actor": 1,
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "caller_impersonates_agent",
+      "obligations": [
+        "caller_impersonates_agent"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "TASK_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk",
+          "task": "0x7777777777777777777777777777777777777777777777777777777777777777"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "substitute_task",
+      "obligations": [
+        "substitute_task"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true,
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "LAB_NATIVE_CALL_REJECTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "repeat": "same",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "repeat_same_task",
+      "obligations": [
+        "repeat_same_task"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true,
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "TASK_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "repeat": "fresh",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "reuse_proof_fresh_task",
+      "obligations": [
+        "reuse_proof_fresh_task"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "CONTRACT_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "instance": "other",
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "reuse_proof_other_contract",
+      "obligations": [
+        "reuse_proof_other_contract"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "CHAIN_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "chain": 31338,
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "reuse_proof_other_chain",
+      "obligations": [
+        "reuse_proof_other_chain"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "ZK_PROOF_VERIFIED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "no_promotion_zk_proof_verified",
+      "obligations": [
+        "no_promotion_zk_proof_verified"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "ATTESTATION_ACCEPTED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "no_promotion_attestation_accepted",
+      "obligations": [
+        "no_promotion_attestation_accepted"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "no_promotion_claim_authorized",
+      "obligations": [
+        "no_promotion_claim_authorized"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "ACTION_AUTHORIZED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "no_promotion_action_authorized",
+      "obligations": [
+        "no_promotion_action_authorized"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              true
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": true,
+            "outer": true,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "MOCK_SP1_NOT_CRYPTOGRAPHIC_EVIDENCE"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "ORDER_EXECUTED",
+          "route": "zk",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "zk"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "no_promotion_order_executed",
+      "obligations": [
+        "no_promotion_order_executed"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "proof": "empty",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_no_signatures",
+      "obligations": [
+        "attestation_no_signatures"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "proof": "malformed",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_invalid_bundle",
+      "obligations": [
+        "attestation_invalid_bundle"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "two"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_illustrative_two_signatures",
+      "obligations": [
+        "attestation_illustrative_two_signatures"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 1,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "duplicate"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_repeated_signature",
+      "obligations": [
+        "attestation_repeated_signature"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "outsider"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_outsider_signatures",
+      "obligations": [
+        "attestation_outsider_signatures"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "OPERATOR_THRESHOLD_NOT_ESTABLISHED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "two"
+        },
+        "policy_fixture": "one-operator"
+      },
+      "name": "attestation_two_keys_one_operator",
+      "obligations": [
+        "attestation_two_keys_one_operator"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "SIGNER_REVOKED_BY_LAB_POLICY"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "two"
+        },
+        "policy_fixture": "revoked"
+      },
+      "name": "attestation_revoked_assumption",
+      "obligations": [
+        "attestation_revoked_assumption"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "SIGNER_NOT_ADMITTED_BY_LAB_POLICY"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "outsider"
+        },
+        "policy_fixture": "unknown-signer"
+      },
+      "name": "attestation_untrusted_signer_assumption",
+      "obligations": [
+        "attestation_untrusted_signer_assumption"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "REFUTED",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "COMMITTEE_MISMATCH"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "committee": "other",
+          "kind": "call",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_wrong_committee",
+      "obligations": [
+        "attestation_wrong_committee"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [
+              false
+            ],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": 2,
+            "inner": false,
+            "outer": false,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "ZK_PROOF_VERIFIED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "call",
+          "route": "attestation",
+          "signatures": "two"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_is_not_zk",
+      "obligations": [
+        "attestation_is_not_zk"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": true,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "valid",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_valid",
+      "obligations": [
+        "committee_valid"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": false,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "empty",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_empty",
+      "obligations": [
+        "committee_empty"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": false,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "zero-threshold",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_zero-threshold",
+      "obligations": [
+        "committee_zero-threshold"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": false,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "high-threshold",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_high-threshold",
+      "obligations": [
+        "committee_high-threshold"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": false,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "duplicate",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_duplicate",
+      "obligations": [
+        "committee_duplicate"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": false,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "config": "zero-signer",
+          "kind": "constructor",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "committee_zero-signer",
+      "obligations": [
+        "committee_zero-signer"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": null,
+            "constructor_accepted": null,
+            "contract_digest_equal": null,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": true,
+            "same_committee_profile": true,
+            "same_threshold_profile": false
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "profiles",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "configuration_profile_collision",
+      "obligations": [
+        "configuration_profile_collision"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "UNVERIFIABLE"
+        },
+        "behavior": {
+          "guarantees": {
+            "ACTION_AUTHORIZED": "UNVERIFIABLE",
+            "ATTESTATION_ACCEPTED": "UNVERIFIABLE",
+            "CLAIM_AUTHORIZED": "UNVERIFIABLE",
+            "ORDER_EXECUTED": "UNVERIFIABLE",
+            "ZK_PROOF_VERIFIED": "UNVERIFIABLE"
+          },
+          "native": {
+            "calls": [],
+            "chain_digest_equal": true,
+            "constructor_accepted": null,
+            "contract_digest_equal": false,
+            "distinct_signers": null,
+            "inner": null,
+            "outer": null,
+            "outer_profile_equal": null,
+            "same_committee_profile": null,
+            "same_threshold_profile": null
+          },
+          "reason": "ATTESTATION_SIGNATURE_VERIFICATION_UNIMPLEMENTED"
+        }
+      },
+      "input": {
+        "claim": {
+          "agent_id": "0x1111111111111111111111111111111111111111111111111111111111111111",
+          "chain_id": 31337,
+          "input_hash": "0x2222222222222222222222222222222222222222222222222222222222222222",
+          "instance": "selected",
+          "output_hash": "0x3333333333333333333333333333333333333333333333333333333333333333",
+          "requested_guarantee": "CLAIM_AUTHORIZED",
+          "route": "attestation",
+          "task_id": "0x6666666666666666666666666666666666666666666666666666666666666666"
+        },
+        "operation": {
+          "kind": "domains",
+          "route": "attestation"
+        },
+        "policy_fixture": "lab-v0"
+      },
+      "name": "attestation_digest_domains",
+      "obligations": [
+        "attestation_digest_domains"
+      ]
+    }
+  ]
+}

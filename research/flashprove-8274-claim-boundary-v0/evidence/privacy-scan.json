@@ -1,0 +1,7 @@
+{
+  "scanned_payloads": 2560,
+  "secret_pattern_hits": [],
+  "new_text_crlf": [],
+  "source_scope": "Only fresh public VECA/FlashProve clones and synthetic EDR inputs; no client or NDA inputs.",
+  "limitations": "Pattern scan is not a guarantee that arbitrary unknown secrets are identifiable. Evidence provenance was also restricted to public sources."
+}

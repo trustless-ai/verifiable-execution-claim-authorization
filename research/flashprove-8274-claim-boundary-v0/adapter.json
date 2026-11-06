@@ -1,0 +1,7 @@
+{
+  "argv": [
+    "{python}",
+    "-B",
+    "{implementation}/research/flashprove-8274-claim-boundary-v0/adapter.py"
+  ]
+}

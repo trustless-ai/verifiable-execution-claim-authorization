@@ -1,0 +1,238 @@
+{
+  "base": "999e7047df15585f8ce0629081a1369a4942353f",
+  "baseline_existing": {
+    "core": {
+      "mutations": {
+        "CRASHED": 0,
+        "KILLED": 16,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 1,
+        "UNVERIFIABLE": 0
+      },
+      "passed": true,
+      "scenarios": 45
+    },
+    "erc8004": {
+      "mutations": {
+        "CRASHED": 0,
+        "KILLED": 17,
+        "NOT_APPLIED": 0,
+        "SURVIVED": 0,
+        "UNVERIFIABLE": 0
+      },
+      "passed": true,
+      "scenarios": 29
+    },
+    "harness": {
+      "mutations": {
+        "KILLED": 12
+      },
+      "passed": true,
+      "scenario_count": 18
+    },
+    "v1": {
+      "cases": 26,
+      "controls": {
+        "normal": 18,
+        "optimized": 18
+      },
+      "passed": true,
+      "physical_mutations": {
+        "CONTROL_BROKEN": 0,
+        "CRASHED": 0,
+        "KILLED": 7,
+        "MISSING_OUTPUT": 0,
+        "NO_OP": 0,
+        "RESTORATION_FAILED": 0,
+        "SURVIVED": 0,
+        "UNVERIFIABLE": 0
+      }
+    },
+    "v2": {
+      "cases": 50,
+      "controls": {
+        "normal": 36,
+        "optimized": 36
+      },
+      "passed": true,
+      "physical_mutations": {
+        "CONTROL_BROKEN": 0,
+        "CRASHED": 0,
+        "KILLED": 5,
+        "MISSING_OUTPUT": 0,
+        "NOT_APPLIED": 0,
+        "NO_OP": 0,
+        "RESTORATION_FAILED": 0,
+        "SURVIVED": 0,
+        "UNVERIFIABLE": 0
+      }
+    }
+  },
+  "ci": "NOT_RUN_UNPUBLISHED",
+  "conformance": {
+    "normal": 54,
+    "optimized": 54,
+    "repeat": 54
+  },
+  "determinism": {
+    "existing": {
+      "erc8004": {
+        "adapter.stdout": {
+          "baseline": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af",
+          "candidate": "9fde155e682c31602cbbf4e9f4adb4aa78d4184c4f105563b3e8b845cd1f78af"
+        },
+        "projected.json": {
+          "baseline": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+          "candidate": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211"
+        }
+      },
+      "harness": {
+        "adapter.stdout": {
+          "baseline": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc",
+          "candidate": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc"
+        },
+        "projected.json": {
+          "baseline": "1c12db717dc43d6b9568b902089cde8906e53951aa2ccf22e4b04404620a106b",
+          "candidate": "1c12db717dc43d6b9568b902089cde8906e53951aa2ccf22e4b04404620a106b"
+        }
+      },
+      "v1": {
+        "adapter.stdout": {
+          "baseline": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387",
+          "candidate": "a7e84c621dddbe36f5cfdc8521e5d748c1e10d8ef9782c2a502da2df88062387"
+        },
+        "projected.json": {
+          "baseline": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617",
+          "candidate": "0ed522131509603602adbb90d8c6111a3347d8b5c19ce90d75440c67953a7617"
+        }
+      },
+      "v2": {
+        "adapter.stdout": {
+          "baseline": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9",
+          "candidate": "57bc6824cddf695fd44c4afa85b4b4a217ccefc2038c286f7fe4f907a5a9cce9"
+        },
+        "projected.json": {
+          "baseline": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22",
+          "candidate": "2c16d8ef34c1c12874f75b378f8a66470138e01cf8d374603517698258292a22"
+        }
+      }
+    },
+    "mutation_normal_optimized_equal": true,
+    "new": {
+      "adapter.stdout": {
+        "normal": "cba3b0ea7a11d8a2aef608084a305dca724d16ce1bbb4236737efdf02f3068e2",
+        "optimized": "cba3b0ea7a11d8a2aef608084a305dca724d16ce1bbb4236737efdf02f3068e2",
+        "repeat": "cba3b0ea7a11d8a2aef608084a305dca724d16ce1bbb4236737efdf02f3068e2"
+      },
+      "projected.json": {
+        "normal": "918326f3807a2456dc4edf9118933dce9aad542bac1f15f670f1cce7bc02aeff",
+        "optimized": "918326f3807a2456dc4edf9118933dce9aad542bac1f15f670f1cce7bc02aeff",
+        "repeat": "918326f3807a2456dc4edf9118933dce9aad542bac1f15f670f1cce7bc02aeff"
+      },
+      "request.json": {
+        "normal": "068abe2e277c9857fe2ffc99df5e0dbac6edb48c052ff2b41d2b8358001cae31",
+        "optimized": "068abe2e277c9857fe2ffc99df5e0dbac6edb48c052ff2b41d2b8358001cae31",
+        "repeat": "068abe2e277c9857fe2ffc99df5e0dbac6edb48c052ff2b41d2b8358001cae31"
+      }
+    },
+    "timing_logs_byte_identical": false
+  },
+  "executed_utc": "2026-11-06T02:56:58.075292+00:00",
+  "flashprove": "ea1b613625513a658942af4bc79867d1c77412cd",
+  "mutations": {
+    "KILLED": 29
+  },
+  "nonkill_sentinels": [
+    {
+      "exit_code": 2,
+      "expected": "CRASHED",
+      "observed": "CRASHED",
+      "passed": true
+    },
+    {
+      "exit_code": 2,
+      "expected": "MISSING_OUTPUT",
+      "observed": "MISSING_OUTPUT",
+      "passed": true
+    },
+    {
+      "exit_code": 0,
+      "expected": "NOT_APPLIED",
+      "observed": "NOT_APPLIED",
+      "passed": true
+    },
+    {
+      "exit_code": 0,
+      "expected": "NO_OP",
+      "observed": "NO_OP",
+      "passed": true
+    },
+    {
+      "exit_code": 0,
+      "expected": "SURVIVED",
+      "observed": "SURVIVED",
+      "passed": true
+    },
+    {
+      "exit_code": 1,
+      "expected": "CONTROL_BROKEN",
+      "observed": "CONTROL_BROKEN",
+      "passed": true
+    }
+  ],
+  "not_covered": [
+    "real SP1 proof",
+    "working attestation verification",
+    "real operator independence",
+    "production policy bootstrap",
+    "action authorization",
+    "external order execution",
+    "live deployment",
+    "Linux/macOS replay",
+    "independent reviewer acceptance"
+  ],
+  "preservation": {
+    "base": "999e7047df15585f8ce0629081a1369a4942353f",
+    "core_files": 13,
+    "core_mismatches": [],
+    "existing_manifest_sha256": "5e20a46f3004a4afa869ca014accc7505cb9a3c7ae0536fb7c8cc9909700b30a",
+    "existing_manifest_unchanged": true,
+    "historical_files": 12739,
+    "historical_mismatches": [],
+    "only_new_unregistered_additions": true,
+    "preservation_passed": true,
+    "registration_status": "NOT_INTEGRATED; existing manifest intentionally unchanged",
+    "source_pins": [
+      26,
+      8
+    ],
+    "unchanged_root_inventory_exit": 1,
+    "unchanged_root_inventory_result": {
+      "files": 12739,
+      "mismatches": [
+        "research/flashprove-8274-claim-boundary-v0/SOURCE_PINS.json",
+        "research/flashprove-8274-claim-boundary-v0/adapter.json",
+        "research/flashprove-8274-claim-boundary-v0/adapter.py",
+        "research/flashprove-8274-claim-boundary-v0/evm.mjs",
+        "research/flashprove-8274-claim-boundary-v0/generate_vectors.py",
+        "research/flashprove-8274-claim-boundary-v0/mutations.py",
+        "research/flashprove-8274-claim-boundary-v0/obligations.json",
+        "research/flashprove-8274-claim-boundary-v0/policy.py",
+        "research/flashprove-8274-claim-boundary-v0/prepare.py",
+        "research/flashprove-8274-claim-boundary-v0/preservation.py",
+        "research/flashprove-8274-claim-boundary-v0/suite.json",
+        "research/flashprove-8274-claim-boundary-v0/tests.py",
+        "research/flashprove-8274-claim-boundary-v0/validate.py",
+        "research/flashprove-8274-claim-boundary-v0/vectors.json"
+      ],
+      "passed": false
+    },
+    "unexpected_diff": []
+  },
+  "root_inventory": "FAIL_ONLY_NEW_UNREGISTERED_RESEARCH_FILES",
+  "tests": {
+    "normal": 15,
+    "optimized": 15,
+    "repeat": 15
+  }
+}

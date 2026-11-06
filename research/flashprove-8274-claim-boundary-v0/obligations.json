@@ -1,0 +1,272 @@
+{
+  "attestation_digest_domains": {
+    "description": "attestation_digest_domains",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_illustrative_two_signatures": {
+    "description": "attestation_illustrative_two_signatures",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_invalid_bundle": {
+    "description": "attestation_invalid_bundle",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_is_not_zk": {
+    "description": "attestation_is_not_zk",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_no_signatures": {
+    "description": "attestation_no_signatures",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_outsider_signatures": {
+    "description": "attestation_outsider_signatures",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_repeated_signature": {
+    "description": "attestation_repeated_signature",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_revoked_assumption": {
+    "description": "attestation_revoked_assumption",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_two_keys_one_operator": {
+    "description": "attestation_two_keys_one_operator",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_untrusted_signer_assumption": {
+    "description": "attestation_untrusted_signer_assumption",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "attestation_wrong_committee": {
+    "description": "attestation_wrong_committee",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "caller_impersonates_agent": {
+    "description": "caller_impersonates_agent",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_duplicate": {
+    "description": "committee_duplicate",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_empty": {
+    "description": "committee_empty",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_high-threshold": {
+    "description": "committee_high-threshold",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_valid": {
+    "description": "committee_valid",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_zero-signer": {
+    "description": "committee_zero-signer",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "committee_zero-threshold": {
+    "description": "committee_zero-threshold",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "configuration_profile_collision": {
+    "description": "configuration_profile_collision",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "failed_call_status": {
+    "description": "failed_call_status",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "missing_policy": {
+    "description": "missing_policy",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "no_promotion_action_authorized": {
+    "description": "no_promotion_action_authorized",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "no_promotion_attestation_accepted": {
+    "description": "no_promotion_attestation_accepted",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "no_promotion_claim_authorized": {
+    "description": "no_promotion_claim_authorized",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "no_promotion_order_executed": {
+    "description": "no_promotion_order_executed",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "no_promotion_zk_proof_verified": {
+    "description": "no_promotion_zk_proof_verified",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "public_values_magic": {
+    "description": "public_values_magic",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "public_values_reserved": {
+    "description": "public_values_reserved",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "public_values_short": {
+    "description": "public_values_short",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "public_values_version": {
+    "description": "public_values_version",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "repeat_same_task": {
+    "description": "repeat_same_task",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "reuse_proof_fresh_task": {
+    "description": "reuse_proof_fresh_task",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "reuse_proof_other_chain": {
+    "description": "reuse_proof_other_chain",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "reuse_proof_other_contract": {
+    "description": "reuse_proof_other_contract",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "short_inner_metadata": {
+    "description": "short_inner_metadata",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "substitute_task": {
+    "description": "substitute_task",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "unaccepted_verdict": {
+    "description": "unaccepted_verdict",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "unknown_native_agent": {
+    "description": "unknown_native_agent",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "unknown_policy": {
+    "description": "unknown_policy",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_agent_claim": {
+    "description": "wrong_agent_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_chain_claim": {
+    "description": "wrong_chain_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_commitment": {
+    "description": "wrong_commitment",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_contract_claim": {
+    "description": "wrong_contract_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_inner_metadata": {
+    "description": "wrong_inner_metadata",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_input_call": {
+    "description": "wrong_input_call",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_input_claim": {
+    "description": "wrong_input_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_output_call": {
+    "description": "wrong_output_call",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_output_claim": {
+    "description": "wrong_output_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_route_claim": {
+    "description": "wrong_route_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "wrong_task_claim": {
+    "description": "wrong_task_claim",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "zk_mock_positive": {
+    "description": "zk_mock_positive",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "zk_proof_bad": {
+    "description": "zk_proof_bad",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "zk_proof_empty": {
+    "description": "zk_proof_empty",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  },
+  "zk_proof_malformed": {
+    "description": "zk_proof_malformed",
+    "normative": false,
+    "scope": "Pinned contract behavior and finite independently selected laboratory consumer policy"
+  }
+}

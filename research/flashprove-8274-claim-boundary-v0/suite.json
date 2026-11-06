@@ -1,0 +1,11 @@
+{
+  "id": "flashprove-erc8274-claim-boundary-v0",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "709856981b1a4a50d3ccb6923e619faa8ced86c3d93b784916b1ae9a37a39a2f"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "1fcb2a38223fac1937c57ed3f94fbd03696f54b0128407d030721a04e86deaf1"
+  }
+}
