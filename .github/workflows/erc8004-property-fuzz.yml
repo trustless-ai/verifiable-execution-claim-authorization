@@ -22,7 +22,7 @@ jobs:
       - run: python -B research/formal-v1/prepare_crypto.py
       - run: npm ci --ignore-scripts --no-audit --no-fund
         working-directory: build/formal-v1/crypto
-      - run: python -B tools/erc8004_fuzz/validate.py
+      - run: python -B tools/pr12_pr13_integration/fuzz_validate.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:

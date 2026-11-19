@@ -1,0 +1,63 @@
+{
+  "core_changes_permitted": false,
+  "core_policy": "All main entries remain unchanged. No ERC8404 Core, baseline, dependency, vector, pin, field, status or preimage transition exists.",
+  "historical_contract_results": "Old checks remain frozen; their exact refusal is expected on main composition. No refusal is relabelled a conformance PASS.",
+  "new_files": [
+    "research/pr12-pr13-integration-v1/TRANSITION.json",
+    "research/pr12-pr13-integration-v1/README.md",
+    "research/pr12-pr13-integration-v1/REPORT.md",
+    "tools/pr12_pr13_integration/preservation.py",
+    "tools/pr12_pr13_integration/controls.py",
+    "tools/pr12_pr13_integration/fuzz_validate.py",
+    "tools/pr12_pr13_integration/spec_validate.py",
+    "tools/pr12_pr13_integration/spec_cli.py",
+    "tools/pr12_pr13_integration/spec_controls.py",
+    "tools/pr12_pr13_integration/runtime_binding.py",
+    "evidence/pr12-pr13-integration-v1/README.md",
+    "evidence/pr12-pr13-integration-v1/RESULTS.json",
+    "evidence/pr12-pr13-integration-v1/EVIDENCE.zip",
+    "evidence/pr12-pr13-integration-v1/SHA256.json"
+  ],
+  "schema": "veca-pr12-pr13-preservation-transition-v1",
+  "source_manifest_sha256": {
+    "6e8fabee9be170245f557a271b6d315176cc4a03": "f7f5f7fc26fad06a0c16462156a8403f828058bb12305714d4acc5715f6ff329",
+    "80c91a09095eca362dbfb69d39d0c01fc31130cf": "46f11963412be66b3b0602c2f2da93a706c516ce844eff0c71ef1472cbbb9719",
+    "999e7047df15585f8ce0629081a1369a4942353f": "5e20a46f3004a4afa869ca014accc7505cb9a3c7ae0536fb7c8cc9909700b30a",
+    "c0d3862a590b62a059c1a923ab93b380d609876f": "87ab212682566d86fb725153b5b91ae01894e8974e2e412896e00ab3e1ed6014"
+  },
+  "transitions": {
+    "conformance/agent-harness-v0/README.md": {
+      "after_sha256": "19aecd97a84bb78ae1d65791193b92e90f46dda1badc72ecc754b29d88558f04",
+      "before_sha256": "cacfd2e3c9ce216fc318044fc08d96ed56d1fa9322ceabd3aaec764bd124eb66",
+      "review_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a"
+    },
+    "research/harness-v0/LIMITATIONS.md": {
+      "after_sha256": "074b81b07e3b4d679e91e6d83e7d969986b8a67a1e574633280fccf6aaaab882",
+      "before_sha256": "b4656d1261f4f1b7eb88bbc9af88d9a8f9a32e1472e42dd337b5708b967d3fb8",
+      "review_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a"
+    },
+    "tools/erc8004/integrity.py": {
+      "after_sha256": "7a784a8188daef3e4b7a6501fd6574895b82d5729bdb9ef5541ecbdd6a2c54b7",
+      "before_sha256": "4b1fba9de4d60c4e9ccaf6212291dd9d7aec4824d352d7fbac363631f3f82a0d",
+      "review_commit": "4799a7260d8f99e489541cffe471e53c50411459"
+    }
+  },
+  "workflow_substitutions": {
+    ".github/workflows/erc8004-property-fuzz.yml": [
+      {
+        "after": "tools/pr12_pr13_integration/fuzz_validate.py",
+        "before": "tools/erc8004_fuzz/validate.py"
+      }
+    ],
+    ".github/workflows/spec-drift-coverage.yml": [
+      {
+        "after": "tools/pr12_pr13_integration/spec_validate.py",
+        "before": "tools/spec_drift_coverage/validate.py"
+      },
+      {
+        "after": "tools/pr12_pr13_integration/spec_cli.py drift",
+        "before": "tools/spec_drift_coverage/drift.py"
+      }
+    ]
+  }
+}
