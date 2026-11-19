@@ -1,1 +1,1145 @@
-{"status":"NOT_RUN"}
+{
+  "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+  "branch": "docs/readme-post-pr14-v1",
+  "completed_at_utc": "2026-11-19T13:01:59.407612+00:00",
+  "control_semantics_sha256": "b280bdeb45f65f104bda79af4f2926dc65cb8600e451e0dae25bb9fa9619f7f1",
+  "core": {
+    "conformance_commands": [
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "python",
+        "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "python-optimized",
+        "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+      },
+      {
+        "argv": [
+          "bun",
+          "evidence/erc8404/core/conformance/rvr-v0/adapter.ts",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "typescript",
+        "stdout_sha256": "ded4743ff34cdf587363e9b334df4f5d90707feb0968a0fcdc6c4b9e1fd30ed0"
+      }
+    ],
+    "object_audit_sha256": "04f5bf1ac09e967eeab67ddc8f467894e7e05448f5dde0df69d343dfd54f632c",
+    "protected_git_objects": 4653,
+    "runtime_binding": {
+      "adapter_path": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\evidence\\erc8404\\core\\conformance\\rvr-v0\\adapter.py",
+      "adapter_sha256": "03505efc8ee993f118fad2c71f706870d25de0da61a393a1f18f7b310bded235",
+      "cases": 18,
+      "core_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "core_modified": false,
+      "executed_calls": {
+        "<genexpr>": 19892,
+        "<lambda>": 1360,
+        "<module>": 1,
+        "CanonicalizationError": 1,
+        "DependencyResolutionError": 1,
+        "GateRejection": 1,
+        "RvrError": 1,
+        "SchemaValidationError": 1,
+        "StrictJsonError": 1,
+        "__init__": 2,
+        "canonical_bytes": 204,
+        "canonical_digest": 204,
+        "canonical_json": 2856,
+        "canonical_string": 2448,
+        "decode_payloads": 32,
+        "dependency_entries": 34,
+        "evaluate": 32,
+        "evidence_set_digest": 68,
+        "json_same": 696,
+        "load_json": 1,
+        "normalize_evidence_set": 68,
+        "normalize_json_strings": 153,
+        "normalize_scalar_text": 3935,
+        "parse_json_bytes": 1,
+        "project": 72,
+        "recompute": 36,
+        "require_schema": 244,
+        "required_dependency_failure": 34,
+        "resolve_dependency_path": 136,
+        "schema_pointer": 1428,
+        "schema_type_matches": 1428,
+        "sha256_hex": 404,
+        "strict_json_loads": 1,
+        "strict_object": 53,
+        "unresolved_present_member": 34,
+        "validate_evidence_closure": 32,
+        "validate_receipt_envelope": 36,
+        "validate_schema": 3444
+      },
+      "independent_implementation": false,
+      "method": "CPython profile call events through unchanged real adapter; no verifier replacement",
+      "module_files": [
+        "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\evidence\\erc8404\\core\\conformance\\rvr-v0\\adapter.py"
+      ],
+      "native_exit": 0,
+      "native_stdout_sha256": "0033b430c73114373fe838cda7d8ae54b6ffc2b76228ebc51219db8cd39f53fc",
+      "observation_matches_native_bytes": true,
+      "passed": true,
+      "schema": "veca-core-runtime-binding-v1"
+    },
+    "unchanged": true,
+    "upstream_files": 75,
+    "vendored_files": 13
+  },
+  "deterministic_control_outcomes": [
+    "test_arbitrary_readme_resealed (test_preservation.DocumentationTransition.test_arbitrary_readme_resealed) ... ok",
+    "test_archived_readme_resealed (test_preservation.DocumentationTransition.test_archived_readme_resealed) ... ok",
+    "test_current_positive (test_preservation.DocumentationTransition.test_current_positive) ... ok",
+    "test_duplicate_manifest_key_rejected (test_preservation.DocumentationTransition.test_duplicate_manifest_key_rejected) ... ok",
+    "test_external_executable_resealed (test_preservation.DocumentationTransition.test_external_executable_resealed) ... ok",
+    "test_historical_evidence_resealed (test_preservation.DocumentationTransition.test_historical_evidence_resealed) ... ok",
+    "test_protected_file_deleted_and_unlisted (test_preservation.DocumentationTransition.test_protected_file_deleted_and_unlisted) ... ok",
+    "test_readme_local_links (test_preservation.DocumentationTransition.test_readme_local_links) ... ok",
+    "test_transition_manifest_resealed (test_preservation.DocumentationTransition.test_transition_manifest_resealed) ... ok",
+    "test_unapproved_file_added_and_listed (test_preservation.DocumentationTransition.test_unapproved_file_added_and_listed) ... ok",
+    "test_unlisted_file_without_reseal (test_preservation.DocumentationTransition.test_unlisted_file_without_reseal) ... ok",
+    "test_workflow_commands_and_pins_preserved (test_preservation.DocumentationTransition.test_workflow_commands_and_pins_preserved) ... ok",
+    "test_workflow_verification_removed_and_resealed (test_preservation.DocumentationTransition.test_workflow_verification_removed_and_resealed) ... ok"
+  ],
+  "dirty_replay_view_control": {
+    "classification": "REJECTED",
+    "commands": [
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/documentation_refresh/replay.py",
+          "prepare"
+        ],
+        "exit_code": 0,
+        "label": "view-positive",
+        "result": {
+          "current_head": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+          "current_transition": {
+            "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+            "baseline_inventory_sha256": "9bd35455636bbfd40e06ddf066408d264d092dcb8e1a0d0ad2510ae339385edf",
+            "changed_baseline_paths": [
+              "README.md",
+              ".github/workflows/agent-harness-review.yml",
+              ".github/workflows/agent-harness-v0.yml",
+              ".github/workflows/baseline-reconciliation.yml",
+              ".github/workflows/claim-aware-integration.yml",
+              ".github/workflows/coverage-v4_1.yml",
+              ".github/workflows/erc8004-harness.yml",
+              ".github/workflows/erc8004-property-fuzz.yml",
+              ".github/workflows/erc8004-role-policy-v1.yml",
+              ".github/workflows/erc8004-role-policy-v2.yml",
+              ".github/workflows/spec-drift-coverage.yml",
+              ".github/workflows/verdict-escrow.yml",
+              "artifacts.sha256.json"
+            ],
+            "core_changes_permitted": false,
+            "existing_executable_sources_unchanged": true,
+            "files": 12836,
+            "independent_review": "NOT_ESTABLISHED",
+            "new_files": [
+              ".github/workflows/documentation-refresh.yml",
+              "evidence/documentation-refresh-v1/RESULTS.json",
+              "research/documentation-refresh-v1/README.md",
+              "research/documentation-refresh-v1/RESULTS.md",
+              "research/documentation-refresh-v1/TRANSITION.json",
+              "research/history/README-4b6d7ef9.md",
+              "tests/documentation_refresh/test_preservation.py",
+              "tools/documentation_refresh/preservation.py",
+              "tools/documentation_refresh/replay.py"
+            ],
+            "passed": true,
+            "schema": "veca-documentation-refresh-check-v1",
+            "transition_sha256": "d0f11eb1ba94eef05916d3c34f2223a6bc27711adece15266e76072f6e5b1554",
+            "unchanged_baseline_files": 12815
+          },
+          "current_worktree_status": [
+            " M .github/workflows/agent-harness-review.yml",
+            " M .github/workflows/agent-harness-v0.yml",
+            " M .github/workflows/baseline-reconciliation.yml",
+            " M .github/workflows/claim-aware-integration.yml",
+            " M .github/workflows/coverage-v4_1.yml",
+            " M .github/workflows/erc8004-harness.yml",
+            " M .github/workflows/erc8004-property-fuzz.yml",
+            " M .github/workflows/erc8004-role-policy-v1.yml",
+            " M .github/workflows/erc8004-role-policy-v2.yml",
+            " M .github/workflows/spec-drift-coverage.yml",
+            " M .github/workflows/verdict-escrow.yml",
+            " M README.md",
+            " M artifacts.sha256.json",
+            "?? .github/workflows/documentation-refresh.yml",
+            "?? evidence/documentation-refresh-v1/",
+            "?? research/documentation-refresh-v1/",
+            "?? research/history/README-4b6d7ef9.md",
+            "?? tests/documentation_refresh/",
+            "?? tools/documentation_refresh/"
+          ],
+          "execution_performed_by_prepare": false,
+          "historical_view": {
+            "exact_pinned_baseline_tree": true,
+            "files": 12827,
+            "head": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+            "passed": true
+          },
+          "independent_review": "NOT_ESTABLISHED",
+          "schema": "veca-documentation-replay-binding-v1"
+        }
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/documentation_refresh/replay.py",
+          "prepare"
+        ],
+        "exit_code": 1,
+        "label": "view-tampered",
+        "result": {
+          "passed": false,
+          "reason": "replay_tree_identity"
+        }
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/documentation_refresh/replay.py",
+          "prepare"
+        ],
+        "exit_code": 0,
+        "label": "view-restored",
+        "result": {
+          "current_head": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+          "current_transition": {
+            "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+            "baseline_inventory_sha256": "9bd35455636bbfd40e06ddf066408d264d092dcb8e1a0d0ad2510ae339385edf",
+            "changed_baseline_paths": [
+              "README.md",
+              ".github/workflows/agent-harness-review.yml",
+              ".github/workflows/agent-harness-v0.yml",
+              ".github/workflows/baseline-reconciliation.yml",
+              ".github/workflows/claim-aware-integration.yml",
+              ".github/workflows/coverage-v4_1.yml",
+              ".github/workflows/erc8004-harness.yml",
+              ".github/workflows/erc8004-property-fuzz.yml",
+              ".github/workflows/erc8004-role-policy-v1.yml",
+              ".github/workflows/erc8004-role-policy-v2.yml",
+              ".github/workflows/spec-drift-coverage.yml",
+              ".github/workflows/verdict-escrow.yml",
+              "artifacts.sha256.json"
+            ],
+            "core_changes_permitted": false,
+            "existing_executable_sources_unchanged": true,
+            "files": 12836,
+            "independent_review": "NOT_ESTABLISHED",
+            "new_files": [
+              ".github/workflows/documentation-refresh.yml",
+              "evidence/documentation-refresh-v1/RESULTS.json",
+              "research/documentation-refresh-v1/README.md",
+              "research/documentation-refresh-v1/RESULTS.md",
+              "research/documentation-refresh-v1/TRANSITION.json",
+              "research/history/README-4b6d7ef9.md",
+              "tests/documentation_refresh/test_preservation.py",
+              "tools/documentation_refresh/preservation.py",
+              "tools/documentation_refresh/replay.py"
+            ],
+            "passed": true,
+            "schema": "veca-documentation-refresh-check-v1",
+            "transition_sha256": "d0f11eb1ba94eef05916d3c34f2223a6bc27711adece15266e76072f6e5b1554",
+            "unchanged_baseline_files": 12815
+          },
+          "current_worktree_status": [
+            " M .github/workflows/agent-harness-review.yml",
+            " M .github/workflows/agent-harness-v0.yml",
+            " M .github/workflows/baseline-reconciliation.yml",
+            " M .github/workflows/claim-aware-integration.yml",
+            " M .github/workflows/coverage-v4_1.yml",
+            " M .github/workflows/erc8004-harness.yml",
+            " M .github/workflows/erc8004-property-fuzz.yml",
+            " M .github/workflows/erc8004-role-policy-v1.yml",
+            " M .github/workflows/erc8004-role-policy-v2.yml",
+            " M .github/workflows/spec-drift-coverage.yml",
+            " M .github/workflows/verdict-escrow.yml",
+            " M README.md",
+            " M artifacts.sha256.json",
+            "?? .github/workflows/documentation-refresh.yml",
+            "?? evidence/documentation-refresh-v1/",
+            "?? research/documentation-refresh-v1/",
+            "?? research/history/README-4b6d7ef9.md",
+            "?? tests/documentation_refresh/",
+            "?? tools/documentation_refresh/"
+          ],
+          "execution_performed_by_prepare": false,
+          "historical_view": {
+            "exact_pinned_baseline_tree": true,
+            "files": 12827,
+            "head": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+            "passed": true
+          },
+          "independent_review": "NOT_ESTABLISHED",
+          "schema": "veca-documentation-replay-binding-v1"
+        }
+      }
+    ],
+    "core_modified": false,
+    "passed": true,
+    "restoration_sha256": "ca021c56b2ed76d2eeb5f940677ef15691f2d74e29e40e436b558b2cf030103f"
+  },
+  "fresh_clone_clean": true,
+  "fresh_clone_independence": "same executor; no independent organizational review",
+  "historical_contract_direct_refusal_expected": true,
+  "initial_rejected_attempt": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo",
+      "exit_code": 0,
+      "name": "current-inventory",
+      "seconds": 5.171999999904074,
+      "started_at_utc": "2026-11-19T12:35:30.357040+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2f44d4ce0a62b09a1381ebc5181dce95cdf53e61465b08d307af96309adf2f0a"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8404/integrity.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo",
+      "exit_code": 1,
+      "name": "core-before",
+      "seconds": 0.8280000000959262,
+      "started_at_utc": "2026-11-19T12:35:35.530951+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ed0fabcaa68dfe41bde3e31d8716e17a4d3a8a93d8effbea57bdb4ee029c9eea"
+    }
+  ],
+  "initial_rejection_detail": {
+    "changed_core": [],
+    "changed_history": [
+      ".github/workflows/coverage-v4.yml",
+      ".github/workflows/formal-v1.yml",
+      ".github/workflows/real-artifact-v2.yml",
+      ".github/workflows/real-chain-v3.yml",
+      ".github/workflows/reproduce.yml"
+    ],
+    "core_byte_identical": true,
+    "core_files": 13,
+    "formal_source_pins": {
+      "1771": true,
+      "1810": true,
+      "1980": true,
+      "2002": true
+    },
+    "historical_files": 4630,
+    "history_byte_identical": false,
+    "passed": false
+  },
+  "integrated_spec": {
+    "commands": [
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/preservation.py"
+        ],
+        "exit_code": 0,
+        "name": "integrity",
+        "seconds": 5.967999999993481,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "219753c1a32a4f9200cc232fa43994b0c4728bbc69ceacf84fabade4a9f555d7"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/verify_artifacts.py"
+        ],
+        "exit_code": 0,
+        "name": "inventory",
+        "seconds": 5.23499999998603,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "569cbefb1a8fab4433854baee0db5287663059fa31365e0695d4863bcb810637"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/erc8404/integrity.py"
+        ],
+        "exit_code": 0,
+        "name": "core-history",
+        "seconds": 0.7810000000754371,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/integration/integrity.py"
+        ],
+        "exit_code": 0,
+        "name": "integration-history",
+        "seconds": 2.312000000034459,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "core-conformance",
+        "seconds": 0.1720000000204891,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_controls.py"
+        ],
+        "exit_code": 0,
+        "name": "negative-controls-normal",
+        "seconds": 22.296999999904074,
+        "stderr_sha256": "737bb8af827e8aee84750e6d84fb4db965d01967f21764a49f52a90cf4404ca9",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/harness_v0",
+          "-v"
+        ],
+        "exit_code": 0,
+        "name": "transport-normal",
+        "seconds": 1.2650000000139698,
+        "stderr_sha256": "d050da14da18cd708ab50719e5dc2093065a5756986ba2fa75c4548168eae289",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_controls.py"
+        ],
+        "exit_code": 0,
+        "name": "negative-controls-repeat",
+        "seconds": 21.57900000002701,
+        "stderr_sha256": "2bccfabf56bb6d1ecf22a21a454a7b6a7aff3c8951a44abc2a74ce7d2a858f98",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/harness_v0",
+          "-v"
+        ],
+        "exit_code": 0,
+        "name": "transport-repeat",
+        "seconds": 1.0,
+        "stderr_sha256": "f4a8d99c3c4d64770c1dd1c5f371c2c64494c34addeb228b696422ea91c8a30a",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "tools/pr12_pr13_integration/spec_controls.py"
+        ],
+        "exit_code": 0,
+        "name": "negative-controls-optimized",
+        "seconds": 21.34299999999348,
+        "stderr_sha256": "e6b4bf1bd168b841dc50b06ad49a66aa6ed9bd76167074e3cb4b1c3e81ad75cf",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/harness_v0",
+          "-v"
+        ],
+        "exit_code": 0,
+        "name": "transport-optimized",
+        "seconds": 0.8440000000409782,
+        "stderr_sha256": "cb50cabc85517e8b856bb5c35a5bbdcd3fac5f07803bb0763a06f4c0aa2c2210",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "coverage",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\normal"
+        ],
+        "exit_code": 0,
+        "name": "coverage-normal",
+        "seconds": 8.093999999924563,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "6fb3546d07d74dd474ccb8d42cdb3eb716402b6b6786b45b5ab13e1c364fa4d9"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "drift",
+          "--snapshot",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\normal"
+        ],
+        "exit_code": 0,
+        "name": "drift-normal",
+        "seconds": 5.906000000075437,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "coverage",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\repeat"
+        ],
+        "exit_code": 0,
+        "name": "coverage-repeat",
+        "seconds": 8.233999999938533,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "6fb3546d07d74dd474ccb8d42cdb3eb716402b6b6786b45b5ab13e1c364fa4d9"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "drift",
+          "--snapshot",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\repeat"
+        ],
+        "exit_code": 0,
+        "name": "drift-repeat",
+        "seconds": 5.75,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "coverage",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\optimized"
+        ],
+        "exit_code": 0,
+        "name": "coverage-optimized",
+        "seconds": 9.094000000040978,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "6fb3546d07d74dd474ccb8d42cdb3eb716402b6b6786b45b5ab13e1c364fa4d9"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "tools/pr12_pr13_integration/spec_cli.py",
+          "drift",
+          "--snapshot",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay\\build\\readme-spec-offline\\optimized"
+        ],
+        "exit_code": 0,
+        "name": "drift-optimized",
+        "seconds": 5.85999999998603,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+      }
+    ],
+    "control_population": "31 unchanged semantic controls + 1 explicit preservation transition control; original 32 on PR13 baseline",
+    "deterministic_normal_repeat_optimized": true,
+    "drift_counts": {
+      "UNCHANGED": 2,
+      "UPSTREAM_MOVED_CONTENT_UNCHANGED": 1
+    },
+    "head": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+    "historical_backend_reports_reconciled": true,
+    "independent_replay": "NOT_COVERED",
+    "mutation_populations": {
+      "pr10-original-17": {
+        "KILLED": 17
+      },
+      "pr11-supplemental-4": {
+        "KILLED": 4
+      },
+      "pr12-generated-6": {
+        "KILLED": 6
+      },
+      "pr9-original-12": {
+        "KILLED": 12
+      }
+    },
+    "new_backend_execution": false,
+    "output_sha256": {
+      "COVERAGE.json": {
+        "normal": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2",
+        "optimized": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2",
+        "repeat": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2"
+      },
+      "OBLIGATION_COVERAGE.md": {
+        "normal": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
+        "optimized": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
+        "repeat": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174"
+      },
+      "SOURCE_DRIFT.json": {
+        "normal": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e",
+        "optimized": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e",
+        "repeat": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e"
+      }
+    },
+    "passed": true,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "profiles": {
+      "agent-harness-review-v0": {
+        "matched_cases": 5,
+        "obligation_levels": {
+          "ENFORCEMENT_DEMONSTRATED": 4,
+          "EXECUTED_AND_MATCHED": 1
+        }
+      },
+      "agent-harness-v0": {
+        "matched_cases": 18,
+        "obligation_levels": {
+          "ENFORCEMENT_DEMONSTRATED": 12,
+          "EXECUTED_AND_MATCHED": 4
+        }
+      },
+      "erc8004-pilot-v0": {
+        "matched_cases": 29,
+        "obligation_levels": {
+          "ENFORCEMENT_DEMONSTRATED": 17
+        }
+      },
+      "erc8004-property-fuzz-v0": {
+        "matched_cases": 300,
+        "obligation_levels": {
+          "ENFORCEMENT_DEMONSTRATED": 6,
+          "EXECUTED_AND_MATCHED": 7
+        }
+      }
+    },
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "research_source_lock_sha256": "223db4095649c7c76cd41af227a3396b4f241cebc0372075e7c83647ed7f60a5",
+    "schema": "veca.spec-drift-integration-validation.v1",
+    "working_tree_status": []
+  },
+  "local_readme_links": 49,
+  "not_run": [
+    "hosted CI for this unpublished branch",
+    "full 300-case/four-role/Solidity mutation campaigns for this documentation update",
+    "independent human review"
+  ],
+  "production": "HOLD",
+  "raw_test_stderr": {
+    "normal": "test_arbitrary_readme_resealed (test_preservation.DocumentationTransition.test_arbitrary_readme_resealed) ... ok\ntest_archived_readme_resealed (test_preservation.DocumentationTransition.test_archived_readme_resealed) ... ok\ntest_current_positive (test_preservation.DocumentationTransition.test_current_positive) ... ok\ntest_duplicate_manifest_key_rejected (test_preservation.DocumentationTransition.test_duplicate_manifest_key_rejected) ... ok\ntest_external_executable_resealed (test_preservation.DocumentationTransition.test_external_executable_resealed) ... ok\ntest_historical_evidence_resealed (test_preservation.DocumentationTransition.test_historical_evidence_resealed) ... ok\ntest_protected_file_deleted_and_unlisted (test_preservation.DocumentationTransition.test_protected_file_deleted_and_unlisted) ... ok\ntest_readme_local_links (test_preservation.DocumentationTransition.test_readme_local_links) ... ok\ntest_transition_manifest_resealed (test_preservation.DocumentationTransition.test_transition_manifest_resealed) ... ok\ntest_unapproved_file_added_and_listed (test_preservation.DocumentationTransition.test_unapproved_file_added_and_listed) ... ok\ntest_unlisted_file_without_reseal (test_preservation.DocumentationTransition.test_unlisted_file_without_reseal) ... ok\ntest_workflow_commands_and_pins_preserved (test_preservation.DocumentationTransition.test_workflow_commands_and_pins_preserved) ... ok\ntest_workflow_verification_removed_and_resealed (test_preservation.DocumentationTransition.test_workflow_verification_removed_and_resealed) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 117.820s\n\nOK\n",
+    "optimized": "test_arbitrary_readme_resealed (test_preservation.DocumentationTransition.test_arbitrary_readme_resealed) ... ok\ntest_archived_readme_resealed (test_preservation.DocumentationTransition.test_archived_readme_resealed) ... ok\ntest_current_positive (test_preservation.DocumentationTransition.test_current_positive) ... ok\ntest_duplicate_manifest_key_rejected (test_preservation.DocumentationTransition.test_duplicate_manifest_key_rejected) ... ok\ntest_external_executable_resealed (test_preservation.DocumentationTransition.test_external_executable_resealed) ... ok\ntest_historical_evidence_resealed (test_preservation.DocumentationTransition.test_historical_evidence_resealed) ... ok\ntest_protected_file_deleted_and_unlisted (test_preservation.DocumentationTransition.test_protected_file_deleted_and_unlisted) ... ok\ntest_readme_local_links (test_preservation.DocumentationTransition.test_readme_local_links) ... ok\ntest_transition_manifest_resealed (test_preservation.DocumentationTransition.test_transition_manifest_resealed) ... ok\ntest_unapproved_file_added_and_listed (test_preservation.DocumentationTransition.test_unapproved_file_added_and_listed) ... ok\ntest_unlisted_file_without_reseal (test_preservation.DocumentationTransition.test_unlisted_file_without_reseal) ... ok\ntest_workflow_commands_and_pins_preserved (test_preservation.DocumentationTransition.test_workflow_commands_and_pins_preserved) ... ok\ntest_workflow_verification_removed_and_resealed (test_preservation.DocumentationTransition.test_workflow_verification_removed_and_resealed) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 133.005s\n\nOK\n",
+    "repeat": "test_arbitrary_readme_resealed (test_preservation.DocumentationTransition.test_arbitrary_readme_resealed) ... ok\ntest_archived_readme_resealed (test_preservation.DocumentationTransition.test_archived_readme_resealed) ... ok\ntest_current_positive (test_preservation.DocumentationTransition.test_current_positive) ... ok\ntest_duplicate_manifest_key_rejected (test_preservation.DocumentationTransition.test_duplicate_manifest_key_rejected) ... ok\ntest_external_executable_resealed (test_preservation.DocumentationTransition.test_external_executable_resealed) ... ok\ntest_historical_evidence_resealed (test_preservation.DocumentationTransition.test_historical_evidence_resealed) ... ok\ntest_protected_file_deleted_and_unlisted (test_preservation.DocumentationTransition.test_protected_file_deleted_and_unlisted) ... ok\ntest_readme_local_links (test_preservation.DocumentationTransition.test_readme_local_links) ... ok\ntest_transition_manifest_resealed (test_preservation.DocumentationTransition.test_transition_manifest_resealed) ... ok\ntest_unapproved_file_added_and_listed (test_preservation.DocumentationTransition.test_unapproved_file_added_and_listed) ... ok\ntest_unlisted_file_without_reseal (test_preservation.DocumentationTransition.test_unlisted_file_without_reseal) ... ok\ntest_workflow_commands_and_pins_preserved (test_preservation.DocumentationTransition.test_workflow_commands_and_pins_preserved) ... ok\ntest_workflow_verification_removed_and_resealed (test_preservation.DocumentationTransition.test_workflow_verification_removed_and_resealed) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 128.927s\n\nOK\n"
+  },
+  "schema": "veca-documentation-refresh-results-v1",
+  "smoke_commands": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/pr12_pr13_integration/preservation.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "name": "historical-contract-refuses-current-docs",
+      "seconds": 7.657000000006519,
+      "stderr_sha256": "2d6ce8938214642298f78fc77bc6e6a3574ca1d476ada5d546b0e6c0bd57fce3",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/pr12_pr13_integration/preservation.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "legacy-preservation",
+      "seconds": 5.656000000075437,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "219753c1a32a4f9200cc232fa43994b0c4728bbc69ceacf84fabade4a9f555d7"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "legacy-inventory",
+      "seconds": 5.218999999924563,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "569cbefb1a8fab4433854baee0db5287663059fa31365e0695d4863bcb810637"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/validate.py",
+        "--out",
+        "build/readme-smoke-v0"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "legacy-v0",
+      "seconds": 4.452999999979511,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "eb2dc2e4361aedd12ed622169e67488702e54adcab4abfb1839cb575f097bd82"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/validate.py",
+        "--out",
+        "build/readme-smoke-v0"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "current-v0",
+      "seconds": 4.39000000001397,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "eb2dc2e4361aedd12ed622169e67488702e54adcab4abfb1839cb575f097bd82"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "prepare",
+        "--source",
+        "D:\\PAVLO HQ\\Workspaces\\veca-pr12-pr13-integration-v1-20261118\\fresh\\build\\agent-harness-v0\\recompute-kit"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "grader-local-prepare",
+      "seconds": 0.2190000000409782,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "947facb1c55e69ea599d4f7919c96623262e2e96c51298eb4d3f972b8bea4d6d"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "research/formal-v1/prepare_crypto.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "crypto-pins",
+      "seconds": 0.0779999999795109,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5ba822f425431b3c424471598896df4567b6a2ff52002422bbde16717094edd6"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/pr12_pr13_integration/runtime_binding.py",
+        "--out",
+        "build/readme-core-binding"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "pinned-core-runtime-binding",
+      "seconds": 34.68799999996554,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e8bf85802e84aa1b00a36f52f874fa1eb8167be8e8f1681da1531b83861614fb"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/pr12_pr13_integration/spec_validate.py",
+        "--out",
+        "build/readme-spec-offline"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "integrated-spec-offline",
+      "seconds": 126.42200000002049,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5931467ed3b917cf8030d161c9dcb105a5aa797d5990aa6183bf3344e37485f9"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "experiments/verdict_escrow/integrity.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo\\build\\documentation-replay",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "original-escrow-integrity",
+      "seconds": 8.84299999999348,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ea82a197f4f7b4744c0977515c408935f61e6538407dc7eb5aabd4c8aac37657"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/documentation_refresh/replay.py",
+        "check"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\repo",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "name": "both-trees-final",
+      "seconds": 13.313000000081956,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9e0c26554ad05cfc16abea95b0f03e949c57c6db8290816762469e4d7bbffd61"
+    }
+  ],
+  "source_changes_after_validation_permitted": [
+    "research/documentation-refresh-v1/RESULTS.md",
+    "evidence/documentation-refresh-v1/RESULTS.json",
+    "artifacts.sha256.json"
+  ],
+  "test_modes": {
+    "normal": {
+      "passed": true,
+      "physical_tamper_witnesses": 9,
+      "stdout_stderr_logged": true,
+      "tests": 13
+    },
+    "optimized": {
+      "passed": true,
+      "physical_tamper_witnesses": 9,
+      "stdout_stderr_logged": true,
+      "tests": 13
+    },
+    "repeat": {
+      "passed": true,
+      "physical_tamper_witnesses": 9,
+      "stdout_stderr_logged": true,
+      "tests": 13
+    }
+  },
+  "validated_source_commit": "f1563d931a21c7f887ecfa1e720dfeed76862afe",
+  "validated_source_inventory_sha256": "b5f60b9f97a85c1191bf97a25787109407f31c3b3557e2f91b85dad3b68cd5a9",
+  "validation_commands": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "current-inventory",
+      "seconds": 26.188000000081956,
+      "started_at_utc": "2026-11-19T12:53:30.548332+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2f44d4ce0a62b09a1381ebc5181dce95cdf53e61465b08d307af96309adf2f0a"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8404/integrity.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "core-before",
+      "seconds": 0.7809999999590218,
+      "started_at_utc": "2026-11-19T12:53:56.726870+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/documentation_refresh/replay.py",
+        "check"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "current-transition",
+      "seconds": 5.75,
+      "started_at_utc": "2026-11-19T12:53:57.510071+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "84b5b91e95aa880c0377ebf168c46745cc444200fb8da968f2757462a1502b15"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/documentation_refresh",
+        "-v"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "normal",
+      "seconds": 117.96900000004098,
+      "started_at_utc": "2026-11-19T12:54:03.266306+00:00",
+      "stderr_sha256": "a658c305a2ad3c0e7ea2bf67c76fc2cd9096ecc85502117ab71a3ed138630885",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/documentation_refresh",
+        "-v"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "repeat",
+      "seconds": 129.10899999993853,
+      "started_at_utc": "2026-11-19T12:56:01.238304+00:00",
+      "stderr_sha256": "910cf1664c56e62a9c886639b2310c3db46851e680e00c44778a641d818ef62f",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/documentation_refresh",
+        "-v"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "optimized",
+      "seconds": 133.2029999999795,
+      "started_at_utc": "2026-11-19T12:58:10.339554+00:00",
+      "stderr_sha256": "366992dbda4bd20d5ae3b391e2fe39ef30dc2c2df33568c32bc94baaee40f8a7",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/documentation_refresh/replay.py",
+        "prepare"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "prepare",
+      "seconds": 52.25,
+      "started_at_utc": "2026-11-19T13:00:23.546954+00:00",
+      "stderr_sha256": "8a6930f6378d871053aba773ac83bec9d713abfe50bd5c88dc736f688be078ec",
+      "stdout_sha256": "1bccfad602fad8b7e5924b5dc7c38d2f5013439635f0ddd4d8f679c381692539"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/documentation_refresh/replay.py",
+        "check"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-readme-v1\\fresh-clone",
+      "exit_code": 0,
+      "name": "current-and-view",
+      "seconds": 17.25,
+      "started_at_utc": "2026-11-19T13:01:15.803770+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9e0c26554ad05cfc16abea95b0f03e949c57c6db8290816762469e4d7bbffd61"
+    }
+  ],
+  "verdict": "LOCAL_SCOPED_VALIDATION_PASS",
+  "workflow_audit": {
+    "legacy_workflows": 17,
+    "new_workflows": 1,
+    "passed": true,
+    "results": [
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/agent-harness-review.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/agent-harness-v0.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/baseline-reconciliation.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/claim-aware-integration.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/coverage-v4.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/coverage-v4_1.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "name": ".github/workflows/documentation-refresh.yml",
+        "new_documentation_workflow": true,
+        "parsed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/erc8004-harness.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/erc8004-property-fuzz.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/erc8004-role-policy-v1.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/erc8004-role-policy-v2.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/erc8404-compatibility.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/formal-v1.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/real-artifact-v2.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/real-chain-v3.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/reproduce.yml",
+        "parsed": true,
+        "routed": false
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/spec-drift-coverage.yml",
+        "parsed": true,
+        "routed": true
+      },
+      {
+        "all_other_semantics_equal": true,
+        "name": ".github/workflows/verdict-escrow.yml",
+        "parsed": true,
+        "routed": true
+      }
+    ],
+    "routed": 11,
+    "runtime": "1.3.14",
+    "unchanged": 6
+  }
+}
