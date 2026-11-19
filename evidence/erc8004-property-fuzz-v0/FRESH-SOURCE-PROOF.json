@@ -1,0 +1,170 @@
+{
+  "dependency_preparation": [
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "--no-checkout",
+        "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022",
+        "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022",
+      "exit_code": 0,
+      "seconds": 1.4839999999385327,
+      "stage": "clone",
+      "stderr_sha256": "8b588ac85861707d544cfcd1ed0eacb58307d4d9a6b246db37251c3d1940c42e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "-c",
+        "core.autocrlf=false",
+        "checkout",
+        "--detach",
+        "d0d1a4cb1bda7d1217da99a2f6a010859cdf8ad5"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 6.907000000006519,
+      "stage": "checkout",
+      "stderr_sha256": "cf6f165d1667d36c4be0ddaafd27f3932ed7f4f043089f0615f7c6f7e6b6521a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 26.234000000054948,
+      "stage": "initial-inventory",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "199b568193889c597eb7b7dacd4abd84a27250eee579b47e9e43c3ebedd00bea"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/agent_harness.py",
+        "prepare"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 0.9839999999385327,
+      "stage": "grader-prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "947facb1c55e69ea599d4f7919c96623262e2e96c51298eb4d3f972b8bea4d6d"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004/prepare.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 21.48499999998603,
+      "stage": "registry-prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "aee53fadd4d6e91448586ebfa224114ccebae7274ae97501301173853fd244d7"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "research/formal-v1/prepare_crypto.py"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 0.10900000005494803,
+      "stage": "crypto-prepare",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5ba822f425431b3c424471598896df4567b6a2ff52002422bbde16717094edd6"
+    },
+    {
+      "argv": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--prefix",
+        "build/formal-v1/crypto"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 1.577999999979511,
+      "stage": "crypto-install",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "4aaef3acc3c4b16766abf61c4f4aa2d3bd413e2fe822d3edd6cfa9d7e7334efa"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004_fuzz/validate.py",
+        "--out",
+        "build/property-replay"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 1704.2820000000065,
+      "stage": "full-replay",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "775c51bf85d1e71d512e869551b79d46810be9036e396d131a41ae3f37d9600a"
+    },
+    {
+      "argv": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "D:\\PAVLO HQ\\Workspaces\\veca-property-fresh-20261022",
+      "exit_code": 0,
+      "seconds": 0.31200000003445894,
+      "stage": "final-status",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "fresh_legacy_mutations": {
+    "CRASHED": 0,
+    "KILLED": 17,
+    "NOT_APPLIED": 0,
+    "SURVIVED": 0,
+    "UNVERIFIABLE": 0
+  },
+  "fresh_mutations": {
+    "KILLED": 6
+  },
+  "fresh_projection_sha256": "98cc0633b9add940124458a1f8cfe46ccec2606347e9cef5ff9101616075229c",
+  "passed": true,
+  "source_files": {
+    "conformance/erc8004-property-fuzz-v0/adapter.json": "4176470c076526c05890f76e4da5ef296ef546ffad94ae164e658ff8bad67f1f",
+    "conformance/erc8004-property-fuzz-v0/expectations.json": "98cc0633b9add940124458a1f8cfe46ccec2606347e9cef5ff9101616075229c",
+    "conformance/erc8004-property-fuzz-v0/fixtures.json": "38d8d24f95277e385312565bf0b5e451de4668dbfd1ca98dcc121d72bdd1e85c",
+    "conformance/erc8004-property-fuzz-v0/obligations.json": "6270db9257ce0572b97d806f63b590c26715972c4028d000bdd73ddd0b8b7b7a",
+    "conformance/erc8004-property-fuzz-v0/source-lock.json": "6a785b6a2ec12e7be18ab61be555f29403ea7c8405d40888b32d66f1dcbf5326",
+    "conformance/erc8004-property-fuzz-v0/suite.json": "3986757222f7a4188b01ae790390079cde2fad34e01cd28ef2c48d80dedd736b",
+    "conformance/erc8004-property-fuzz-v0/vectors.json": "89dd1566f55f4a7e32163338b8552499b3bf02276987ba34d1e788e51caf79e0",
+    "tools/erc8004_fuzz/adapter.py": "f1104ed552390513bed11f89044b423d4796c0aaa2c59340576bfd45d868d215",
+    "tools/erc8004_fuzz/campaign.py": "08ebbd2cac1170c740969844462e7ff6b5282ec05886468efb2499dc5dceca91",
+    "tools/erc8004_fuzz/generate.py": "3d3c43309c8295f159e23397b27720e11a0f681253f1f8b58071e9170c59b3b3",
+    "tools/erc8004_fuzz/integrity.py": "c79a74948f3adbc9b612774aa9df537247672330ec312c9398e41fc7b9cd935b",
+    "tools/erc8004_fuzz/model.py": "5b8cc9b19353378937b52cb52e6719ec3bed0bd894ae56a41427a160e2749a38",
+    "tools/erc8004_fuzz/mutations.py": "30bb44b0ba80252e43fa332b3d9a3b661f257dd69e162eec485fac1f9f14578a",
+    "tools/erc8004_fuzz/package.py": "5f665db617bf59f0220ef2aeee3f9066507c80a7b3415fd3ec0dae6786da1eaf",
+    "tools/erc8004_fuzz/sequence.mjs": "cf615f879ce42e51c86d16238fae46fc3bbfb9b0bde225b07fc6edab560cf921",
+    "tools/erc8004_fuzz/shrink.py": "378b07e97cbad0c9ecc6201e073a6b3667ebb56e1eaec171780ae7a30d40ffad",
+    "tools/erc8004_fuzz/tests.py": "83bad06d873b8fd86db6bbfbe2cc96dd839482194ce22c9136765e123416d12a",
+    "tools/erc8004_fuzz/validate.py": "36d7aa4b24d091405ef8007428bb1e76bd29a7a9c0dee565f567daeb2cdf5994",
+    "tools/erc8004_fuzz/verify_results.py": "2817468980899229e1d5ceed71667a58d2bec2d606309dcd34111ba3e81064c7"
+  },
+  "source_semantics_changed_after_replay": false,
+  "tested_commit": "d0d1a4cb1bda7d1217da99a2f6a010859cdf8ad5",
+  "tested_tree": "9b44bd7b2b3760ebe5f5cfe8b47836c50b7e6b4c"
+}
