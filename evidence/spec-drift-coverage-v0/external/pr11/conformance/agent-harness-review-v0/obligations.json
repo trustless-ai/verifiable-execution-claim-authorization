@@ -1,0 +1,37 @@
+{
+  "POL-CLAIM": {
+    "coverage": "Finite witness coverage only; not specification completeness.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Only REVIEWED_ARTIFACT_IDENTITY with the exact scenario and artifact-byte-identity scope is admitted.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/2e329fffbee103047d034b97056aea9e49cf1c58/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0"
+  },
+  "REVIEW-DEFINITIONS": {
+    "coverage": "One isolated finite witness; not exhaustive predicate or policy coverage.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Catalog procedure and dependency definitions must equal the independently supplied contract requirements.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/0e17c97e896916b4d9505072cc9ebe2018329b01/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0 / supplemental review v0"
+  },
+  "REVIEW-SCENARIO": {
+    "coverage": "One isolated finite witness; not exhaustive predicate or policy coverage.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Requested scenario must equal the exact scenario contract scenario.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/0e17c97e896916b4d9505072cc9ebe2018329b01/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0 / supplemental review v0"
+  },
+  "REVIEW-SCOPE": {
+    "coverage": "One isolated finite witness; not exhaustive predicate or policy coverage.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Requested claim scope must equal the signed scenario contract scope.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/0e17c97e896916b4d9505072cc9ebe2018329b01/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0 / supplemental review v0"
+  },
+  "REVIEW-SUPPORTED_CONTRACT": {
+    "coverage": "One isolated finite witness; not exhaustive predicate or policy coverage.",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "A contract for EXTERNAL_TASK_SUCCESS is outside this consumer even when signatures and claim bindings agree.",
+    "source": "https://github.com/trustless-ai/verifiable-execution-claim-authorization/blob/0e17c97e896916b4d9505072cc9ebe2018329b01/research/erc8404/CLAIM_AWARE_PROFILE.md",
+    "version": "rvr-reviewed-artifact-v0 / supplemental review v0"
+  }
+}

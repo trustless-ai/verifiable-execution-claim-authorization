@@ -1,0 +1,694 @@
+{
+  "bindings": [
+    {
+      "after": "'authority': lambda: V",
+      "before": "'authority': authority",
+      "guard": "authority",
+      "id": "pr9-original-12/authority",
+      "mutant_sha256": "f4368b9f9f0a0c403fc0163545f17d364c6e3695a5bc3ebcc826e91c191aa50d",
+      "obligation": "POL-AUTHORITY",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_authority"
+    },
+    {
+      "after": "'subject': lambda: V",
+      "before": "'subject': subject",
+      "guard": "subject",
+      "id": "pr9-original-12/subject",
+      "mutant_sha256": "68668f49426c3a1d8feee7ca2abd432b799910c3958813c7e483472b3eb7ef61",
+      "obligation": "POL-SUBJECT",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_subject"
+    },
+    {
+      "after": "'judgment': lambda: V",
+      "before": "'judgment': judgment",
+      "guard": "judgment",
+      "id": "pr9-original-12/judgment",
+      "mutant_sha256": "b2a733ec003881a5639d0c5605d2cae722925d9fddd094042ff827ff81f54c06",
+      "obligation": "POL-SCOPE",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_signed_scope"
+    },
+    {
+      "after": "'artifact': lambda: V",
+      "before": "'artifact': artifact",
+      "guard": "artifact",
+      "id": "pr9-original-12/artifact",
+      "mutant_sha256": "4e350e21181b29fdbd569191504451990de3709c8cb37949ae8c289d65fdf28f",
+      "obligation": "POL-ARTIFACT",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "cross_component_loss"
+    },
+    {
+      "after": "'independence': lambda: V",
+      "before": "'independence': independence",
+      "guard": "independence",
+      "id": "pr9-original-12/independence",
+      "mutant_sha256": "af871d1c4cb7939782fe3bb5159df0334a79c1c0edf1b9ab38eb0871f47a9c63",
+      "obligation": "POL-O14",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "self_judgment"
+    },
+    {
+      "after": "    statuses['claim_type'] = V  # physical mutant",
+      "before": "    statuses['claim_type'] = check(same(claim.get('claimType'), contract.get('claim_type')))  # MUTATE: claim_type",
+      "guard": "claim_type",
+      "id": "pr9-original-12/claim_type",
+      "mutant_sha256": "da14be81c79e3ec2c6b5481b445d441ef9cb4c9e92145ccae4da504b369dcf1c",
+      "obligation": "POL-CLAIM",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "unsupported_claim"
+    },
+    {
+      "after": "    statuses['contract_commitment'] = V  # physical mutant",
+      "before": "    statuses['contract_commitment'] = check(same(digest, context.get('contract_sha256')))  # MUTATE: contract_commitment",
+      "guard": "contract_commitment",
+      "id": "pr9-original-12/contract_commitment",
+      "mutant_sha256": "62c203acbad20f458deddaa4967f0880b3b702d2c4c497d988e9128c0731d622",
+      "obligation": "POL-CONTRACT",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "mismatched_contract"
+    },
+    {
+      "after": "    statuses['signed_contract'] = V  # physical mutant",
+      "before": "    statuses['signed_contract'] = check(same('0x'+digest, msg('producer', 'policyHash'), msg('judgment', 'policyHash')))  # MUTATE: signed_contract",
+      "guard": "signed_contract",
+      "id": "pr9-original-12/signed_contract",
+      "mutant_sha256": "8aa0697d356e2738a1a5432d8dc37cea1f41e2b3ca549e83bd9626a9b5a628f7",
+      "obligation": "POL-POLICY",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_signed_policy"
+    },
+    {
+      "after": "    statuses['field_policy'] = V  # physical mutant",
+      "before": "    statuses['field_policy'] = check(not unconsumed or contract.get('unconsumed_policy') == 'LIST')  # MUTATE: field_policy",
+      "guard": "field_policy",
+      "id": "pr9-original-12/field_policy",
+      "mutant_sha256": "3f8ea8756059d85c5392d6d2eb12c817edd3de44e2cafd05736244386d274293",
+      "obligation": "POL-FIELDS",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "downstream_promotion"
+    },
+    {
+      "after": "    statuses['coverage'] = V  # physical mutant",
+      "before": "    statuses['coverage'] = check(not missing)  # MUTATE: coverage",
+      "guard": "coverage",
+      "id": "pr9-original-12/coverage",
+      "mutant_sha256": "4ff7b919b5829e87797b03cf6e385ac012f10178b48aa7522b8baba864e1f025",
+      "obligation": "POL-COVERAGE",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "missing_independence_coverage"
+    },
+    {
+      "after": "statuses['contract_preimage'] = V",
+      "before": "statuses['contract_preimage'] = U",
+      "guard": "contract_preimage",
+      "id": "pr9-original-12/contract_preimage",
+      "mutant_sha256": "a7b9b63518f4ff72bbf01adc8ab3609aa0896a83b9cdf16bd129eba1cf98be39",
+      "obligation": "POL-PREIMAGE",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "missing_contract_preimage"
+    },
+    {
+      "after": "return V",
+      "before": "return check(record == fresh['authorization_scope'])",
+      "guard": "admission",
+      "id": "pr9-original-12/admission",
+      "mutant_sha256": "5f0e0cea06524215188ed37ea9908889f629d5866f4f68f69100b3e6049550f0",
+      "obligation": "POL-ADMISSION",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "tampered_admission"
+    },
+    {
+      "after": "",
+      "before": "require(\n            msg.sender == owner ||\n            isApprovedForAll(owner, msg.sender) ||\n            msg.sender == getApproved(agentId),\n            \"Not authorized\"\n        );",
+      "guard": "uri_authority",
+      "id": "pr10-original-17/uri_authority",
+      "mutant_sha256": "34ff6943b967929a449dfbe789c436866c06db3e13fdaebb6e2d2b417f202888",
+      "obligation": "N1",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setAgentURI",
+        "function getAgentWallet"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "uri_stranger"
+    },
+    {
+      "after": "",
+      "before": "require(ok && res.length >= 32 && abi.decode(res, (bytes4)) == ERC1271_MAGICVALUE, \"invalid wallet sig\");",
+      "guard": "wallet_signature",
+      "id": "pr10-original-17/wallet_signature",
+      "mutant_sha256": "4e2e478fd2056e5736c2c924256ca0ff4814106b4018b7064f6ad0bd9c576ee3",
+      "obligation": "N2",
+      "positive_controls": [
+        "wallet_valid"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setAgentWallet",
+        "function unsetAgentWallet"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wallet_wrong_signer"
+    },
+    {
+      "after": "",
+      "before": "require(block.timestamp <= deadline, \"expired\");",
+      "guard": "wallet_deadline",
+      "id": "pr10-original-17/wallet_deadline",
+      "mutant_sha256": "e6f5167f6c023a9dc2205575c49ae55357fadc07047f5f79e1e22336bdc56235",
+      "obligation": "I1",
+      "positive_controls": [
+        "wallet_valid"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setAgentWallet",
+        "function unsetAgentWallet"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wallet_expired"
+    },
+    {
+      "after": "",
+      "before": "$._metadata[tokenId][\"agentWallet\"] = \"\";",
+      "guard": "transfer_reset",
+      "id": "pr10-original-17/transfer_reset",
+      "mutant_sha256": "280410fdd1fbd5e1622696943e5068d63d00d59a3dd663093f283d89d8e2d13f",
+      "obligation": "N3",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function _update",
+        "function isAuthorizedOrOwner"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "transfer_clears_wallet"
+    },
+    {
+      "after": "",
+      "before": "require(keccak256(bytes(metadataKey)) != RESERVED_AGENT_WALLET_KEY_HASH, \"reserved key\");",
+      "guard": "reserved_wallet",
+      "id": "pr10-original-17/reserved_wallet",
+      "mutant_sha256": "b2d3c213a2fd3f42c05f13eaae90b4a83f6da8c63f87eb9018bf481600f55099",
+      "obligation": "N4",
+      "positive_controls": [
+        "wallet_valid"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setMetadata",
+        "function setAgentURI"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "reserved_wallet_metadata"
+    },
+    {
+      "after": "",
+      "before": "require(\n            msg.sender == owner ||\n            registry.isApprovedForAll(owner, msg.sender) ||\n            registry.getApproved(agentId) == msg.sender,\n            \"Not authorized\"\n        );",
+      "guard": "request_authority",
+      "id": "pr10-original-17/request_authority",
+      "mutant_sha256": "f0ef15d823adb8af9a571644efd4a6f6dd1c75bcc88019d3fbd30413e53ba4b9",
+      "obligation": "N5",
+      "positive_controls": [
+        "request_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function validationRequest",
+        "function validationResponse"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "request_stranger"
+    },
+    {
+      "after": "",
+      "before": "require($.validations[requestHash].validatorAddress == address(0), \"exists\");",
+      "guard": "request_duplicate",
+      "id": "pr10-original-17/request_duplicate",
+      "mutant_sha256": "472b7de0d10861afbfa564f56de2dea47585ca2b3a4514a5cd63165c6e8c6d67",
+      "obligation": "I2",
+      "positive_controls": [
+        "request_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function validationRequest",
+        "function validationResponse"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "request_duplicate"
+    },
+    {
+      "after": "",
+      "before": "require(msg.sender == s.validatorAddress, \"not validator\");",
+      "guard": "response_authority",
+      "id": "pr10-original-17/response_authority",
+      "mutant_sha256": "3f7b5c1480b64756cd9fbea0dac730d6c32890ea1ec8b2bf842c288d173c8e65",
+      "obligation": "N6",
+      "positive_controls": [
+        "response_validator"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function validationResponse",
+        "function getValidationStatus"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "response_stranger"
+    },
+    {
+      "after": "require(!s.hasResponse, \"mutant rejects update\");\n        require(response <= 100, \"resp>100\");",
+      "before": "require(response <= 100, \"resp>100\");",
+      "guard": "reject_permitted_updates",
+      "id": "pr10-original-17/reject_permitted_updates",
+      "mutant_sha256": "1a9884be065a2d5e35ee77de95aa4227f4c6be09e6ed627f778762d11b76353b",
+      "obligation": "N7",
+      "positive_controls": [
+        "response_validator"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function validationResponse",
+        "function getValidationStatus"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "response_update_permitted"
+    },
+    {
+      "after": "    if False:  # physically removed claim type",
+      "before": "    if claim.get('type') != 'LAB_REGISTRY_TRANSITION':  # guard: claim type",
+      "guard": "policy_claim_type",
+      "id": "pr10-original-17/policy_claim_type",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "3d1a4847f74f00c83239db2560a6eb8996c1d7fc576d8547ef9e7a77d0b3e253",
+      "obligation": "P1",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "unsupported_claim"
+    },
+    {
+      "after": "    if False:  # physically removed policy",
+      "before": "    if claim.get('policy') != POLICY:  # guard: policy",
+      "guard": "policy_policy",
+      "id": "pr10-original-17/policy_policy",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "321c6992caab8ae37283e63c0cc7bd75c598d189e1b469fb3cc51f771601de0d",
+      "obligation": "P2",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "stale_policy"
+    },
+    {
+      "after": "    if False:  # physically removed fields",
+      "before": "    if set(claim) != {'type', 'policy', 'agent_id', 'operation', 'chain_id', 'registry_role'}:  # guard: fields",
+      "guard": "policy_fields",
+      "id": "pr10-original-17/policy_fields",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "e6b897cac82a79aa9bf11cb80e4155ddba9b300b2ab61a8e5f9a3c65f51fcefc",
+      "obligation": "P3",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "unconsumed_output_hash"
+    },
+    {
+      "after": "    if False:  # physically removed subject",
+      "before": "    if claim['agent_id'] != op['agent_id']:  # guard: subject",
+      "guard": "policy_subject",
+      "id": "pr10-original-17/policy_subject",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "3d6f7f882e32c9d44063f00515ef0f70b996ee8fc035cfd1c0fc908c386ab5e1",
+      "obligation": "P4",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_subject"
+    },
+    {
+      "after": "    if False:  # physically removed operation",
+      "before": "    if claim['operation'] != op['kind']:  # guard: operation",
+      "guard": "policy_operation",
+      "id": "pr10-original-17/policy_operation",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "b68eb868333acc34c05082d8bc00a7ad5914c2990b0be9cab42655b085c887a5",
+      "obligation": "P5",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_operation"
+    },
+    {
+      "after": "    if False:  # physically removed domain",
+      "before": "    if claim['chain_id'] != observed['chain_id'] or claim['registry_role'] != observed['registry_role']:  # guard: domain",
+      "guard": "policy_domain",
+      "id": "pr10-original-17/policy_domain",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "22a9df7fd1c5be67a248f33b31f290523e96b3d966cf7b95aa3dde6d9e2dea59",
+      "obligation": "P6",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "wrong_chain_scope"
+    },
+    {
+      "after": "    if False:  # physically removed availability",
+      "before": "    if observed.get('receipt') is None:  # guard: availability",
+      "guard": "policy_availability",
+      "id": "pr10-original-17/policy_availability",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "6cfccededc7b2372df4f42ae6e82cbbe2f1a076c81ebc221bcb6a165c1995111",
+      "obligation": "P7",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "missing_receipt"
+    },
+    {
+      "after": "    if False:  # physically removed execution",
+      "before": "    if observed['status'] != 'ACCEPTED':  # guard: execution",
+      "guard": "policy_execution",
+      "id": "pr10-original-17/policy_execution",
+      "infrastructure_relocation": {
+        "after": "ROOT = Path('D:\\\\PAVLO HQ\\\\Workspaces\\\\veca-erc8004-pilot-20261021')",
+        "before": "ROOT = Path(__file__).resolve().parents[2]"
+      },
+      "mutant_sha256": "b680bf4f41133b22f1093d011415ae57f33cc252e65be7b593849f080a75a4d2",
+      "obligation": "P8",
+      "positive_controls": [
+        "uri_owner"
+      ],
+      "profile": "erc8004-pilot-v0",
+      "source_sha256": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "uri_stranger"
+    },
+    {
+      "after": "    statuses['scope'] = V  # review physical mutation",
+      "before": "    statuses['scope'] = check(same(claim.get('scope'), contract.get('scope')))  # MUTATE: scope",
+      "guard": "scope",
+      "id": "pr11-supplemental-4/scope",
+      "mutant_sha256": "2d7594f96b9c3eec7e38e7e4709680485ab811f54eff1721a71780764c9367f6",
+      "obligation": "REVIEW-SCOPE",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-review-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "scope_only"
+    },
+    {
+      "after": "    statuses['scenario'] = V  # review physical mutation",
+      "before": "    statuses['scenario'] = check(same(claim.get('scenario'), contract.get('scenario')))  # MUTATE: scenario",
+      "guard": "scenario",
+      "id": "pr11-supplemental-4/scenario",
+      "mutant_sha256": "79a8a1a9860746b01380bb79d56703eda17ab9e9700949d50368e32dc26de227",
+      "obligation": "REVIEW-SCENARIO",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-review-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "scenario_only"
+    },
+    {
+      "after": "    statuses['definitions'] = V  # review physical mutation",
+      "before": "    statuses['definitions'] = check(all(catalog.get(k) == v for k, v in required.items() if k in catalog))  # MUTATE: definitions",
+      "guard": "definitions",
+      "id": "pr11-supplemental-4/definitions",
+      "mutant_sha256": "0e266832c777be43351119008b2f7c7fcfff435f39d25cc981e89673c8bb2013",
+      "obligation": "REVIEW-DEFINITIONS",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-review-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "definitions_only"
+    },
+    {
+      "after": "    statuses['supported_contract'] = V  # review physical mutation",
+      "before": "    statuses['supported_contract'] = check(contract.get('schema') == 'claim-aware.external.v1' and contract.get('claim_type') == 'REVIEWED_ARTIFACT_IDENTITY' and contract.get('scope') == 'artifact-byte-identity' and bool(required))  # MUTATE: supported_contract",
+      "guard": "supported_contract",
+      "id": "pr11-supplemental-4/supported_contract",
+      "mutant_sha256": "0fa63d88ca8d4aeab9f0749b105cb905d7671d7da1d460bf1e5371dddeb7e493",
+      "obligation": "REVIEW-SUPPORTED_CONTRACT",
+      "positive_controls": [
+        "permitted_review"
+      ],
+      "profile": "agent-harness-review-v0",
+      "source_sha256": "c16360127cc6bdb824c205184bd46e57f16fd3aeec2cfe58d812d9a9fb9fe412",
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "supported_contract_only"
+    },
+    {
+      "after": "",
+      "before": "require(keccak256(bytes(metadata[i].metadataKey)) != RESERVED_AGENT_WALLET_KEY_HASH, \"reserved key\");",
+      "guard": "registration_reserved",
+      "id": "pr12-generated-6/registration_reserved",
+      "mutant_sha256": "59911de9d0051d6d69eef8b4fc1c307e65c287e2fea8abcbee2614d9a311e27a",
+      "obligation": "N_RESERVED",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function register(string memory agentURI, MetadataEntry[]",
+        "function getMetadata"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c008"
+    },
+    {
+      "after": "",
+      "before": "require(\n            msg.sender == agentOwner ||\n            isApprovedForAll(agentOwner, msg.sender) ||\n            msg.sender == getApproved(agentId),\n            \"Not authorized\"\n        );",
+      "guard": "metadata_authority",
+      "id": "pr12-generated-6/metadata_authority",
+      "mutant_sha256": "6e73e4b557200bc96eca9c76686e8fafc1f0a779f65ae541e009161f611302cf",
+      "obligation": "I_METADATA",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setMetadata",
+        "function setAgentURI"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c001"
+    },
+    {
+      "after": "",
+      "before": "require(\n            msg.sender == owner ||\n            isApprovedForAll(owner, msg.sender) ||\n            msg.sender == getApproved(agentId),\n            \"Not authorized\"\n        );",
+      "guard": "unset_authority",
+      "id": "pr12-generated-6/unset_authority",
+      "mutant_sha256": "66124ed819a1e2c726d4848357c4149517017421e5f1ed2cebff49b4071bd592",
+      "obligation": "I_UNSET",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function unsetAgentWallet",
+        "function _authorizeUpgrade"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c007"
+    },
+    {
+      "after": "",
+      "before": "require(deadline <= block.timestamp + MAX_DEADLINE_DELAY, \"deadline too far\");",
+      "guard": "wallet_future",
+      "id": "pr12-generated-6/wallet_future",
+      "mutant_sha256": "8d43466a6dd32e2782d2df81bf13696e22049966b7668d135523a182e23da6e7",
+      "obligation": "I_WALLET",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+      "source_window": [
+        "function setAgentWallet",
+        "function unsetAgentWallet"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c052"
+    },
+    {
+      "after": "",
+      "before": "require(response <= 100, \"resp>100\");",
+      "guard": "response_range",
+      "id": "pr12-generated-6/response_range",
+      "mutant_sha256": "53bf1b9eace6871a6999034936f79bc415c1e167662e00809fa0e7790df1e4b4",
+      "obligation": "N_RESPONSE",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function validationResponse",
+        "function getValidationStatus"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c010"
+    },
+    {
+      "after": "matchValidator && matchTag",
+      "before": "matchValidator && matchTag && s.hasResponse",
+      "guard": "summary_unanswered",
+      "id": "pr12-generated-6/summary_unanswered",
+      "mutant_sha256": "0aa187ae1761c425d23b54e6237197e83e8f2eeda7235a3b57655b67debdfce0",
+      "obligation": "I_STATE",
+      "positive_controls": [
+        "control-0",
+        "control-1",
+        "control-2"
+      ],
+      "profile": "erc8004-property-fuzz-v0",
+      "source_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+      "source_window": [
+        "function getSummary",
+        "function getAgentValidations"
+      ],
+      "supported_claim": "This specific changed guard distinguishes the mapped witness while selected positive controls still match; no whole-obligation completeness claim.",
+      "witness": "s8004-c009"
+    }
+  ],
+  "schema": "veca.reviewed-guard-bindings.v0"
+}

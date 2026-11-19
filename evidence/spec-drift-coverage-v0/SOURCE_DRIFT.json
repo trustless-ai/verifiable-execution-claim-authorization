@@ -1,0 +1,182 @@
+{
+  "authorization_verdict": "NOT_EVALUATED",
+  "conformance_verdict": "NOT_EVALUATED",
+  "counts": {
+    "UNCHANGED": 2,
+    "UPSTREAM_MOVED_CONTENT_UNCHANGED": 1
+  },
+  "results": [
+    {
+      "affected_obligations": [
+        {
+          "id": "N1",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N2",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N3",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N4",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N5",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N6",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N7",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N_REG",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_REQUEST",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_RESERVED",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_RESPONSE",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_TRANSFER",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_URI",
+          "profile": "erc8004-property-fuzz-v0"
+        }
+      ],
+      "affected_profiles": [
+        "erc8004-pilot-v0",
+        "erc8004-property-fuzz-v0"
+      ],
+      "comparison": "UPSTREAM_MOVED_CONTENT_UNCHANGED",
+      "erc": 8004,
+      "evidence_source": "GitHub public HTTPS API and exact-commit raw content",
+      "historical_execution_invalidated": false,
+      "implementation_failure_proven": false,
+      "latest_file_sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+      "latest_observed_commit": "3c0f7076cf20d70bdd6142f012d8e03322f4518c",
+      "observed_at": "2026-10-22T18:11:54.836197+00:00",
+      "path": "ERCS/erc-8004.md",
+      "pinned_commit": "503591a6e80e6e1affdd6403341e25269141f046",
+      "pinned_file_sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+      "pins_updated": false,
+      "repository": "ethereum/ERCs",
+      "response_evidence": [
+        {
+          "http_status": 200,
+          "sha256": "f5885ad9132a646fa9b971da1bfb76d576b621320f6cc6156d2841089e64d977",
+          "url": "https://api.github.com/repos/ethereum/ERCs/commits/master"
+        },
+        {
+          "http_status": 200,
+          "sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+          "url": "https://raw.githubusercontent.com/ethereum/ERCs/3c0f7076cf20d70bdd6142f012d8e03322f4518c/ERCS/erc-8004.md"
+        }
+      ],
+      "review_required": false,
+      "source_id": "erc8004-draft",
+      "upstream_branch": "master"
+    },
+    {
+      "affected_obligations": [],
+      "affected_profiles": [
+        "agent-harness-v0",
+        "agent-harness-review-v0"
+      ],
+      "comparison": "UNCHANGED",
+      "erc": 8404,
+      "evidence_source": "GitHub public HTTPS API and exact-commit raw content",
+      "historical_execution_invalidated": false,
+      "implementation_failure_proven": false,
+      "latest_file_sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
+      "latest_observed_commit": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "observed_at": "2026-10-22T18:11:54.836197+00:00",
+      "path": "ERCS/erc-8404.md",
+      "pinned_commit": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "pinned_file_sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
+      "pins_updated": false,
+      "repository": "pipavlo82/ERCs",
+      "response_evidence": [
+        {
+          "http_status": 200,
+          "sha256": "f0e444ff80b2f92483755292a9e95d0e1ce13d65e4869d46a1027c3e09e5fb9d",
+          "url": "https://api.github.com/repos/pipavlo82/ERCs/commits/feat%2Frvr-erc-draft"
+        },
+        {
+          "http_status": 200,
+          "sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
+          "url": "https://raw.githubusercontent.com/pipavlo82/ERCs/7a9e63a80bce04db53c6550103c1d41eca35f3d1/ERCS/erc-8404.md"
+        }
+      ],
+      "review_required": false,
+      "source_id": "erc8404-draft",
+      "upstream_branch": "feat/rvr-erc-draft"
+    },
+    {
+      "affected_obligations": [
+        {
+          "id": "RVR-AVAILABLE",
+          "profile": "agent-harness-v0"
+        },
+        {
+          "id": "RVR-IDENTITY",
+          "profile": "agent-harness-v0"
+        },
+        {
+          "id": "RVR-PROJECTION",
+          "profile": "agent-harness-v0"
+        }
+      ],
+      "affected_profiles": [
+        "agent-harness-v0",
+        "agent-harness-review-v0"
+      ],
+      "comparison": "UNCHANGED",
+      "erc": 8404,
+      "evidence_source": "GitHub public HTTPS API and exact-commit raw content",
+      "historical_execution_invalidated": false,
+      "implementation_failure_proven": false,
+      "latest_file_sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+      "latest_observed_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "observed_at": "2026-10-22T18:11:54.836197+00:00",
+      "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+      "pinned_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "pinned_file_sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+      "pins_updated": false,
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "response_evidence": [
+        {
+          "http_status": 200,
+          "sha256": "80bb69640f9ba799a29d4bae097b9f20f5ce897350b2cb2caa2783d2a994f37c",
+          "url": "https://api.github.com/repos/pipavlo82/recomputable-verification-receipts/commits/main"
+        },
+        {
+          "http_status": 200,
+          "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+          "url": "https://raw.githubusercontent.com/pipavlo82/recomputable-verification-receipts/9dd36e882dd372f264b77b179130948aa5adcbde/docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md"
+        }
+      ],
+      "review_required": false,
+      "source_id": "rvr-v0",
+      "upstream_branch": "main"
+    }
+  ],
+  "schema": "veca.spec-drift-report.v0"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "erc8004-property-fuzz-v0",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "6270db9257ce0572b97d806f63b590c26715972c4028d000bdd73ddd0b8b7b7a"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "89dd1566f55f4a7e32163338b8552499b3bf02276987ba34d1e788e51caf79e0"
+  }
+}

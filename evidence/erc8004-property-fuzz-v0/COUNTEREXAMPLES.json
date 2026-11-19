@@ -1,0 +1,1303 @@
+{
+  "cases": [
+    {
+      "category": "status:register",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [],
+              "state": {
+                "agents": {},
+                "operators": [],
+                "requests": {},
+                "summaries": {}
+              },
+              "status": "REJECTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 1,
+          "chain_id": 31337,
+          "operation": "register",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [
+              {
+                "key": "agentWallet",
+                "value": "0x1111111111111111111111111111111111111111"
+              }
+            ],
+            "overload": 2,
+            "uri": ""
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "registration_reserved",
+      "observed": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 1,
+                    "uri": "",
+                    "wallet": "external:0x1111111111111111111111111111111111111111"
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 1,
+          "chain_id": 31337,
+          "operation": "register",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": "ipfs://lab"
+          },
+          {
+            "actor": 1,
+            "agent_id": 1,
+            "kind": "register",
+            "metadata": [
+              {
+                "key": "agentWallet",
+                "value": "0x1111111111111111111111111111111111111111"
+              }
+            ],
+            "overload": 2,
+            "uri": "ipfs://lab"
+          },
+          {
+            "actor": 2,
+            "agent_id": 1,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": "ipfs://lab"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "59911de9d0051d6d69eef8b4fc1c307e65c287e2fea8abcbee2614d9a311e27a"
+    },
+    {
+      "category": "status:metadata",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [],
+              "state": {
+                "agents": {},
+                "operators": [],
+                "requests": {},
+                "summaries": {}
+              },
+              "status": "REJECTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 10,
+          "chain_id": 31337,
+          "operation": "metadata",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "key": "",
+            "kind": "metadata",
+            "value": "0x"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "metadata_authority",
+      "observed": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {},
+                "operators": [],
+                "requests": {},
+                "summaries": {}
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 10,
+          "chain_id": 31337,
+          "operation": "metadata",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": "data:application/json;base64,e30="
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "key": "capability",
+            "kind": "metadata",
+            "value": "0x01"
+          },
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "key": "capability",
+            "kind": "metadata",
+            "value": "0x8d2955839d3889e31583165a55d350bee328cbd0afab10616a42e50fd46abac6dfd3dd6cb9a5966de2f1e70349858dd5981d0891527c8098c473f12c67de6cad"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "6e73e4b557200bc96eca9c76686e8fafc1f0a779f65ae541e009161f611302cf"
+    },
+    {
+      "category": "status:unset",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "REJECTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "unset",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 3,
+            "agent_id": 0,
+            "kind": "unset"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "unset_authority",
+      "observed": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "unset",
+            "operation_sha256": "f7c6932e486f71c0c9c48cbced721ec0fcc11a6f602ed5757c17d80504136f89",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "identity",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": null
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "unset",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": "ipfs://lab"
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "deadline_offset": 120,
+            "kind": "wallet",
+            "signature_actor": 2,
+            "signature_chain": 31337,
+            "signature_registry": "identity",
+            "signed_agent": 0,
+            "signed_owner": 0,
+            "wallet": 2
+          },
+          {
+            "actor": 3,
+            "agent_id": 0,
+            "kind": "unset"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "66124ed819a1e2c726d4848357c4149517017421e5f1ed2cebff49b4071bd592"
+    },
+    {
+      "category": "status:wallet",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "REJECTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "wallet",
+          "policy": "stale",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "deadline_offset": 301,
+            "kind": "wallet",
+            "signature_actor": 2,
+            "signature_chain": 31337,
+            "signature_registry": "identity",
+            "signed_agent": 0,
+            "signed_owner": 0,
+            "wallet": 2
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "wallet_future",
+      "observed": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 2
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "wallet",
+          "policy": "stale",
+          "registry_role": "identity",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "deadline_offset": 600,
+            "kind": "wallet",
+            "signature_actor": 2,
+            "signature_chain": 31337,
+            "signature_registry": "identity",
+            "signed_agent": 0,
+            "signed_owner": 0,
+            "wallet": 2
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "8d43466a6dd32e2782d2df81bf13696e22049966b7668d135523a182e23da6e7"
+    },
+    {
+      "category": "status:respond",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ValidationRequest"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {
+                  "a": {
+                    "agent_id": 0,
+                    "responded": false,
+                    "response": 0,
+                    "response_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {
+                  "a": {
+                    "agent_id": 0,
+                    "responded": false,
+                    "response": 0,
+                    "response_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "REJECTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "a",
+            "validator": 2
+          },
+          {
+            "actor": 2,
+            "agent_id": 0,
+            "kind": "respond",
+            "label": "a",
+            "response": 101,
+            "response_hash": "0x1212121212121212121212121212121212121212121212121212121212121212",
+            "tag": ""
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "response_range",
+      "observed": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "respond",
+            "operation_sha256": "d42a6b65734f9f620aa662f10ec3cdd9e6314a0bfa6fd87f69eaad7c6a75742f",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ValidationRequest"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {
+                  "a": {
+                    "agent_id": 0,
+                    "responded": false,
+                    "response": 0,
+                    "response_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ValidationResponse"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {
+                  "a": {
+                    "agent_id": 0,
+                    "responded": true,
+                    "response": 101,
+                    "response_hash": "0x1212121212121212121212121212121212121212121212121212121212121212",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 101,
+                    "count": 1
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "respond",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": "data:application/json;base64,e30="
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "a",
+            "validator": 2
+          },
+          {
+            "actor": 2,
+            "agent_id": 0,
+            "kind": "respond",
+            "label": "a",
+            "response": 255,
+            "response_hash": "0x1212121212121212121212121212121212121212121212121212121212121212",
+            "tag": "final"
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "53bf1b9eace6871a6999034936f79bc415c1e167662e00809fa0e7790df1e4b4"
+    },
+    {
+      "category": "state:summaries",
+      "deletion_1_minimal": true,
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request",
+            "operation_sha256": "a66f889449805cfde657aa1d9adda6daf62cf4bf80e369aac8542b3941406664",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ApprovalForAll"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [
+                  "0:1"
+                ],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ValidationRequest"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [
+                  "0:1"
+                ],
+                "requests": {
+                  "b": {
+                    "agent_id": 0,
+                    "responded": false,
+                    "response": 0,
+                    "response_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "global_minimum_claimed": false,
+      "minimized": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "enabled": true,
+            "kind": "operator",
+            "operator": 1
+          },
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "b",
+            "validator": 2
+          }
+        ],
+        "supply_receipt": true
+      },
+      "mutant": "summary_unanswered",
+      "observed": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "agent_id": 0,
+            "chain_id": 31337,
+            "operation": "request",
+            "operation_sha256": "a66f889449805cfde657aa1d9adda6daf62cf4bf80e369aac8542b3941406664",
+            "policy": "erc8004-registry-observation-v0",
+            "registry_role": "validation",
+            "type": "LAB_REGISTRY_TRANSITION"
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "steps": [
+            {
+              "events": [
+                "Transfer",
+                "Registered",
+                "MetadataSet"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ApprovalForAll"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [
+                  "0:1"
+                ],
+                "requests": {},
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 0
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            },
+            {
+              "events": [
+                "ValidationRequest"
+              ],
+              "state": {
+                "agents": {
+                  "0": {
+                    "approved": null,
+                    "metadata": {},
+                    "owner": 0,
+                    "uri": "",
+                    "wallet": 0
+                  }
+                },
+                "operators": [
+                  "0:1"
+                ],
+                "requests": {
+                  "b": {
+                    "agent_id": 0,
+                    "responded": false,
+                    "response": 0,
+                    "response_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "tag": "",
+                    "validator": 2
+                  }
+                },
+                "summaries": {
+                  "0": {
+                    "average": 0,
+                    "count": 1
+                  }
+                }
+              },
+              "status": "ACCEPTED"
+            }
+          ]
+        }
+      },
+      "original": {
+        "claim": {
+          "agent_id": 0,
+          "chain_id": 31337,
+          "operation": "request",
+          "policy": "erc8004-registry-observation-v0",
+          "registry_role": "validation",
+          "type": "LAB_REGISTRY_TRANSITION"
+        },
+        "sequence": [
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "register",
+            "metadata": [],
+            "overload": 1,
+            "uri": ""
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "enabled": true,
+            "kind": "operator",
+            "operator": 1
+          },
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "a",
+            "validator": 2
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "enabled": false,
+            "kind": "operator",
+            "operator": 1
+          },
+          {
+            "actor": 1,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "b",
+            "validator": 2
+          },
+          {
+            "actor": 0,
+            "agent_id": 0,
+            "kind": "request",
+            "label": "a",
+            "validator": null
+          }
+        ],
+        "supply_receipt": true
+      },
+      "original_matrix": {
+        "conformance": "PASS",
+        "exit_code": 0,
+        "failed": [],
+        "rows": 29
+      },
+      "scope": "TEST_ONLY_MUTANT",
+      "source_sha256": "0aa187ae1761c425d23b54e6237197e83e8f2eeda7235a3b57655b67debdfce0"
+    }
+  ],
+  "schema": "erc8004.mutant-counterexamples.v0"
+}

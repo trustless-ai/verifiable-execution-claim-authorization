@@ -1,0 +1,770 @@
+{
+  "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+  "branch": "research/erc8004-property-fuzz-v0",
+  "campaign_lock_sha256": "53fe98968e3479741c3482ea49df0f1462f63ab8b9086c5573dce1f4c5effa25",
+  "campaigns": {
+    "normal": {
+      "authorization": {
+        "REFUTED": 222,
+        "UNVERIFIABLE": 21,
+        "VERIFIED": 57
+      },
+      "batch_count": 15,
+      "budget_per_seed": 100,
+      "complete": true,
+      "conformance": {
+        "PASS": 300
+      },
+      "executed": 300,
+      "failures": [],
+      "families": {
+        "metadata_authority": 21,
+        "operator_revocation": 21,
+        "policy_promotion": 18,
+        "post_transfer": 18,
+        "random_walk": 18,
+        "registration": 21,
+        "request_authority": 18,
+        "reserved_registration": 18,
+        "response_range": 18,
+        "response_updates": 18,
+        "token_transfer": 21,
+        "two_agents": 18,
+        "unset_authority": 18,
+        "wallet_deadline": 18,
+        "wallet_domain": 18,
+        "wallet_subject": 18
+      },
+      "fixture_sha256": "38d8d24f95277e385312565bf0b5e451de4668dbfd1ca98dcc121d72bdd1e85c",
+      "generated": 300,
+      "independent_implementation_coverage": "NOT_COVERED",
+      "obligation_cases": {
+        "I_METADATA": 73,
+        "I_REQUEST": 108,
+        "I_STATE": 300,
+        "I_UNSET": 30,
+        "I_WALLET": 72,
+        "N_REG": 300,
+        "N_REQUEST": 108,
+        "N_RESERVED": 18,
+        "N_RESPONSE": 90,
+        "N_TRANSFER": 68,
+        "N_URI": 50,
+        "P_CLAIM": 300,
+        "P_EVIDENCE": 300
+      },
+      "operation_statuses": {
+        "approve:ACCEPTED": 21,
+        "metadata:ACCEPTED": 54,
+        "metadata:REJECTED": 71,
+        "operator:ACCEPTED": 96,
+        "register:ACCEPTED": 357,
+        "register:REJECTED": 18,
+        "request:ACCEPTED": 126,
+        "request:REJECTED": 54,
+        "respond:ACCEPTED": 98,
+        "respond:REJECTED": 46,
+        "transfer:ACCEPTED": 59,
+        "transfer:REJECTED": 11,
+        "unset:ACCEPTED": 11,
+        "unset:REJECTED": 24,
+        "uri:ACCEPTED": 45,
+        "uri:REJECTED": 32,
+        "wallet:ACCEPTED": 35,
+        "wallet:REJECTED": 37
+      },
+      "operations": 1195,
+      "optimized": false,
+      "passed": true,
+      "projection_sha256": "98cc0633b9add940124458a1f8cfe46ccec2606347e9cef5ff9101616075229c",
+      "schema": "erc8004.generated-campaign.v0",
+      "seeds": [
+        8004,
+        8299,
+        8274
+      ],
+      "universal_conformance": false
+    },
+    "optimized": {
+      "authorization": {
+        "REFUTED": 222,
+        "UNVERIFIABLE": 21,
+        "VERIFIED": 57
+      },
+      "batch_count": 15,
+      "budget_per_seed": 100,
+      "complete": true,
+      "conformance": {
+        "PASS": 300
+      },
+      "executed": 300,
+      "failures": [],
+      "families": {
+        "metadata_authority": 21,
+        "operator_revocation": 21,
+        "policy_promotion": 18,
+        "post_transfer": 18,
+        "random_walk": 18,
+        "registration": 21,
+        "request_authority": 18,
+        "reserved_registration": 18,
+        "response_range": 18,
+        "response_updates": 18,
+        "token_transfer": 21,
+        "two_agents": 18,
+        "unset_authority": 18,
+        "wallet_deadline": 18,
+        "wallet_domain": 18,
+        "wallet_subject": 18
+      },
+      "fixture_sha256": "38d8d24f95277e385312565bf0b5e451de4668dbfd1ca98dcc121d72bdd1e85c",
+      "generated": 300,
+      "independent_implementation_coverage": "NOT_COVERED",
+      "obligation_cases": {
+        "I_METADATA": 73,
+        "I_REQUEST": 108,
+        "I_STATE": 300,
+        "I_UNSET": 30,
+        "I_WALLET": 72,
+        "N_REG": 300,
+        "N_REQUEST": 108,
+        "N_RESERVED": 18,
+        "N_RESPONSE": 90,
+        "N_TRANSFER": 68,
+        "N_URI": 50,
+        "P_CLAIM": 300,
+        "P_EVIDENCE": 300
+      },
+      "operation_statuses": {
+        "approve:ACCEPTED": 21,
+        "metadata:ACCEPTED": 54,
+        "metadata:REJECTED": 71,
+        "operator:ACCEPTED": 96,
+        "register:ACCEPTED": 357,
+        "register:REJECTED": 18,
+        "request:ACCEPTED": 126,
+        "request:REJECTED": 54,
+        "respond:ACCEPTED": 98,
+        "respond:REJECTED": 46,
+        "transfer:ACCEPTED": 59,
+        "transfer:REJECTED": 11,
+        "unset:ACCEPTED": 11,
+        "unset:REJECTED": 24,
+        "uri:ACCEPTED": 45,
+        "uri:REJECTED": 32,
+        "wallet:ACCEPTED": 35,
+        "wallet:REJECTED": 37
+      },
+      "operations": 1195,
+      "optimized": true,
+      "passed": true,
+      "projection_sha256": "98cc0633b9add940124458a1f8cfe46ccec2606347e9cef5ff9101616075229c",
+      "schema": "erc8004.generated-campaign.v0",
+      "seeds": [
+        8004,
+        8299,
+        8274
+      ],
+      "universal_conformance": false
+    },
+    "repeat": {
+      "authorization": {
+        "REFUTED": 222,
+        "UNVERIFIABLE": 21,
+        "VERIFIED": 57
+      },
+      "batch_count": 15,
+      "budget_per_seed": 100,
+      "complete": true,
+      "conformance": {
+        "PASS": 300
+      },
+      "executed": 300,
+      "failures": [],
+      "families": {
+        "metadata_authority": 21,
+        "operator_revocation": 21,
+        "policy_promotion": 18,
+        "post_transfer": 18,
+        "random_walk": 18,
+        "registration": 21,
+        "request_authority": 18,
+        "reserved_registration": 18,
+        "response_range": 18,
+        "response_updates": 18,
+        "token_transfer": 21,
+        "two_agents": 18,
+        "unset_authority": 18,
+        "wallet_deadline": 18,
+        "wallet_domain": 18,
+        "wallet_subject": 18
+      },
+      "fixture_sha256": "38d8d24f95277e385312565bf0b5e451de4668dbfd1ca98dcc121d72bdd1e85c",
+      "generated": 300,
+      "independent_implementation_coverage": "NOT_COVERED",
+      "obligation_cases": {
+        "I_METADATA": 73,
+        "I_REQUEST": 108,
+        "I_STATE": 300,
+        "I_UNSET": 30,
+        "I_WALLET": 72,
+        "N_REG": 300,
+        "N_REQUEST": 108,
+        "N_RESERVED": 18,
+        "N_RESPONSE": 90,
+        "N_TRANSFER": 68,
+        "N_URI": 50,
+        "P_CLAIM": 300,
+        "P_EVIDENCE": 300
+      },
+      "operation_statuses": {
+        "approve:ACCEPTED": 21,
+        "metadata:ACCEPTED": 54,
+        "metadata:REJECTED": 71,
+        "operator:ACCEPTED": 96,
+        "register:ACCEPTED": 357,
+        "register:REJECTED": 18,
+        "request:ACCEPTED": 126,
+        "request:REJECTED": 54,
+        "respond:ACCEPTED": 98,
+        "respond:REJECTED": 46,
+        "transfer:ACCEPTED": 59,
+        "transfer:REJECTED": 11,
+        "unset:ACCEPTED": 11,
+        "unset:REJECTED": 24,
+        "uri:ACCEPTED": 45,
+        "uri:REJECTED": 32,
+        "wallet:ACCEPTED": 35,
+        "wallet:REJECTED": 37
+      },
+      "operations": 1195,
+      "optimized": false,
+      "passed": true,
+      "projection_sha256": "98cc0633b9add940124458a1f8cfe46ccec2606347e9cef5ff9101616075229c",
+      "schema": "erc8004.generated-campaign.v0",
+      "seeds": [
+        8004,
+        8299,
+        8274
+      ],
+      "universal_conformance": false
+    }
+  },
+  "completed_at": "2026-10-22T16:25:05.578510+00:00",
+  "distinct_inputs": 243,
+  "distinct_sequences": 186,
+  "git_status": "?? conformance/erc8004-property-fuzz-v0/\n?? research/erc8004-property-fuzz-v0/\n?? tools/erc8004_fuzz/\n",
+  "guarantee": "LABORATORY_VERIFIED",
+  "head": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+  "independent_implementation_coverage": "NOT_COVERED",
+  "inherited_baseline": {
+    "authorization_counts": {
+      "REFUTED": 20,
+      "UNVERIFIABLE": 1,
+      "VERIFIED": 8
+    },
+    "commands": [
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/erc8004/integrity.py"
+        ],
+        "exit_code": 0,
+        "name": "integrity-before",
+        "seconds": 3.4115681999828666,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "acc59273864b6227946c45d9c35d649dfb70eb413e15789acc6ebd27d084cd13"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/harness_v0",
+          "-v"
+        ],
+        "exit_code": 0,
+        "name": "transport-regression",
+        "seconds": 1.0809005999471992,
+        "stderr_sha256": "b4c5c216cee5b655251637e156907fdecbd1ff9acb2100f81e147d4ec1aa0952",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/agent_harness.py",
+          "run",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022\\build\\fuzz-start\\baseline\\erc8404"
+        ],
+        "exit_code": 0,
+        "name": "erc8404-pilot-regression",
+        "seconds": 8.447047099936754,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/agent_harness.py",
+          "run",
+          "--suite",
+          "conformance/erc8004-pilot-v0/suite.json",
+          "--adapter",
+          "conformance/erc8004-pilot-v0/adapter.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022\\build\\fuzz-start\\baseline\\normal"
+        ],
+        "exit_code": 0,
+        "name": "erc8004-normal",
+        "seconds": 9.45488940004725,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/agent_harness.py",
+          "run",
+          "--suite",
+          "conformance/erc8004-pilot-v0/suite.json",
+          "--adapter",
+          "conformance/erc8004-pilot-v0/adapter.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022\\build\\fuzz-start\\baseline\\repeat"
+        ],
+        "exit_code": 0,
+        "name": "erc8004-repeat",
+        "seconds": 9.542724900064059,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-O",
+          "tools/agent_harness.py",
+          "run",
+          "--suite",
+          "conformance/erc8004-pilot-v0/suite.json",
+          "--adapter",
+          "conformance/erc8004-pilot-v0/adapter.json",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022\\build\\fuzz-start\\baseline\\optimized"
+        ],
+        "exit_code": 0,
+        "name": "erc8004-optimized",
+        "seconds": 9.646814599982463,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "d91b5a51c0ec5cc5059300d6dc50ea11abddd7447d5b8580a49acb13a916568c"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/erc8004/mutations.py",
+          "--out",
+          "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022\\build\\fuzz-start\\baseline\\mutations"
+        ],
+        "exit_code": 0,
+        "name": "physical-mutations",
+        "seconds": 307.3931984999217,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "1bac23119a8108fb9e4e24bf778a90de89cf976fe8d1400fc4d9badde40e83a8"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests/erc8004",
+          "-v"
+        ],
+        "exit_code": 0,
+        "name": "negative-infrastructure",
+        "seconds": 6.836819599964656,
+        "stderr_sha256": "049d299ff5e87a2785098702b8d61e805d785d89bae68d97e62fba1eade68f2f",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "core-conformance",
+        "seconds": 0.20826560002751648,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+      },
+      {
+        "argv": [
+          "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+          "-B",
+          "tools/erc8004/integrity.py"
+        ],
+        "exit_code": 0,
+        "name": "integrity-after",
+        "seconds": 3.093448800034821,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "acc59273864b6227946c45d9c35d649dfb70eb413e15789acc6ebd27d084cd13"
+      }
+    ],
+    "conformant": 29,
+    "external_execution_verified": false,
+    "guarantee": "LABORATORY_VERIFIED",
+    "mutations": {
+      "CRASHED": 0,
+      "KILLED": 17,
+      "NOT_APPLIED": 0,
+      "SURVIVED": 0,
+      "UNVERIFIABLE": 0
+    },
+    "passed": true,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scenarios": 29,
+    "schema": "erc8004.validation.v0",
+    "semantic_determinism": true,
+    "source_lock_sha256": "4af4bae26a8d86cd3ea588f7b0bb506f925008868d21379c3db2c5cfa13ff1c7",
+    "universal_erc_conformance": false
+  },
+  "inherited_fixture_inputs_unchanged": true,
+  "integrity": {
+    "frozen_files": 12667,
+    "inherited_evidence_files": 456,
+    "inherited_research_archive_files": 14,
+    "mismatches": [],
+    "passed": true,
+    "research_files": 23,
+    "root_inventory_unchanged": true
+  },
+  "mutations": {
+    "counts": {
+      "KILLED": 6
+    },
+    "original_source_unchanged": true,
+    "results": [
+      {
+        "after": "",
+        "before": "require(keccak256(bytes(metadata[i].metadataKey)) != RESERVED_AGENT_WALLET_KEY_HASH, \"reserved key\");",
+        "classification": "KILLED",
+        "divergence": "status:register",
+        "id": "registration_reserved",
+        "mutant_sha256": "59911de9d0051d6d69eef8b4fc1c307e65c287e2fea8abcbee2614d9a311e27a",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 1,
+          "original_calls": 3
+        },
+        "source": "contracts/IdentityRegistryUpgradeable.sol",
+        "witness_id": "s8004-c008"
+      },
+      {
+        "after": "",
+        "before": "require(\n            msg.sender == agentOwner ||\n            isApprovedForAll(agentOwner, msg.sender) ||\n            msg.sender == getApproved(agentId),\n            \"Not authorized\"\n        );",
+        "classification": "KILLED",
+        "divergence": "status:metadata",
+        "id": "metadata_authority",
+        "mutant_sha256": "6e73e4b557200bc96eca9c76686e8fafc1f0a779f65ae541e009161f611302cf",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 1,
+          "original_calls": 3
+        },
+        "source": "contracts/IdentityRegistryUpgradeable.sol",
+        "witness_id": "s8004-c001"
+      },
+      {
+        "after": "",
+        "before": "require(\n            msg.sender == owner ||\n            isApprovedForAll(owner, msg.sender) ||\n            msg.sender == getApproved(agentId),\n            \"Not authorized\"\n        );",
+        "classification": "KILLED",
+        "divergence": "status:unset",
+        "id": "unset_authority",
+        "mutant_sha256": "66124ed819a1e2c726d4848357c4149517017421e5f1ed2cebff49b4071bd592",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 2,
+          "original_calls": 3
+        },
+        "source": "contracts/IdentityRegistryUpgradeable.sol",
+        "witness_id": "s8004-c007"
+      },
+      {
+        "after": "",
+        "before": "require(deadline <= block.timestamp + MAX_DEADLINE_DELAY, \"deadline too far\");",
+        "classification": "KILLED",
+        "divergence": "status:wallet",
+        "id": "wallet_future",
+        "mutant_sha256": "8d43466a6dd32e2782d2df81bf13696e22049966b7668d135523a182e23da6e7",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 2,
+          "original_calls": 2
+        },
+        "source": "contracts/IdentityRegistryUpgradeable.sol",
+        "witness_id": "s8004-c052"
+      },
+      {
+        "after": "",
+        "before": "require(response <= 100, \"resp>100\");",
+        "classification": "KILLED",
+        "divergence": "status:respond",
+        "id": "response_range",
+        "mutant_sha256": "53bf1b9eace6871a6999034936f79bc415c1e167662e00809fa0e7790df1e4b4",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 3,
+          "original_calls": 3
+        },
+        "source": "contracts/ValidationRegistryUpgradeable.sol",
+        "witness_id": "s8004-c010"
+      },
+      {
+        "after": "matchValidator && matchTag",
+        "before": "matchValidator && matchTag && s.hasResponse",
+        "classification": "KILLED",
+        "divergence": "state:summaries",
+        "id": "summary_unanswered",
+        "mutant_sha256": "0aa187ae1761c425d23b54e6237197e83e8f2eeda7235a3b57655b67debdfce0",
+        "original_matrix": {
+          "conformance": "PASS",
+          "exit_code": 0,
+          "failed": [],
+          "rows": 29
+        },
+        "original_sha256": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+        "positive_controls": true,
+        "positive_count": 3,
+        "restored_pass": true,
+        "restored_source_bytes": true,
+        "shrink": {
+          "deletion_1_minimal": true,
+          "global_minimum_claimed": false,
+          "minimized_calls": 3,
+          "original_calls": 6
+        },
+        "source": "contracts/ValidationRegistryUpgradeable.sol",
+        "witness_id": "s8004-c009"
+      }
+    ],
+    "schema": "erc8004.generated-mutations.v0"
+  },
+  "new_mutants_missed_by_original_matrix": [
+    "registration_reserved",
+    "metadata_authority",
+    "unset_authority",
+    "wallet_future",
+    "response_range",
+    "summary_unanswered"
+  ],
+  "new_publication": false,
+  "original_implementation_counterexamples": 0,
+  "passed": true,
+  "python": "3.12.10",
+  "quick_checks": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004_fuzz/generate.py",
+        "--check"
+      ],
+      "elapsed_seconds": 0.3119999999180436,
+      "exit_code": 0,
+      "name": "fixtures",
+      "started_at": "2026-10-22T16:13:51.446403+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "a1dff1a28a55bdca8c68579c19232ea33640243519babaf04c24b65eb88daf0e"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8004_fuzz/tests.py",
+        "-v"
+      ],
+      "elapsed_seconds": 0.7040000000270084,
+      "exit_code": 0,
+      "name": "tests-normal",
+      "started_at": "2026-10-22T16:13:51.747932+00:00",
+      "stderr_sha256": "a8df06c5bbf1b624e69127af66acf84dbb4f14e8c6b89ac3e72055e355b6fa52",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "tools/erc8004_fuzz/tests.py",
+        "-v"
+      ],
+      "elapsed_seconds": 0.7179999999934807,
+      "exit_code": 0,
+      "name": "tests-optimized",
+      "started_at": "2026-10-22T16:13:52.461038+00:00",
+      "stderr_sha256": "63e0ab0788649d119dcb8a4569e18401eb76fafbf9cfe2a138b98436513e3196",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "elapsed_seconds": 0.06299999996554106,
+      "exit_code": 0,
+      "name": "diff-check",
+      "started_at": "2026-10-22T16:13:53.173759+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "report_sha256": "942c150f4f3015de0c87ac16e7e8bf17afc94f919a98b2ef373c991b28b4ea4f",
+  "schema": "erc8004.property-research-closure.v0",
+  "semantic_repeatability": true,
+  "sequence_lengths": {
+    "2": 57,
+    "3": 111,
+    "4": 4,
+    "5": 44,
+    "6": 78,
+    "7": 4,
+    "8": 2
+  },
+  "source_lock": {
+    "base": "80c91a09095eca362dbfb69d39d0c01fc31130cf",
+    "implementation": {
+      "commit": "b9e466c250744a7e06b13dff9d3c2844ed64f825",
+      "files": {
+        "contracts/ERC1967Proxy.sol": "d70ae5779f17b5a0b42eea535227f4004072ccc35b4d0b4ffe7c0ed5502a25c5",
+        "contracts/HardhatMinimalUUPS.sol": "9d3b152b88733e61f40ae2de775f7448001b73d9165f23ee8bbe5dd88cd042aa",
+        "contracts/IdentityRegistryUpgradeable.sol": "18c8ca8c88493b46e54d000c96eaf7470d1f9dbfe55493fd7fa923bae543ff75",
+        "contracts/ValidationRegistryUpgradeable.sol": "26b1ebb8718abfeba1f12d51201f2adcf6c02f5bde79902532bd2d8fc3657882",
+        "hardhat.config.ts": "aee2bf179a5eb58de5644c506361777b449c7e4ad1f77847a0d5938a342c7b5e",
+        "package-lock.json": "c869ae3bde4d17067998631756dcb0bfb0dda8f5153ea64e75b041fabe449e5c",
+        "package.json": "acf10fe4652833b386709a7006d66dc01af8dc554770e2803d925e7e4066326d",
+        "test/core.ts": "eabdb3147274efbdd913f0acd37d4a08dc0dc58643e01f571d3698b77f1a5ca5",
+        "test/upgradeable.ts": "2e2fb1c0eade7f876e56eeab9ae616a6ac069270029ae2708ad30011592e68b5"
+      },
+      "repository": "erc-8004/erc-8004-contracts"
+    },
+    "preserved": {
+      "conformance/agent-harness-v0/source-lock.json": "bf559d4b1a2433ce5b9913b6ec5fffb2e436bbf3c14e274b95c69b1f9a15bbe6",
+      "conformance/erc8004-pilot-v0/package-lock.json": "b9f988d86e752d80ad9834abd92753f49d2d82a34ab3b3f4b5bd641879156995",
+      "tools/agent_harness.py": "5b1368c1ed80032b953bc886dce1eea98e54820462a45de68ba3c07cb1af2eb6",
+      "tools/erc8004/adapter.py": "d5369e0c413be195499fa307934b140f94808dba6cac5a49f4b2dec4aac1932b",
+      "tools/erc8004/evm.mjs": "995e957138979c936a29d1251c357a3ca2e8d8a09b46aa48ab2dec7221be1193"
+    },
+    "research_sources": {
+      "echidna": {
+        "commit": "286449a545e0e2b84feba95a3d7602af66be306b",
+        "files": {
+          "README.md": "56c991509faf0d67710fd6b86b3c0fcc2714dac058ba2ce442e84fcd451dfcdf",
+          "lib/Echidna/Shrink.hs": "25e670739b4db75e687183464cfad89aa7b08bf7141a7fa27c5de9b0fa23991b",
+          "tests/solidity/basic/default.yaml": "64959f46473436c679918abaacd216cab9f33b7ebff9b12e40f504accd0cac7d",
+          "tests/solidity/basic/flags.sol": "200608788f72525b00a04bd9c1fb8cf6b839d4260b9b8a159f6011c16d2ae4be"
+        }
+      },
+      "execution-specs": {
+        "commit": "05420bce40492ca7ff11bc79cf3feb24778dce83",
+        "files": {
+          "packages/testing/README.md": "2e6cf029b135a68c5d8148ea41b82c62c37cea020d7e5f4c04ff7407bb00f007",
+          "packages/testing/src/execution_testing/fixtures/consume.py": "a97dd6960851358b96152adce8a103ecb0cd133a76dc87a640947caddb1a01bd",
+          "packages/testing/src/execution_testing/fixtures/state.py": "bdcad5f47db858313d27016abc3e9488ba5894496366b3aca2a2f7735c8c5b50",
+          "packages/testing/src/execution_testing/specs/state.py": "471febb0691ae0ae8c73b881a803a4a4f63182599300c54a72a4b3fc59d80390"
+        }
+      },
+      "foundry-doc": {
+        "executed": false,
+        "retrieved": "2026-10-22",
+        "sha256": "646d5bfcfef32e8ddb848cf7ee832e12512a06291d96533895089525da8a8ca9",
+        "url": "https://getfoundry.sh/forge/invariant-testing"
+      }
+    },
+    "specification": {
+      "commit": "503591a6e80e6e1affdd6403341e25269141f046",
+      "path": "ERCS/erc-8004.md",
+      "repository": "ethereum/ERCs",
+      "sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+      "status": "Draft"
+    }
+  },
+  "test_only_mutant_counterexamples": 6,
+  "unique_case_ids": 300,
+  "universal_erc_conformance": false,
+  "workspace": "D:\\PAVLO HQ\\Workspaces\\veca-erc8004-property-fuzz-20261022"
+}

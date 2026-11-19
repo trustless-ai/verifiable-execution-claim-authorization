@@ -1,0 +1,65 @@
+{
+  "schema": "veca.external-inputs.v0",
+  "pr11": {
+    "commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+    "integrated_into_base": false,
+    "imports": [
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "conformance/agent-harness-review-v0/obligations.json",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/obligations.json",
+          "sha256": "8e88b01d9e36348513d351bbd926f6855aca6069d920161483b271e68cda7f47"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "conformance/agent-harness-review-v0/suite.json",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/suite.json",
+          "sha256": "177c79517f464130866a8ad722109cb3bb89dd420652b2edd4f4882200b16474"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "conformance/agent-harness-review-v0/vectors.json",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/vectors.json",
+          "sha256": "8093950c39310e2591699885e6c224c130d920f5872e8c1659186b7f58ea58ff"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "evidence/harness-review-v0/archive.json",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/evidence/harness-review-v0/archive.json",
+          "sha256": "231d9def9f1c6f1f989359cea5000ebfb68f5f5a5e2098a35ff7fece271fffca"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "evidence/harness-review-v0/replay.zip",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/evidence/harness-review-v0/replay.zip",
+          "sha256": "1a7fe7cad3e8c278f070ba6726010f7ed1b1078232b860cfdfdcb849c32d7182"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "tools/harness_v0/review_controls.py",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/tools/harness_v0/review_controls.py",
+          "sha256": "9f03d312c24628334afd8899eb917b7e321f0c415c2b81e1503f88bb5000053d"
+        }
+      },
+      {
+        "source_commit": "e5263f47325a81b0647f3de3a7bc36ad858aea5a",
+        "source_path": "research/harness-v0/REVIEW_FOLLOWUP.md",
+        "bytes": {
+          "path": "evidence/spec-drift-coverage-v0/external/pr11/research/harness-v0/REVIEW_FOLLOWUP.md",
+          "sha256": "bf18dcd23f9200ee098333495f2c3d279d8830c68d862d4280410b0efa0c1f2b"
+        }
+      }
+    ]
+  }
+}

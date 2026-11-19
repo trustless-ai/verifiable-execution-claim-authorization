@@ -1,0 +1,93 @@
+{
+  "I_METADATA": {
+    "clause": "I_METADATA",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "Metadata authority",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "I_REQUEST": {
+    "clause": "I_REQUEST",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "Duplicate and zero-validator handling",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "I_STATE": {
+    "clause": "I_STATE",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "State consistency",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "I_UNSET": {
+    "clause": "I_UNSET",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "Unset authority",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "I_WALLET": {
+    "clause": "I_WALLET",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "IMPLEMENTATION_BEHAVIOR",
+    "requirement": "Wallet EIP712 and deadline",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_REG": {
+    "clause": "N_REG",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Registration defaults and events",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_REQUEST": {
+    "clause": "N_REQUEST",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Request authority",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_RESERVED": {
+    "clause": "N_RESERVED",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Reserved registration metadata",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_RESPONSE": {
+    "clause": "N_RESPONSE",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Response authority, range and updates",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_TRANSFER": {
+    "clause": "N_TRANSFER",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "Wallet reset and new ownership",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "N_URI": {
+    "clause": "N_URI",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "NORMATIVE_SPECIFICATION",
+    "requirement": "URI authority",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "P_CLAIM": {
+    "clause": "P_CLAIM",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Scoped laboratory claim",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  },
+  "P_EVIDENCE": {
+    "clause": "P_EVIDENCE",
+    "coverage": "bounded generated sequences; not universal",
+    "kind": "RESEARCH_POLICY",
+    "requirement": "Required receipt availability",
+    "source": "research/erc8004-property-fuzz-v0/PROPERTY_MATRIX.md"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "agent-harness-review-boundaries-v0",
+  "obligations": {
+    "path": "obligations.json",
+    "sha256": "8e88b01d9e36348513d351bbd926f6855aca6069d920161483b271e68cda7f47"
+  },
+  "vectors": {
+    "path": "vectors.json",
+    "sha256": "8093950c39310e2591699885e6c224c130d920f5872e8c1659186b7f58ea58ff"
+  }
+}
