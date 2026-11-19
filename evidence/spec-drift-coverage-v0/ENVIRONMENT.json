@@ -1,0 +1,16 @@
+{
+  "erc8004_dependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "@openzeppelin/contracts-upgradeable": "5.4.0",
+    "ethers": "6.15.0",
+    "hardhat": "3.0.6",
+    "solc": "0.8.24"
+  },
+  "git": "git version 2.54.0.windows.1",
+  "node": "v22.15.0",
+  "npm": "10.9.2",
+  "observed_at": "2026-10-22T18:33:18.941151+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+}

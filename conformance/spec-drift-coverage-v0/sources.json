@@ -1,0 +1,134 @@
+{
+  "schema": "veca.spec-sources.v0",
+  "sources": [
+    {
+      "bytes": {
+        "archive_sha256": "2f907b38957512c95a0e5bfb6e917ba076a5c32930dd664af0dabb81246ae8ad",
+        "member": "erc8004-draft.md",
+        "path": "evidence/spec-drift-coverage-v0/sources/NORMATIVE.zip",
+        "sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9"
+      },
+      "commit": "503591a6e80e6e1affdd6403341e25269141f046",
+      "erc": 8004,
+      "id": "erc8004-draft",
+      "obligations": [
+        {
+          "id": "N1",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N2",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N3",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N4",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N5",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N6",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N7",
+          "profile": "erc8004-pilot-v0"
+        },
+        {
+          "id": "N_REG",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_REQUEST",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_RESERVED",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_RESPONSE",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_TRANSFER",
+          "profile": "erc8004-property-fuzz-v0"
+        },
+        {
+          "id": "N_URI",
+          "profile": "erc8004-property-fuzz-v0"
+        }
+      ],
+      "path": "ERCS/erc-8004.md",
+      "profiles": [
+        "erc8004-pilot-v0",
+        "erc8004-property-fuzz-v0"
+      ],
+      "repository": "ethereum/ERCs",
+      "role": "normative",
+      "sha256": "249dc3d96ad7bbe4afd25cacd14be942eb87751abcf1608bab19a610f3c3f8a9",
+      "upstream_branch": "master"
+    },
+    {
+      "bytes": {
+        "archive_sha256": "2f907b38957512c95a0e5bfb6e917ba076a5c32930dd664af0dabb81246ae8ad",
+        "member": "erc8404-draft.md",
+        "path": "evidence/spec-drift-coverage-v0/sources/NORMATIVE.zip",
+        "sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85"
+      },
+      "commit": "7a9e63a80bce04db53c6550103c1d41eca35f3d1",
+      "erc": 8404,
+      "id": "erc8404-draft",
+      "obligations": [],
+      "path": "ERCS/erc-8404.md",
+      "profiles": [
+        "agent-harness-v0",
+        "agent-harness-review-v0"
+      ],
+      "repository": "pipavlo82/ERCs",
+      "role": "draft-context",
+      "sha256": "63f1ad56b6a8a5099a12afbacd511c1271f50b1af6ef674a12b7aeb28850ad85",
+      "upstream_branch": "feat/rvr-erc-draft"
+    },
+    {
+      "bytes": {
+        "archive_sha256": "2f907b38957512c95a0e5bfb6e917ba076a5c32930dd664af0dabb81246ae8ad",
+        "member": "rvr-v0.md",
+        "path": "evidence/spec-drift-coverage-v0/sources/NORMATIVE.zip",
+        "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973"
+      },
+      "commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+      "erc": 8404,
+      "id": "rvr-v0",
+      "obligations": [
+        {
+          "id": "RVR-AVAILABLE",
+          "profile": "agent-harness-v0"
+        },
+        {
+          "id": "RVR-IDENTITY",
+          "profile": "agent-harness-v0"
+        },
+        {
+          "id": "RVR-PROJECTION",
+          "profile": "agent-harness-v0"
+        }
+      ],
+      "path": "docs/spec/RECOMPUTABLE_VERIFICATION_RECEIPTS_V0.md",
+      "profiles": [
+        "agent-harness-v0",
+        "agent-harness-review-v0"
+      ],
+      "repository": "pipavlo82/recomputable-verification-receipts",
+      "role": "normative",
+      "sha256": "81077ddbf50624bc70941cf53a4f542604e926a653d7fcb3a36310ff5430b973",
+      "upstream_branch": "main"
+    }
+  ]
+}

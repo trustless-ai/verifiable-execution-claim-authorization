@@ -1,0 +1,1042 @@
+{
+  "profile": "rvr-reviewed-artifact-v0",
+  "vectors": [
+    {
+      "expected": {
+        "authorization": {
+          "authorized": true,
+          "scope": {
+            "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+            "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+            "limits": [
+              "artifact identity and authenticated review only",
+              "no inference truth, external execution or judgment correctness"
+            ],
+            "receipt_sha256": "0d0f0764847fcb8a8a82c5c8a0c8f6ad7741c2c8319e277ef0a18412c4d8bb77",
+            "scenario": "lab-artifact-review-v1",
+            "unconsumed_claim_fields": [],
+            "verified_claim_scope": {
+              "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+              "scenario": "lab-artifact-review-v1",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            }
+          },
+          "status": "VERIFIED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "VERIFIED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "input": {
+        "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+        "catalog": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "authority"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "claim": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        },
+        "context": {
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496"
+        },
+        "contract": {
+          "actions": {
+            "judgment": "review-artifact",
+            "producer": "declare-artifact"
+          },
+          "adequacy": "EXTERNAL_ASSUMPTION",
+          "authorized": {
+            "judgment": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "producer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+          },
+          "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+          "consumed_fields": [
+            "scenario",
+            "claimType",
+            "scope",
+            "subject",
+            "artifactSha256"
+          ],
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "identity_namespace": "eip155:31337:secp256k1",
+          "requirements": {
+            "O14": {
+              "dependencies": [
+                "S01",
+                "S04",
+                "S05"
+              ],
+              "procedure": "independence"
+            },
+            "S01": {
+              "dependencies": [],
+              "procedure": "signature"
+            },
+            "S02": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "artifact"
+            },
+            "S03": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "subject"
+            },
+            "S04": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "authority"
+            },
+            "S05": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "domain"
+            },
+            "S06": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "judgment"
+            }
+          },
+          "scenario": "lab-artifact-review-v1",
+          "schema": "claim-aware.external.v1",
+          "scope": "artifact-byte-identity",
+          "separation": [
+            [
+              "producer",
+              "judgment"
+            ]
+          ],
+          "unconsumed_policy": "REJECT"
+        },
+        "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweGI4YmIzMzUwMDk1Mzg3ZDU0ZDlkODY5ODNjNDhjMDE2NGVjOTNjYzciLCJwcm9kdWNlciI6IjB4N2Q4ZjAyMGI3ZDhkYmJmZjg1ODdlMWE3ZjljZTAyZWUzZjk3ZTc4OSJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXV0sInVuY29uc3VtZWRfcG9saWN5IjoiUkVKRUNUIn0=",
+        "documents": {
+          "judgment": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "review-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x098c53954246db4a9cd2617732467295eab065c5ff97ef29ebf7f2184806c5aa0f709b7e4e6e52be9f8cf70209d16fbc6bb49d51c1af72c128c012e0b7124c531b",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "type": "LabJudgment"
+          },
+          "producer": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "declare-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0xbc4c99850fc8497604db59b9649ab6a25098b7668d2c79ea8aba73e6b5a725757791e61248b04fa1f5dc7e2ca8c3f7e3c38a23de02ba7e754d00ce54b289652e1c",
+            "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+            "type": "LabJudgment"
+          }
+        },
+        "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9"
+      },
+      "name": "permitted_review",
+      "obligations": [
+        "POL-CLAIM"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "input": {
+        "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+        "catalog": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "authority"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "claim": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "external-task-success",
+          "subject": "lab:preserved-native-proof-a"
+        },
+        "context": {
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496"
+        },
+        "contract": {
+          "actions": {
+            "judgment": "review-artifact",
+            "producer": "declare-artifact"
+          },
+          "adequacy": "EXTERNAL_ASSUMPTION",
+          "authorized": {
+            "judgment": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "producer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+          },
+          "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+          "consumed_fields": [
+            "scenario",
+            "claimType",
+            "scope",
+            "subject",
+            "artifactSha256"
+          ],
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "identity_namespace": "eip155:31337:secp256k1",
+          "requirements": {
+            "O14": {
+              "dependencies": [
+                "S01",
+                "S04",
+                "S05"
+              ],
+              "procedure": "independence"
+            },
+            "S01": {
+              "dependencies": [],
+              "procedure": "signature"
+            },
+            "S02": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "artifact"
+            },
+            "S03": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "subject"
+            },
+            "S04": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "authority"
+            },
+            "S05": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "domain"
+            },
+            "S06": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "judgment"
+            }
+          },
+          "scenario": "lab-artifact-review-v1",
+          "schema": "claim-aware.external.v1",
+          "scope": "artifact-byte-identity",
+          "separation": [
+            [
+              "producer",
+              "judgment"
+            ]
+          ],
+          "unconsumed_policy": "REJECT"
+        },
+        "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweGI4YmIzMzUwMDk1Mzg3ZDU0ZDlkODY5ODNjNDhjMDE2NGVjOTNjYzciLCJwcm9kdWNlciI6IjB4N2Q4ZjAyMGI3ZDhkYmJmZjg1ODdlMWE3ZjljZTAyZWUzZjk3ZTc4OSJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXV0sInVuY29uc3VtZWRfcG9saWN5IjoiUkVKRUNUIn0=",
+        "documents": {
+          "judgment": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "review-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x098c53954246db4a9cd2617732467295eab065c5ff97ef29ebf7f2184806c5aa0f709b7e4e6e52be9f8cf70209d16fbc6bb49d51c1af72c128c012e0b7124c531b",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "type": "LabJudgment"
+          },
+          "producer": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "declare-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0xbc4c99850fc8497604db59b9649ab6a25098b7668d2c79ea8aba73e6b5a725757791e61248b04fa1f5dc7e2ca8c3f7e3c38a23de02ba7e754d00ce54b289652e1c",
+            "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+            "type": "LabJudgment"
+          }
+        },
+        "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9"
+      },
+      "name": "scope_only",
+      "obligations": [
+        "REVIEW-SCOPE"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "input": {
+        "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+        "catalog": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "authority"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "claim": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "another-scenario",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        },
+        "context": {
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496"
+        },
+        "contract": {
+          "actions": {
+            "judgment": "review-artifact",
+            "producer": "declare-artifact"
+          },
+          "adequacy": "EXTERNAL_ASSUMPTION",
+          "authorized": {
+            "judgment": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "producer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+          },
+          "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+          "consumed_fields": [
+            "scenario",
+            "claimType",
+            "scope",
+            "subject",
+            "artifactSha256"
+          ],
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "identity_namespace": "eip155:31337:secp256k1",
+          "requirements": {
+            "O14": {
+              "dependencies": [
+                "S01",
+                "S04",
+                "S05"
+              ],
+              "procedure": "independence"
+            },
+            "S01": {
+              "dependencies": [],
+              "procedure": "signature"
+            },
+            "S02": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "artifact"
+            },
+            "S03": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "subject"
+            },
+            "S04": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "authority"
+            },
+            "S05": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "domain"
+            },
+            "S06": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "judgment"
+            }
+          },
+          "scenario": "lab-artifact-review-v1",
+          "schema": "claim-aware.external.v1",
+          "scope": "artifact-byte-identity",
+          "separation": [
+            [
+              "producer",
+              "judgment"
+            ]
+          ],
+          "unconsumed_policy": "REJECT"
+        },
+        "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweGI4YmIzMzUwMDk1Mzg3ZDU0ZDlkODY5ODNjNDhjMDE2NGVjOTNjYzciLCJwcm9kdWNlciI6IjB4N2Q4ZjAyMGI3ZDhkYmJmZjg1ODdlMWE3ZjljZTAyZWUzZjk3ZTc4OSJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXV0sInVuY29uc3VtZWRfcG9saWN5IjoiUkVKRUNUIn0=",
+        "documents": {
+          "judgment": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "review-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x098c53954246db4a9cd2617732467295eab065c5ff97ef29ebf7f2184806c5aa0f709b7e4e6e52be9f8cf70209d16fbc6bb49d51c1af72c128c012e0b7124c531b",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "type": "LabJudgment"
+          },
+          "producer": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "declare-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0xbc4c99850fc8497604db59b9649ab6a25098b7668d2c79ea8aba73e6b5a725757791e61248b04fa1f5dc7e2ca8c3f7e3c38a23de02ba7e754d00ce54b289652e1c",
+            "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+            "type": "LabJudgment"
+          }
+        },
+        "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9"
+      },
+      "name": "scenario_only",
+      "obligations": [
+        "REVIEW-SCENARIO"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "input": {
+        "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+        "catalog": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "signature"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "claim": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "REVIEWED_ARTIFACT_IDENTITY",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        },
+        "context": {
+          "contract_sha256": "4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496"
+        },
+        "contract": {
+          "actions": {
+            "judgment": "review-artifact",
+            "producer": "declare-artifact"
+          },
+          "adequacy": "EXTERNAL_ASSUMPTION",
+          "authorized": {
+            "judgment": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "producer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789"
+          },
+          "claim_type": "REVIEWED_ARTIFACT_IDENTITY",
+          "consumed_fields": [
+            "scenario",
+            "claimType",
+            "scope",
+            "subject",
+            "artifactSha256"
+          ],
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "identity_namespace": "eip155:31337:secp256k1",
+          "requirements": {
+            "O14": {
+              "dependencies": [
+                "S01",
+                "S04",
+                "S05"
+              ],
+              "procedure": "independence"
+            },
+            "S01": {
+              "dependencies": [],
+              "procedure": "signature"
+            },
+            "S02": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "artifact"
+            },
+            "S03": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "subject"
+            },
+            "S04": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "authority"
+            },
+            "S05": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "domain"
+            },
+            "S06": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "judgment"
+            }
+          },
+          "scenario": "lab-artifact-review-v1",
+          "schema": "claim-aware.external.v1",
+          "scope": "artifact-byte-identity",
+          "separation": [
+            [
+              "producer",
+              "judgment"
+            ]
+          ],
+          "unconsumed_policy": "REJECT"
+        },
+        "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweGI4YmIzMzUwMDk1Mzg3ZDU0ZDlkODY5ODNjNDhjMDE2NGVjOTNjYzciLCJwcm9kdWNlciI6IjB4N2Q4ZjAyMGI3ZDhkYmJmZjg1ODdlMWE3ZjljZTAyZWUzZjk3ZTc4OSJ9LCJjbGFpbV90eXBlIjoiUkVWSUVXRURfQVJUSUZBQ1RfSURFTlRJVFkiLCJjb25zdW1lZF9maWVsZHMiOlsic2NlbmFyaW8iLCJjbGFpbVR5cGUiLCJzY29wZSIsInN1YmplY3QiLCJhcnRpZmFjdFNoYTI1NiJdLCJkb21haW4iOnsiY2hhaW5JZCI6IjMxMzM3IiwibmFtZSI6IkNsYWltLUF3YXJlIEV4dGVybmFsIExhYiIsInZlcnNpb24iOiIxIn0sImlkZW50aXR5X25hbWVzcGFjZSI6ImVpcDE1NTozMTMzNzpzZWNwMjU2azEiLCJyZXF1aXJlbWVudHMiOnsiTzE0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiLCJTMDQiLCJTMDUiXSwicHJvY2VkdXJlIjoiaW5kZXBlbmRlbmNlIn0sIlMwMSI6eyJkZXBlbmRlbmNpZXMiOltdLCJwcm9jZWR1cmUiOiJzaWduYXR1cmUifSwiUzAyIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXJ0aWZhY3QifSwiUzAzIjp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoic3ViamVjdCJ9LCJTMDQiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJhdXRob3JpdHkifSwiUzA1Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiZG9tYWluIn0sIlMwNiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6Imp1ZGdtZW50In19LCJzY2VuYXJpbyI6ImxhYi1hcnRpZmFjdC1yZXZpZXctdjEiLCJzY2hlbWEiOiJjbGFpbS1hd2FyZS5leHRlcm5hbC52MSIsInNjb3BlIjoiYXJ0aWZhY3QtYnl0ZS1pZGVudGl0eSIsInNlcGFyYXRpb24iOltbInByb2R1Y2VyIiwianVkZ21lbnQiXV0sInVuY29uc3VtZWRfcG9saWN5IjoiUkVKRUNUIn0=",
+        "documents": {
+          "judgment": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "review-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x098c53954246db4a9cd2617732467295eab065c5ff97ef29ebf7f2184806c5aa0f709b7e4e6e52be9f8cf70209d16fbc6bb49d51c1af72c128c012e0b7124c531b",
+            "signer": "0xb8bb3350095387d54d9d86983c48c0164ec93cc7",
+            "type": "LabJudgment"
+          },
+          "producer": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "declare-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0x4d27785216e8bd1212d1a08818a62653a1d406ce75cab5955af298a778c2b496",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0xbc4c99850fc8497604db59b9649ab6a25098b7668d2c79ea8aba73e6b5a725757791e61248b04fa1f5dc7e2ca8c3f7e3c38a23de02ba7e754d00ce54b289652e1c",
+            "signer": "0x7d8f020b7d8dbbff8587e1a7f9ce02ee3f97e789",
+            "type": "LabJudgment"
+          }
+        },
+        "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9"
+      },
+      "name": "definitions_only",
+      "obligations": [
+        "REVIEW-DEFINITIONS"
+      ]
+    },
+    {
+      "expected": {
+        "authorization": {
+          "authorized": false,
+          "scope": null,
+          "status": "REFUTED"
+        },
+        "behavior": {
+          "core_gate": "ACCEPTED",
+          "decision_status": "REFUTED",
+          "receipt_status": "VERIFIED",
+          "recomputation_status": "REPRODUCED",
+          "verification_outcome": "VERIFIED"
+        }
+      },
+      "input": {
+        "bundle_bytes": "eyJjYW5vbmljYWxSZXN1bHQiOnsiZXZhbHVhdGlvbiI6eyJldmlkZW5jZU1lbWJlciI6ImFydGlmYWN0IiwiZXhwZWN0ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib2JzZXJ2ZWREaWdlc3QiOiI4N2RhODQ1YTJmZTJjNDc2OGQwZWM0NzkyNmQ2YzViNmE4OGNmMTAxNDlmMGFjMjkxMDMzYjAzNGRjMzY0NTMwIiwib3BlcmF0aW9uIjoiU0hBMjU2X0VRVUFMUyJ9LCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInNjaGVtYSI6InJ2ci5jYW5vbmljYWwtcmVzdWx0LnYwIn0sImNsYWltIjp7ImV2aWRlbmNlTWVtYmVyIjoiYXJ0aWZhY3QiLCJleHBlY3RlZERpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJvcGVyYXRpb24iOiJTSEEyNTZfRVFVQUxTIiwic2NoZW1hIjoicnZyLmNsYWltLnNoYTI1Ni1lcXVhbHMudjAifSwiZXZpZGVuY2VTZXQiOnsibWVtYmVycyI6W3siYnl0ZUxlbmd0aCI6IjM4MCIsImRpZ2VzdCI6Ijg3ZGE4NDVhMmZlMmM0NzY4ZDBlYzQ3OTI2ZDZjNWI2YTg4Y2YxMDE0OWYwYWMyOTEwMzNiMDM0ZGMzNjQ1MzAiLCJpZCI6ImFydGlmYWN0IiwibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtIiwic3RhdHVzIjoiUFJFU0VOVCJ9XSwic2NoZW1hIjoicnZyLmV2aWRlbmNlLXNldC52MCJ9LCJwYXlsb2Fkc0Jhc2U2NCI6eyJhcnRpZmFjdCI6IlZrRkhRMDVRTWdBQkFBQUE1bjc4bHV3em1tNENBQUFBYmVYaERZallIZHpuM2VEaTIzTE81Z01BQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2tEQUFBQUdYczAreFkzZGVXdjllRi8zKzVSeklTOTNueU1HaXZhQ1FBQUFQQjNoNDBaRFdYUGUwRTRac014VUVHTlRiVVY5T2Qvam9sbUNxTmdSc2tpOWllWkorTE1mL0RLdUdPRFdMalR3dUZTLzhUQjloalpQVUU0VFNBc1krdU05bUMzd3lzVGNRSUFBQUJGWnBDTElYR2JOTnlHbTE5T281aGVBQUFBQUFVQUFBQVplelQ3RmpkMTVhLzE0WC9mN2xITWhMM2VmSXdhSzlwdDVlRU5pTmdkM09mZDRPTGJjczdtQVFBQUFFVm1rSXNoY1pzMEFRQUFBQVlBQUFDY2haYjl4OG54WVpkUFVWam5La3NReU9qUWV1KzRJS2taZXpUN0ZqZDE1YS8xNFgvZjdsSE1oTDNlZkl3YUs5b0JBQUFBM0lhYlgwNmptRjRDQUFBQUJRQUFBSnlGbHYzSHlmRmhsMDlSV09jcVN4REk2TkI2NzdnZ3FXM2w0UTJJMkIzYzU5M2c0dHR5enVZQkFBQUE1bjc4bHV3em1tND0ifSwicmVjZWlwdCI6eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9LCJ2ZXJpZmljYXRpb25Qcm9maWxlIjp7ImNhbm9uaWNhbEJ5dGVDb250cmFjdCI6eyJhcnJheU9yZGVyIjoicHJlc2VydmVkLXdpdGgtZHVwbGljYXRlcyIsImRvbWFpbiI6Im51bGwtYm9vbGVhbi11bmljb2RlLXNjYWxhci1zdHJpbmctYXJyYXktb2JqZWN0IiwiZW5jb2RpbmciOiJVVEYtOCIsImlkIjoicnZyLWNhbm9uaWNhbC1qc29uLXYwIiwibGluZVNlcGFyYXRvcnMiOiJVKzIwMjgtYW5kLVUrMjAyOS1saXRlcmFsIiwibnVtYmVycyI6ImZvcmJpZGRlbiIsIm9iamVjdEtleU9yZGVyIjoidW5pY29kZS1zY2FsYXItdmFsdWUtYXNjZW5kaW5nIiwic29saWR1cyI6ImxpdGVyYWwiLCJzdHJpbmdFc2NhcGluZyI6InJ2ci1qc29uLXN0cmluZy1lc2NhcGluZy12MCIsInVuaWNvZGUiOiJzY2FsYXItdmFsdWVzLW9ubHktbm8tbm9ybWFsaXphdGlvbiIsIndoaXRlc3BhY2UiOiJub25lIn0sImNhbm9uaWNhbFJlc3VsdENvbnRyYWN0Ijp7Im91dGNvbWVQcm9qZWN0aW9uIjoiL291dGNvbWUiLCJyZWFzb25Db2RlUHJvamVjdGlvbiI6Ii9yZWFzb25Db2RlIiwic2NoZW1hUGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnIuc2NoZW1hLmpzb24iLCJzY2hlbWFQb2ludGVyIjoiIy8kZGVmcy9jYW5vbmljYWxSZXN1bHQiLCJzY2hlbWFTaGEyNTYiOiI5Nzc5OTQwM2Q4ZWI5NmMwNDY5MzAzOTZjMzllMGYxYzNlNzZkNmMzNWZkMDQzNTkzNzQ0NmNlODQ0YmQ0ZGFlIn0sImNvbmZvcm1hbmNlVmVjdG9yU2V0Ijp7ImRpZ2VzdCI6IjJlYjVlMGMwNTZkMTNjNGJlZGE0YjNkYTZmYWZkY2QzNGE2YmQ5NjQ3OTAzMGUzOTE0YTc5ZDA4Njc5YzA2ODciLCJkaWdlc3RSdWxlIjoic2hhMjU2LXV0Zjgtc29ydGVkLXBhdGgtdGFiLWZpbGUtc2hhMjU2LWxmLXJvd3MiLCJpZCI6InJ2ci12MC1maXJzdC1mYWxzaWZpY2F0aW9uLXNldCIsIm1lbWJlcnMiOlt7ImlkIjoiZXhwZWN0ZWQtcmVzdWx0cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvZXhwZWN0ZWQuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6ZmFsc2UsInNoYTI1NiI6IjBlZDIzZWUzNTMwZGY5M2RkZTJmODc5OTgxZDI4ZGRiM2Y2MGZjMjUwYzg2NTJkMTA5ZGQ2NWZkYjIyMTkzY2UifSx7ImlkIjoiYWR2ZXJzYXJpYWwtbXV0YW50cyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvbXV0YW50cy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiZDVkMTZjYzUzZWMwZDliZTUzOTY4ZDdmZmMwMWZlMDE5Y2I4YjI2MzAzOTBjMDQ0MzFmNmVlOWY1NGVkZjg0NyJ9LHsiaWQiOiJ2ZXJpZmljYXRpb24tdmVjdG9ycyIsInBhdGgiOiJjb25mb3JtYW5jZS9ydnItdjAvdmVjdG9ycy5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjpmYWxzZSwic2hhMjU2IjoiMTcwZmM2MjU3NmZhOGVkYjIyMDczZjczYjI4ZDlhYzBkZWZmMjY0NTFlZjY1MTM3ODgzOWNkNDU4ZGE3MzEyZiJ9XX0sImRlcGVuZGVuY3lSZXNvbHV0aW9uIjp7ImJhc2UiOiJTVVBQTElFRF9QUk9GSUxFX1BBQ0tBR0VfUk9PVCIsImxvY2F0b3JSb2xlIjoiTk9STUFUSVZFX1BBQ0tBR0VfUkVMQVRJVkVfUEFUSCIsInBhdGhGb3JtYXQiOiJyZWxhdGl2ZS1wb3NpeC1uby1lbXB0eS1kb3QtZG90ZG90LW9yLWNvbG9uLXNlZ21lbnRzIiwidmVyaWZpY2F0aW9uT3JkZXIiOiJyZXNvbHZlLXJlYWQtc2hhMjU2LW1hdGNoLXVzZSJ9LCJldmlkZW5jZVNldENvbnRyYWN0Ijp7ImRpZ2VzdFJ1bGUiOiJzaGEyNTYtdXRmOC1ydnItY2Fub25pY2FsLWpzb24tdjAtbm9ybWFsaXplZC1tZW1iZXItb3JkZXIiLCJzY2hlbWFQYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInNjaGVtYVBvaW50ZXIiOiIjLyRkZWZzL2V2aWRlbmNlU2V0Iiwic2NoZW1hU2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9LCJleHRlcm5hbENvbnRleHRQb2xpY3kiOnsiYW1iaWVudElucHV0cyI6IkZPUkJJRERFTiIsImltbXV0YWJsZUNvbW1pdG1lbnRzIjpbXSwibW9kZSI6IkZPUkJJRERFTl9VTkxFU1NfQ09NTUlUVEVEIn0sInByb2ZpbGVJZCI6InJ2ci1nZW5lcmljLXNoYTI1Ni1lcXVhbHMtdjAiLCJwcm9maWxlU2NoZW1hQ29udHJhY3QiOnsiY29uc3RyYWludHMiOnsiaWQiOiJydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXByb2ZpbGUtc2NoZW1hIiwicGF0aCI6ImNvbmZvcm1hbmNlL3J2ci12MC9ydnItZ2VuZXJpYy1zaGEyNTYtZXF1YWxzLXYwLnByb2ZpbGUuc2NoZW1hLmpzb24iLCJyZXF1aXJlZEZvclJlY29tcHV0YXRpb24iOnRydWUsInNoYTI1NiI6ImVjZGVkOTZjNWY1OGY3MDU3ZTJjNWMwYjZkOTc4OTk0MmE5YTdiZjYwMGY0YTQ1MzM4N2U5OWY4NDA2ZTdiYWYifSwibWFuaWZlc3QiOnsiaWQiOiJ2ZXJpZmljYXRpb24tcHJvZmlsZS1tYW5pZmVzdC1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3ZlcmlmaWNhdGlvbi1wcm9maWxlLW1hbmlmZXN0LnNjaGVtYS5qc29uIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiIxNDhhZmViNDg0ZDM4NjZjMWNhYWU4MmU1NzQxODJjMWI3NDhkZDQ2MWRmYWViMWQ4MDk1ZWNmNDkwNTY5MGMxIn19LCJyZWFzb25Db2RlTmFtZXNwYWNlIjp7ImdhdGVSZWplY3Rpb25zIjpbInJ2ci5nYXRlLnNjaGVtYV9pbnZhbGlkIiwicnZyLmdhdGUuaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIuZ2F0ZS5yZXN1bHRfcHJvamVjdGlvbl9taXNtYXRjaCIsInJ2ci5nYXRlLmV2aWRlbmNlX2Nsb3N1cmVfaW5jb21wbGV0ZSJdLCJyZWNvbXB1dGF0aW9uIjpbInJ2ci5yZWNvbXB1dGUuaWRlbnRpY2FsIiwicnZyLnJlY29tcHV0ZS5jYW5vbmljYWxfcmVzdWx0X2RpdmVyZ2VkIiwicnZyLnJlY29tcHV0ZS5ub3JtYXRpdmVfZGVwZW5kZW5jeV91bmF2YWlsYWJsZSIsInJ2ci5yZWNvbXB1dGUubm9ybWF0aXZlX2RlcGVuZGVuY3lfaWRlbnRpdHlfbWlzbWF0Y2giLCJydnIucmVjb21wdXRlLmNvbW1pdHRlZF9ldmlkZW5jZV91bmF2YWlsYWJsZSJdLCJ2ZXJpZmljYXRpb24iOlsicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJ2ci52MC5kaWdlc3RfbWlzbWF0Y2giLCJydnIudjAucmVxdWlyZWRfZXZpZGVuY2VfdW5hdmFpbGFibGUiXX0sInJlc3VsdEhhc2hSdWxlcyI6eyJhbGdvcml0aG0iOiJTSEEtMjU2IiwiZW5jb2RpbmciOiJVVEYtOC1leGFjdGx5LW9uY2UiLCJpbnB1dCI6InJ2ci1jYW5vbmljYWwtanNvbi12MChjYW5vbmljYWxSZXN1bHQpIiwib3V0cHV0IjoibG93ZXJjYXNlLWhleC1uby1wcmVmaXgifSwic2NoZW1hIjoicnZyLnZlcmlmaWNhdGlvbi1wcm9maWxlLnYwIiwic2NoZW1hQ29udHJhY3RzIjpbeyJpZCI6InJ2ci1zY2hlbWEiLCJwYXRoIjoiY29uZm9ybWFuY2UvcnZyLXYwL3J2ci5zY2hlbWEuanNvbiIsInJlcXVpcmVkRm9yUmVjb21wdXRhdGlvbiI6dHJ1ZSwic2hhMjU2IjoiOTc3OTk0MDNkOGViOTZjMDQ2OTMwMzk2YzM5ZTBmMWMzZTc2ZDZjMzVmZDA0MzU5Mzc0NDZjZTg0NGJkNGRhZSJ9XSwidmVyaWZpY2F0aW9uU3BlY2lmaWNhdGlvbiI6eyJpZCI6InZlcmlmaWNhdGlvbi1zcGVjaWZpY2F0aW9uIiwicGF0aCI6ImRvY3Mvc3BlYy9SRUNPTVBVVEFCTEVfVkVSSUZJQ0FUSU9OX1JFQ0VJUFRTX1YwLm1kIiwicmVxdWlyZWRGb3JSZWNvbXB1dGF0aW9uIjp0cnVlLCJzaGEyNTYiOiI4MTA3N2RkYmY1MDYyNGJjNzA5NDFjZjUzYTRmNTQyNjA0ZTkyNmE2NTNkN2ZjYjNhMzYzMTBmZjU0MzBiOTczIn19fQ==",
+        "catalog": {
+          "O14": {
+            "dependencies": [
+              "S01",
+              "S04",
+              "S05"
+            ],
+            "procedure": "independence"
+          },
+          "S01": {
+            "dependencies": [],
+            "procedure": "signature"
+          },
+          "S02": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "artifact"
+          },
+          "S03": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "subject"
+          },
+          "S04": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "authority"
+          },
+          "S05": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "domain"
+          },
+          "S06": {
+            "dependencies": [
+              "S01"
+            ],
+            "procedure": "judgment"
+          }
+        },
+        "claim": {
+          "artifactSha256": "87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+          "claimType": "EXTERNAL_TASK_SUCCESS",
+          "scenario": "lab-artifact-review-v1",
+          "scope": "artifact-byte-identity",
+          "subject": "lab:preserved-native-proof-a"
+        },
+        "context": {
+          "contract_sha256": "d8856da5156b4ed7ebae1de220a5a86ba8f0fb20c7ca0462b95f5b911db3ee5e"
+        },
+        "contract": {
+          "actions": {
+            "judgment": "review-artifact",
+            "producer": "declare-artifact"
+          },
+          "adequacy": "EXTERNAL_ASSUMPTION",
+          "authorized": {
+            "judgment": "0x1b6691afd64df792c14c832451dff41b66b5391d",
+            "producer": "0x308588eabaa35131587466cb93a813a297590aeb"
+          },
+          "claim_type": "EXTERNAL_TASK_SUCCESS",
+          "consumed_fields": [
+            "scenario",
+            "claimType",
+            "scope",
+            "subject",
+            "artifactSha256"
+          ],
+          "domain": {
+            "chainId": "31337",
+            "name": "Claim-Aware External Lab",
+            "version": "1"
+          },
+          "identity_namespace": "eip155:31337:secp256k1",
+          "requirements": {
+            "O14": {
+              "dependencies": [
+                "S01",
+                "S04",
+                "S05"
+              ],
+              "procedure": "independence"
+            },
+            "S01": {
+              "dependencies": [],
+              "procedure": "signature"
+            },
+            "S02": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "artifact"
+            },
+            "S03": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "subject"
+            },
+            "S04": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "authority"
+            },
+            "S05": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "domain"
+            },
+            "S06": {
+              "dependencies": [
+                "S01"
+              ],
+              "procedure": "judgment"
+            }
+          },
+          "scenario": "lab-artifact-review-v1",
+          "schema": "claim-aware.external.v1",
+          "scope": "artifact-byte-identity",
+          "separation": [
+            [
+              "producer",
+              "judgment"
+            ]
+          ],
+          "unconsumed_policy": "REJECT"
+        },
+        "contract_bytes": "eyJhY3Rpb25zIjp7Imp1ZGdtZW50IjoicmV2aWV3LWFydGlmYWN0IiwicHJvZHVjZXIiOiJkZWNsYXJlLWFydGlmYWN0In0sImFkZXF1YWN5IjoiRVhURVJOQUxfQVNTVU1QVElPTiIsImF1dGhvcml6ZWQiOnsianVkZ21lbnQiOiIweDFiNjY5MWFmZDY0ZGY3OTJjMTRjODMyNDUxZGZmNDFiNjZiNTM5MWQiLCJwcm9kdWNlciI6IjB4MzA4NTg4ZWFiYWEzNTEzMTU4NzQ2NmNiOTNhODEzYTI5NzU5MGFlYiJ9LCJjbGFpbV90eXBlIjoiRVhURVJOQUxfVEFTS19TVUNDRVNTIiwiY29uc3VtZWRfZmllbGRzIjpbInNjZW5hcmlvIiwiY2xhaW1UeXBlIiwic2NvcGUiLCJzdWJqZWN0IiwiYXJ0aWZhY3RTaGEyNTYiXSwiZG9tYWluIjp7ImNoYWluSWQiOiIzMTMzNyIsIm5hbWUiOiJDbGFpbS1Bd2FyZSBFeHRlcm5hbCBMYWIiLCJ2ZXJzaW9uIjoiMSJ9LCJpZGVudGl0eV9uYW1lc3BhY2UiOiJlaXAxNTU6MzEzMzc6c2VjcDI1NmsxIiwicmVxdWlyZW1lbnRzIjp7Ik8xNCI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIiwiUzA0IiwiUzA1Il0sInByb2NlZHVyZSI6ImluZGVwZW5kZW5jZSJ9LCJTMDEiOnsiZGVwZW5kZW5jaWVzIjpbXSwicHJvY2VkdXJlIjoic2lnbmF0dXJlIn0sIlMwMiI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6ImFydGlmYWN0In0sIlMwMyI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6InN1YmplY3QifSwiUzA0Ijp7ImRlcGVuZGVuY2llcyI6WyJTMDEiXSwicHJvY2VkdXJlIjoiYXV0aG9yaXR5In0sIlMwNSI6eyJkZXBlbmRlbmNpZXMiOlsiUzAxIl0sInByb2NlZHVyZSI6ImRvbWFpbiJ9LCJTMDYiOnsiZGVwZW5kZW5jaWVzIjpbIlMwMSJdLCJwcm9jZWR1cmUiOiJqdWRnbWVudCJ9fSwic2NlbmFyaW8iOiJsYWItYXJ0aWZhY3QtcmV2aWV3LXYxIiwic2NoZW1hIjoiY2xhaW0tYXdhcmUuZXh0ZXJuYWwudjEiLCJzY29wZSI6ImFydGlmYWN0LWJ5dGUtaWRlbnRpdHkiLCJzZXBhcmF0aW9uIjpbWyJwcm9kdWNlciIsImp1ZGdtZW50Il1dLCJ1bmNvbnN1bWVkX3BvbGljeSI6IlJFSkVDVCJ9",
+        "documents": {
+          "judgment": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "review-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0xd8856da5156b4ed7ebae1de220a5a86ba8f0fb20c7ca0462b95f5b911db3ee5e",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x4ecf67ad4f8fc71b0911fc30e3e9a731b62880ebf8532cdd71947ecb267c09156f0d56d234cd2d625aa72d9aea94c20166b27fe34c9ab5cc5e384f3f071f469d1b",
+            "signer": "0x1b6691afd64df792c14c832451dff41b66b5391d",
+            "type": "LabJudgment"
+          },
+          "producer": {
+            "domain": {
+              "chainId": "31337",
+              "name": "Claim-Aware External Lab",
+              "version": "1"
+            },
+            "message": {
+              "action": "declare-artifact",
+              "executionId": "NOT_AN_EXECUTION_CLAIM",
+              "inputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "modelHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "nonce": "lab-fixture-v1",
+              "outputHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "policyHash": "0xd8856da5156b4ed7ebae1de220a5a86ba8f0fb20c7ca0462b95f5b911db3ee5e",
+              "proofHash": "0x87da845a2fe2c4768d0ec47926d6c5b6a88cf10149f0ac291033b034dc364530",
+              "scope": "artifact-byte-identity",
+              "subject": "lab:preserved-native-proof-a"
+            },
+            "signature": "0x7ad56c553961b82d744383a870c22be3c887e68fdb8af628901be322847192ae74eda40a77bf245b22f4587ec274b5907e8d97e5b8f8e4a23fcc1d8f78cee2361c",
+            "signer": "0x308588eabaa35131587466cb93a813a297590aeb",
+            "type": "LabJudgment"
+          }
+        },
+        "receipt_bytes": "eyJjbGFpbURpZ2VzdCI6IjRmNGUxMGQyZjAzY2IzY2ZmNTMwZjc5ZjYwMjc3MDlmZWQ1NzlkN2RhNmM2MzVmNTMzZDY1MjZlMjk1YWQ5YWIiLCJldmlkZW5jZVNldERpZ2VzdCI6ImNkNDRlZWIxNWFhNDM0OTRlZmE0MjQ4ZjQ2MTMxNmNmYWFkZTE0MzYzMmQ4YjU3ZDRjNDIwZTI4ZjM0YTM5ZmQiLCJvdXRjb21lIjoiVkVSSUZJRUQiLCJyZWFzb25Db2RlIjoicnZyLnYwLmRpZ2VzdF9tYXRjaCIsInJlc3VsdERpZ2VzdCI6IjdkZDMzMmU1MTg2ZDEyNDA1YTFjZjE5YjdmYWJjNWYxOTgzYTNiNzcxNjljZjIwOWNiMDkzN2M2ZDkzZWFhMjQiLCJ2ZXJpZmljYXRpb25Qcm9maWxlRGlnZXN0IjoiNTFmNzk0NDJlOTYzMzljYTQ1ZTllNmNjMGM4MjMyODMzZWZiZWUyMGU3NDgwZGYwMDk4N2RiYzk3ZGE3Mjk0OCJ9"
+      },
+      "name": "supported_contract_only",
+      "obligations": [
+        "REVIEW-SUPPORTED_CONTRACT"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "base": "6e8fabee9be170245f557a271b6d315176cc4a03",
+  "files": {
+    ".github/workflows/spec-drift-coverage.yml": "b12c87bf8e14826ee4934c873ad0f9056b5590c6fb366b00924858fe66dc9587",
+    "conformance/spec-drift-coverage-v0/baseline-inventory.json": "f7f5f7fc26fad06a0c16462156a8403f828058bb12305714d4acc5715f6ff329",
+    "conformance/spec-drift-coverage-v0/catalog.json": "b37dd5d501b6dbba53db14f341ba3ba2cdaca8df7bd109af9aa180b40121591c",
+    "conformance/spec-drift-coverage-v0/eels-reference.json": "67ba526abd09911c58d9817640b78a7d7beb05bd87f74ba45aa3f0741ace29f0",
+    "conformance/spec-drift-coverage-v0/external-sources.json": "85ec125a42696af3fca4fd1b04e6f5ffebc1d55d77ac67883d2b2b5d6db9305d",
+    "conformance/spec-drift-coverage-v0/guard-bindings.json": "8ccf65ae9131952d2a6b15f6d46d6473cf465dabfbe05616fb043f637e0091c8",
+    "conformance/spec-drift-coverage-v0/sources.json": "ac21069139582f3003e56c198981db5ed9ac996508b391b5d99403cd0d19e4e3",
+    "research/spec-drift-coverage-v0/ARCHITECTURE.md": "0b44c98ba6a248203af78436c96fff00fd3f5e004fcc1499920753403990ad17",
+    "research/spec-drift-coverage-v0/LIMITATIONS.md": "74481c6fcd216c3e84594f6a65485869a878dfd23705d78c4fe8b77b679bf27c",
+    "research/spec-drift-coverage-v0/OBLIGATION_COVERAGE.md": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
+    "research/spec-drift-coverage-v0/README.md": "d95e8e6aa237fd01fe95edf82a28dae42e281d9cb9129fe68b03f6ba9618e7c5",
+    "research/spec-drift-coverage-v0/RESULTS.md": "b4b6c65a08621baba62806c99e3f4b2760ad2ce98d8079089ce4100e37b8fc07",
+    "research/spec-drift-coverage-v0/SOURCE_PINS.md": "7859be83f1e07d2e4ea321acf40637a796f6533dffbc9f8aac9fafd3f2f90fe8",
+    "tests/spec_drift_coverage/test_controls.py": "b7d6eefcd84cf4830f0a6654761b862b41d74228fe1cbd16db562c143cb1647c",
+    "tools/spec_drift_coverage/common.py": "ef9db8540e7ddfc78fe9ca655ddf603c15fbc84c38d2f1fd765ca384a3d1808b",
+    "tools/spec_drift_coverage/coverage.py": "e2763004fbff7c369ea71d2ebc9bf1b2cc4d8e86a8627d02bda8d9bbaf005305",
+    "tools/spec_drift_coverage/drift.py": "7a6ba600e4eaf5dc724566bc38871b4cbf7b9efb28cf5890490f8557f466b731",
+    "tools/spec_drift_coverage/integrity.py": "0c3d62ff15d72dff1334f779688f0b3c669645c7c686b22bb967a721b582d6aa",
+    "tools/spec_drift_coverage/validate.py": "11838bbcd7e6459bc33562ce36cea90b2b244f037dc50e2f6bae07626906d0fb"
+  },
+  "schema": "veca.spec-drift-research-source-lock.v0"
+}

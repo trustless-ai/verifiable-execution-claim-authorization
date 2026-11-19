@@ -1,0 +1,31 @@
+{
+  "repository": "ethereum/execution-specs",
+  "commit": "05420bce40492ca7ff11bc79cf3feb24778dce83",
+  "files": [
+    {
+      "path": "docs/writing_tests/reference_specification.md",
+      "url": "https://raw.githubusercontent.com/ethereum/execution-specs/05420bce40492ca7ff11bc79cf3feb24778dce83/docs/writing_tests/reference_specification.md",
+      "sha256": "c9d33327521225eda02b48ded81feec30ba9ff102dfcd31dffbfee072f509577"
+    },
+    {
+      "path": "docs/writing_tests/eip_checklist.md",
+      "url": "https://raw.githubusercontent.com/ethereum/execution-specs/05420bce40492ca7ff11bc79cf3feb24778dce83/docs/writing_tests/eip_checklist.md",
+      "sha256": "96fe987e1a34969ecbdd42a388c9559adb4694bc799846340b65e45c4d3726bd"
+    },
+    {
+      "path": "packages/testing/src/execution_testing/base_types/reference_spec/git_reference_spec.py",
+      "url": "https://raw.githubusercontent.com/ethereum/execution-specs/05420bce40492ca7ff11bc79cf3feb24778dce83/packages/testing/src/execution_testing/base_types/reference_spec/git_reference_spec.py",
+      "sha256": "a8ba1b00423c291a80f6dada667ea325a68600c465b86ee84a0b3a494dae4fd1"
+    },
+    {
+      "path": "packages/testing/src/execution_testing/cli/pytest_commands/plugins/spec_version_checker/spec_version_checker.py",
+      "url": "https://raw.githubusercontent.com/ethereum/execution-specs/05420bce40492ca7ff11bc79cf3feb24778dce83/packages/testing/src/execution_testing/cli/pytest_commands/plugins/spec_version_checker/spec_version_checker.py",
+      "sha256": "5278004e7fd88363f6b7a7086d02615665dff945e99947a6d34e039e1c825ec8"
+    },
+    {
+      "path": "docs/writing_tests/index.md",
+      "url": "https://raw.githubusercontent.com/ethereum/execution-specs/05420bce40492ca7ff11bc79cf3feb24778dce83/docs/writing_tests/index.md",
+      "sha256": "9af651ec27b4c0b66f4819956b537cdfc7240601ec763636842a37c698330b2f"
+    }
+  ]
+}

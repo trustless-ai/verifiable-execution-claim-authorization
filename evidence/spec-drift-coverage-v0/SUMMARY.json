@@ -1,0 +1,342 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/spec_drift_coverage/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "integrity",
+      "seconds": 3.422000000020489,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2d76523417df4782dc673cbf937bad381e931af2d091eedc0ed7ae44682b6ecb"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/verify_artifacts.py"
+      ],
+      "exit_code": 0,
+      "name": "inventory",
+      "seconds": 10.937000000034459,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "815d8d8e2df3109f14fb7afcab6bfa3157bdecf8659f4f4db3e15f77189950e4"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/erc8404/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "core-history",
+      "seconds": 0.765999999945052,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "09391ddddc954708012075072c0cdccbad736cc6b765bc0519c2530060e5a9e2"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/integration/integrity.py"
+      ],
+      "exit_code": 0,
+      "name": "integration-history",
+      "seconds": 3.5,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ba5d855f04210451bced1bae708e2004c8621416aed3bc0b08382ec3829df1a6"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "evidence/erc8404/core/conformance/rvr-v0/adapter.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "core-conformance",
+      "seconds": 0.2660000000614673,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "85c6379bc34a1df12e6c6ca93926842aae2b43ed37a6754d58a22fc113d25636"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/spec_drift_coverage",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "negative-controls-normal",
+      "seconds": 10.827999999979511,
+      "stderr_sha256": "d5e874c1797ba85ff391f81f0a2cf14bcd55ad3299104ce0b990fed88c33836a",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-normal",
+      "seconds": 1.015999999945052,
+      "stderr_sha256": "26fd9800777c8b5ecb95609d96ce1c94a885b3514554f5ec6052aaa6945ec1f1",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/spec_drift_coverage",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "negative-controls-optimized",
+      "seconds": 10.452999999979511,
+      "stderr_sha256": "08c61eccc09597ac2a68766e8c2637c8be6c7ccbd66dc4c759f7404657c9d73e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/harness_v0",
+        "-v"
+      ],
+      "exit_code": 0,
+      "name": "transport-optimized",
+      "seconds": 1.047000000020489,
+      "stderr_sha256": "c05a93e98f4202a9026d525fb2bb87cfbed4a480e533c31ed113f2a1e7e4318d",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/spec_drift_coverage/coverage.py",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\normal"
+      ],
+      "exit_code": 0,
+      "name": "coverage-normal",
+      "seconds": 5.937000000034459,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e8f41ec1ae08346501d7fd344d8d574b8968c7cc352c464ce1b5489a9fef9dd5"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/spec_drift_coverage/drift.py",
+        "--snapshot",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\normal"
+      ],
+      "exit_code": 0,
+      "name": "drift-normal",
+      "seconds": 3.562999999965541,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/spec_drift_coverage/coverage.py",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\repeat"
+      ],
+      "exit_code": 0,
+      "name": "coverage-repeat",
+      "seconds": 5.797000000020489,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e8f41ec1ae08346501d7fd344d8d574b8968c7cc352c464ce1b5489a9fef9dd5"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "tools/spec_drift_coverage/drift.py",
+        "--snapshot",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\repeat"
+      ],
+      "exit_code": 0,
+      "name": "drift-repeat",
+      "seconds": 3.530999999959022,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "tools/spec_drift_coverage/coverage.py",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\optimized"
+      ],
+      "exit_code": 0,
+      "name": "coverage-optimized",
+      "seconds": 5.922000000020489,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e8f41ec1ae08346501d7fd344d8d574b8968c7cc352c464ce1b5489a9fef9dd5"
+    },
+    {
+      "argv": [
+        "C:\\Users\\msi\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "-O",
+        "tools/spec_drift_coverage/drift.py",
+        "--snapshot",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\evidence\\spec-drift-coverage-v0\\SOURCE_CAPTURE.json",
+        "--out",
+        "D:\\PAVLO HQ\\Workspaces\\veca-spec-drift-20261022\\build\\spec-drift-coverage\\validation-v3\\optimized"
+      ],
+      "exit_code": 0,
+      "name": "drift-optimized",
+      "seconds": 3.609000000054948,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "985052346711bc858c6b484acb6a90c439aa494445ef5d9c98f4f955d258a43c"
+    }
+  ],
+  "deterministic_normal_repeat_optimized": true,
+  "drift_counts": {
+    "UNCHANGED": 2,
+    "UPSTREAM_MOVED_CONTENT_UNCHANGED": 1
+  },
+  "head": "6e8fabee9be170245f557a271b6d315176cc4a03",
+  "historical_backend_reports_reconciled": true,
+  "independent_replay": "NOT_COVERED",
+  "mutation_populations": {
+    "pr10-original-17": {
+      "KILLED": 17
+    },
+    "pr11-supplemental-4": {
+      "KILLED": 4
+    },
+    "pr12-generated-6": {
+      "KILLED": 6
+    },
+    "pr9-original-12": {
+      "KILLED": 12
+    }
+  },
+  "new_backend_execution": false,
+  "output_sha256": {
+    "COVERAGE.json": {
+      "normal": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2",
+      "optimized": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2",
+      "repeat": "a69e5774afdea3c7115d0959a528a743f18dd68038f2c9a3638f7ffc9678f1d2"
+    },
+    "OBLIGATION_COVERAGE.md": {
+      "normal": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
+      "optimized": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174",
+      "repeat": "836258a4d882066208a2dacf9b803d6aae01373006e49e177dd7cd49c03f5174"
+    },
+    "SOURCE_DRIFT.json": {
+      "normal": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e",
+      "optimized": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e",
+      "repeat": "56e97a4d0a81fef4f8343e0f27bfa29daee5d76cc9d08e04e0974ef0be0aaf7e"
+    }
+  },
+  "passed": true,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "profiles": {
+    "agent-harness-review-v0": {
+      "matched_cases": 5,
+      "obligation_levels": {
+        "ENFORCEMENT_DEMONSTRATED": 4,
+        "EXECUTED_AND_MATCHED": 1
+      }
+    },
+    "agent-harness-v0": {
+      "matched_cases": 18,
+      "obligation_levels": {
+        "ENFORCEMENT_DEMONSTRATED": 12,
+        "EXECUTED_AND_MATCHED": 4
+      }
+    },
+    "erc8004-pilot-v0": {
+      "matched_cases": 29,
+      "obligation_levels": {
+        "ENFORCEMENT_DEMONSTRATED": 17
+      }
+    },
+    "erc8004-property-fuzz-v0": {
+      "matched_cases": 300,
+      "obligation_levels": {
+        "ENFORCEMENT_DEMONSTRATED": 6,
+        "EXECUTED_AND_MATCHED": 7
+      }
+    }
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "research_source_lock_sha256": "47d16c45109ab5507b8aff661523a09f86533fb2d9a1a596817c5b6779e6c2d3",
+  "schema": "veca.spec-drift-validation.v0",
+  "working_tree_status": [
+    "A  .github/workflows/spec-drift-coverage.yml",
+    "MM artifacts.sha256.json",
+    "A  conformance/spec-drift-coverage-v0/baseline-inventory.json",
+    "A  conformance/spec-drift-coverage-v0/catalog.json",
+    "A  conformance/spec-drift-coverage-v0/eels-reference.json",
+    "A  conformance/spec-drift-coverage-v0/external-sources.json",
+    "A  conformance/spec-drift-coverage-v0/guard-bindings.json",
+    "AM conformance/spec-drift-coverage-v0/source-lock.json",
+    "AM conformance/spec-drift-coverage-v0/sources.json",
+    "A  evidence/spec-drift-coverage-v0/COVERAGE.json",
+    "A  evidence/spec-drift-coverage-v0/RAW.zip",
+    "A  evidence/spec-drift-coverage-v0/README.md",
+    "AM evidence/spec-drift-coverage-v0/SHA256.json",
+    "A  evidence/spec-drift-coverage-v0/SOURCE_CAPTURE.json",
+    "A  evidence/spec-drift-coverage-v0/SOURCE_DRIFT.json",
+    "A  evidence/spec-drift-coverage-v0/SUMMARY.json",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/obligations.json",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/suite.json",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/conformance/agent-harness-review-v0/vectors.json",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/evidence/harness-review-v0/archive.json",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/evidence/harness-review-v0/replay.zip",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/research/harness-v0/REVIEW_FOLLOWUP.md",
+    "A  evidence/spec-drift-coverage-v0/external/pr11/tools/harness_v0/review_controls.py",
+    "AD evidence/spec-drift-coverage-v0/sources/erc8004-draft.md",
+    "AD evidence/spec-drift-coverage-v0/sources/erc8404-draft.md",
+    "AD evidence/spec-drift-coverage-v0/sources/rvr-v0.md",
+    "A  research/spec-drift-coverage-v0/ARCHITECTURE.md",
+    "A  research/spec-drift-coverage-v0/LIMITATIONS.md",
+    "A  research/spec-drift-coverage-v0/OBLIGATION_COVERAGE.md",
+    "A  research/spec-drift-coverage-v0/README.md",
+    "A  research/spec-drift-coverage-v0/RESULTS.md",
+    "A  research/spec-drift-coverage-v0/SOURCE_PINS.md",
+    "A  tests/spec_drift_coverage/test_controls.py",
+    "A  tools/spec_drift_coverage/common.py",
+    "A  tools/spec_drift_coverage/coverage.py",
+    "A  tools/spec_drift_coverage/drift.py",
+    "A  tools/spec_drift_coverage/integrity.py",
+    "A  tools/spec_drift_coverage/validate.py",
+    "?? evidence/spec-drift-coverage-v0/sources/NORMATIVE.zip"
+  ]
+}
