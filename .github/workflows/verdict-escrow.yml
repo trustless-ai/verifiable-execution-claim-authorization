@@ -6,6 +6,9 @@ jobs:
   escrow:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: build/documentation-replay
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -22,6 +25,9 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@908c540300062bd5a7e473851cdb4282204cee09
         with:
           version: v1.7.1
+      - name: Verify documentation transition and prepare identical executable tree
+        working-directory: .
+        run: python -B tools/documentation_refresh/replay.py prepare
       - run: rustup toolchain install 1.97.1 --profile minimal
       - run: rustup override set 1.97.1
       - run: python -B tools/verify_artifacts.py
@@ -33,12 +39,17 @@ jobs:
       - run: python -B tools/escrow_prepare.py --forge-std-cache build/escrow/forge-std-source
       - run: python -B -X utf8 tools/escrow_ci.py
       - run: python -B tools/verify_artifacts.py
+      - name: Recheck current documentation transition
+        if: always()
+        working-directory: .
+        run: python -B tools/documentation_refresh/replay.py check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: verdict-escrow-evidence
           path: |
-            build/escrow/ci
-            build/escrow/setup.json
-            build/v2/native
-            build/v3/setup-replay
+            build/documentation-replay/build/escrow/ci
+            build/documentation-replay/build/escrow/setup.json
+            build/documentation-replay/build/v2/native
+            build/documentation-replay/build/v3/setup-replay
+            build/documentation-refresh/REPLAY.json

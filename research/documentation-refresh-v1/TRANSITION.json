@@ -1,0 +1,33 @@
+{
+  "after_readme_sha256": "a576e40cca6242d90b7e1028689f5c13b090fbb98465c68443a567e348260c66",
+  "archive": "research/history/README-4b6d7ef9.md",
+  "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+  "baseline_inventory_sha256": "9bd35455636bbfd40e06ddf066408d264d092dcb8e1a0d0ad2510ae339385edf",
+  "before_readme_sha256": "ca021c56b2ed76d2eeb5f940677ef15691f2d74e29e40e436b558b2cf030103f",
+  "core_changes_permitted": false,
+  "new_files": [
+    ".github/workflows/documentation-refresh.yml",
+    "evidence/documentation-refresh-v1/RESULTS.json",
+    "research/documentation-refresh-v1/README.md",
+    "research/documentation-refresh-v1/RESULTS.md",
+    "research/documentation-refresh-v1/TRANSITION.json",
+    "research/history/README-4b6d7ef9.md",
+    "tests/documentation_refresh/test_preservation.py",
+    "tools/documentation_refresh/preservation.py",
+    "tools/documentation_refresh/replay.py"
+  ],
+  "schema": "veca-documentation-refresh-v1",
+  "workflows": [
+    ".github/workflows/agent-harness-review.yml",
+    ".github/workflows/agent-harness-v0.yml",
+    ".github/workflows/baseline-reconciliation.yml",
+    ".github/workflows/claim-aware-integration.yml",
+    ".github/workflows/coverage-v4_1.yml",
+    ".github/workflows/erc8004-harness.yml",
+    ".github/workflows/erc8004-property-fuzz.yml",
+    ".github/workflows/erc8004-role-policy-v1.yml",
+    ".github/workflows/erc8004-role-policy-v2.yml",
+    ".github/workflows/spec-drift-coverage.yml",
+    ".github/workflows/verdict-escrow.yml"
+  ]
+}

@@ -25,7 +25,9 @@ requirements; this repository is not a security certification.
 | --- | --- |
 | Research model | Typed guarantees, dependencies, authorities, scenario contracts, counterexamples and prior-art analysis |
 | Claim-Aware Verification Engine | Experimental composition, claim-scoped authorization and independently recomputed consumer admission |
-| Agent Conformance Harness | Existing vectors, replay runners and mutation controls; a general adapter interface for arbitrary implementations is a next development stage |
+| Agent Conformance Harness | Implemented versioned request/observation protocol, caller-selected adapters and pinned recompute-kit grader; finite ERC-8404 and ERC-8004 laboratory profiles |
+| ERC-8004 policies and generated tests | Registry pilot, request-time role policies v1/v2 and bounded state-transition generation with physical Solidity mutation controls |
+| Specification drift and obligation evidence | Source comparison and evidence-level mapping; neither drift success nor a test PASS grants authorization |
 | Application adapters | External ERC-8404 consumer and verdict-gated escrow laboratory experiment |
 
 The conformance harness is a component of the broader research programme. Escrow is
@@ -61,14 +63,23 @@ Read the [engine contract](research/integration/CLAIM_AWARE_ENGINE.md),
 
 ## Current integrated state
 
-As of **2026-10-21**, research PRs **#2-#8 are merged into `main`**. The combined
-research baseline is
-[`3d55a8456dddb3cb981c91b143761e87e31d7531`](https://github.com/trustless-ai/verifiable-execution-claim-authorization/commit/3d55a8456dddb3cb981c91b143761e87e31d7531).
-[PR #7](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/7)
-and [PR #8](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/8)
-retain the integration and escrow implementation history. See
+As of **2026-11-19**, [PR #14](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/14)
+has merged the PR #12/#13 integration into `main`, which already contained the
+ERC-8404 harness, ERC-8004 pilot, role policies and supplemental review controls.
+The verified merge checkpoint is
+[`4b6d7ef9aabd23932668711ee1d6cf774d9844d7`](https://github.com/trustless-ai/verifiable-execution-claim-authorization/commit/4b6d7ef9aabd23932668711ee1d6cf774d9844d7).
+Its Git tree is identical to the reviewed candidate
+`92220f4e64e7161c949dcccb4356bee9294600c3`.
+PR #12 and #13 are incorporated through this integration; they must not be merged
+again separately. This is a dated checkpoint, not a promise that `main` never changes.
+
+The [integration report](research/pr12-pr13-integration-v1/REPORT.md) records the
+executed source candidate, closing report/evidence-only changes, historical
+baselines, commands, failures and limits. The
+[replay guide](research/pr12-pr13-integration-v1/README.md) selects the versioned
+entrypoints for this composed tree. Consult
 [GitHub Actions](https://github.com/trustless-ai/verifiable-execution-claim-authorization/actions)
-for commit-specific CI outcomes.
+for the exact commit's CI; prior-head success is not a new merge-commit execution.
 
 Historical reports describe their own dates, commits and publication constraints.
 References there to drafts, unmerged dependencies or prohibited publication are
@@ -76,7 +87,28 @@ historical, not current repository status. Original results and failed runs rema
 preserved. Merging research does not establish independent academic approval or
 production readiness.
 
-## Reproduced experimental results
+## Implemented profiles and evidence
+
+These are separate finite populations. Repeated and optimized runs do not create
+new cases or mutations. Counts below describe the preserved integration replay,
+not a new execution caused by reading this page.
+
+| Profile or layer | Recorded scope | Evidence boundary |
+| --- | --- | --- |
+| [ERC-8404 harness](conformance/agent-harness-v0/README.md) | 18 cases; 12 external-consumer mutants KILLED | Executes the pinned Core; conformance PASS is not payment permission |
+| [ERC-8004 registry pilot](conformance/erc8004-pilot-v0/README.md) | 29 cases; 17 mutants KILLED | Local EVM observations of pinned contracts, not authenticated public-chain execution |
+| [Role policy v1](research/erc8004-role-policy-v1/README.md) | 26 cases; 7 mutants KILLED | Request-time owner/operator/token-approval separation under an external research policy |
+| [Role policy v2](research/erc8004-role-policy-v2/README.md) | 50 cases; 5 mutants KILLED | Also binds request-block agentWallet calls; different addresses do not prove independent controllers |
+| [Supplemental harness review](conformance/agent-harness-review-v0/README.md) | 5 cases; 4 isolated mutants KILLED | The historical comparison remains separately 1 KILLED / 4 SURVIVED |
+| [Bounded ERC-8004 generation](research/erc8004-property-fuzz-v0/README.md) | 300 cases, seeds 8004/8299/8274, 100 each; 6 Solidity mutants KILLED | The original 29-case matrix misses these six; generated witnesses and restored positive controls distinguish them. Not universal contract correctness |
+| [Specification drift and obligation evidence](research/spec-drift-coverage-v0/README.md) | 51 obligations: 39 guard-mapped, 12 executed-only; 32 integrated controls plus 13 transport controls | The 32 are 31 unchanged semantic controls plus 1 versioned preservation control. Reconciles historical execution evidence; does not newly execute the EVM |
+
+The original 32-control PR #13 baseline and the integrated population are recorded
+separately. Missing runs, unrelated mutations and unsupported independence claims
+cannot raise evidence levels. Network errors are not unchanged-source evidence.
+Source drift requests review; it does not rewrite pins or historical verdicts.
+
+## Earlier integration and escrow results
 
 These are **two separate finite experiments** with different baselines and
 denominators. Counts do not estimate deployment exploit rates or universal coverage.
@@ -111,14 +143,22 @@ unchanged. Additional authorization rules live in external research consumers.
 ## Reproduce
 
 Clone the complete Git history: integrity checks need pinned ancestor commits.
-Run commands from the repository root. The pinned replay environment uses Python
-**3.12**.
+The pinned replay environment uses Python **3.12**. The setup below checks this
+checkout's exact documentation transition, then creates an isolated replay worktree
+with the historical README and inventory. All existing executable source, fixtures,
+Core and dependency pins must match this checkout byte-for-byte before that replay
+is permitted. Historical guards remain unchanged and run against their own baseline.
+The remaining replay sections run inside `build/documentation-replay/`.
+See the [documentation transition contract](research/documentation-refresh-v1/README.md).
 
 ### Lightweight synthetic baseline
 
 ```sh
 git clone https://github.com/trustless-ai/verifiable-execution-claim-authorization.git
 cd verifiable-execution-claim-authorization
+python -B tools/verify_artifacts.py
+python -B tools/documentation_refresh/replay.py prepare
+cd build/documentation-replay
 python -B tools/verify_artifacts.py
 python -B tools/validate.py
 ```
@@ -144,6 +184,44 @@ generate replacement evidence. Commands, exit codes and replay logs go to
 [review checklist](research/integration/INDEPENDENT_REVIEW_CHECKLIST.md) and
 [source lock](fixtures/integration/source-lock.json).
 
+### Current harness, ERC-8004 generation and drift replay
+
+Inside the replay worktree prepared above, use Python **3.12**, Node **22.15.0**
+and full Git history. Prepare the pinned
+grader, local EVM and laboratory signature dependencies:
+
+```sh
+python -B tools/agent_harness.py prepare
+python -B tools/erc8004/prepare.py
+python -B research/formal-v1/prepare_crypto.py
+npm ci --ignore-scripts --no-audit --no-fund --prefix build/formal-v1/crypto
+python -B tools/pr12_pr13_integration/preservation.py
+python -B tools/pr12_pr13_integration/fuzz_validate.py --out build/readme-replay-fuzz
+python -B tools/pr12_pr13_integration/spec_validate.py --out build/readme-replay-spec
+python -B tools/pr12_pr13_integration/runtime_binding.py --out build/readme-core-binding
+python -B tools/pr12_pr13_integration/controls.py --out build/readme-preservation-controls
+python -B tools/verify_artifacts.py
+```
+
+Run campaigns sequentially and choose unused output directories. Preparation fetches
+pinned dependencies; subsequent deterministic replay uses the prepared local caches.
+The fuzz validator executes normal/repeat/optimized cases, six physical Solidity
+mutations in normal and optimized modes, restoration checks and legacy regressions.
+The spec validator compares offline coverage and captured drift outputs across modes.
+These integration wrappers select the explicit preservation contract; original
+PR #12/#13 validators remain replay instructions for their own historical baselines.
+Use the profile links above for role-policy and supplemental-review commands.
+
+Run live upstream observation separately from deterministic replay:
+
+```sh
+python -B tools/pr12_pr13_integration/spec_cli.py drift --live --out build/readme-live-drift
+```
+
+This public-source HTTP observation preserves response bytes and comparison status.
+A successful comparison is not a conformance or authorization verdict. No live
+chain, funds or provider credentials are required.
+
 ### Local escrow
 
 After integration preparation, install Foundry **1.7.1**; the harness uses solc
@@ -163,11 +241,17 @@ technical text uses LF. This suite executes local EVM/mock-token tests, authoriz
 mutations, integrity controls and semantic determinism checks. It does not broadcast
 transactions or require production keys or real funds. Logs go to `build/escrow/ci/`.
 
-Do not regenerate manifests to hide unexplained mismatches. The old root README is
-retained byte-for-byte in [this historical snapshot](research/history/README-3d55a845.md)
-(its relative links refer to the original root location). The baseline checker permits
-only the explicitly pinned current README version and still requires the archived
-original and complete current inventory.
+Do not regenerate manifests to hide unexplained mismatches. Both previous root
+README versions remain byte-for-byte in [the original snapshot](research/history/README-3d55a845.md)
+and [the merged-PR14 snapshot](research/history/README-4b6d7ef9.md); their relative
+links refer to the original root location. The
+[versioned documentation transition](research/documentation-refresh-v1/README.md)
+allows only the exact new README and mechanical CI routing changes. It verifies
+all other historical files and the exact added-file set. Existing guards and
+historical inventories are not rewritten. CI records the current candidate and
+the separate replay worktree identity; no old CI result is relabelled as a new run.
+After replay, run `python -B tools/documentation_refresh/replay.py check` from the
+current checkout root to verify both trees again.
 
 ## Evidence boundaries and next work
 
@@ -185,9 +269,12 @@ adapter is **PARTIALLY_COMPATIBLE** with the existing contract.
   expiration/revocation policy at execution time. Production signing-service
   compatibility and authenticated payer/state inputs remain unestablished.
 
-Next work is to extract a reusable harness interface, reproduce it against another
-independent implementation, and obtain the missing external bindings. Scientific
-novelty and end-to-end external success are not claimed. Read the
+The reusable bounded harness interface is implemented. Next work is independent
+replay and an independently authored backend for the same selected profile, then
+explicitly scoped work on missing authenticated external bindings. Reuse across
+two different ERC profiles does not establish interoperability between independent
+implementations of one ERC. Scientific novelty and end-to-end external success
+are not claimed. Read the
 [integration limitations](research/integration/LIMITATIONS.md),
 [escrow limitations](research/escrow-v0/LIMITATIONS.md) and
 [open proof obligations](research/OPEN_PROOF_OBLIGATIONS.md).
@@ -197,13 +284,15 @@ novelty and end-to-end external success are not claimed. Read the
 | Stage | Preserved contribution |
 | --- | --- |
 | [v0-v1](research/PAPER_OUTLINE.md) | Synthetic composition and typed obligations. V0 was explicitly reconstructed because the original ZIP was unavailable; that missing archive was never verified. |
-| [v2](research/V2_REAL_ARTIFACT_REPORT.md) | Laboratory signatures and native proof artifacts. Original mutations: 18 KILLED / 2 SURVIVED; the [separate audit](research/V2_SURVIVOR_AUDIT.md) reports 2 isolated kills without rewriting history. |
+| [v2](research/V2_REAL_ARTIFACT_REPORT.md) | Laboratory signatures and native proof artifacts. Original mutations: 18 KILLED / 2 SURVIVED; 1 historical-execution target separately UNVERIFIABLE and unexecuted; the [separate audit](research/V2_SURVIVOR_AUDIT.md) reports 2 isolated kills without rewriting history. |
 | [v3](research/V3_REAL_CHAIN_REPORT.md) | Published artifacts, dependencies and explicit missing real-chain links. |
 | [v4](research/v4/RESULTS.md) | Scenario-relative coverage independent of the verifier's own check inventory. |
 | [v4.1](research/v4_1/README.md) | Scenario-dependent O14 and authorization-scope binding. |
 | [ERC-8404 consumer](research/erc8404/EXPERIMENT_RESULTS.md) | External profile. Original 16/1 mutation report and later [fallback isolation](research/integration/MUTATION_REPORT.md) remain distinct. |
 | [Integration](research/integration/EXPERIMENT_RESULTS.md) | Combined guarantees and independently recomputed admission. |
 | [Escrow](research/escrow-v0/REPORT.md) | Signed-verdict consumption and local enforcement under explicit limits. |
+| [Harness and ERC-8004](conformance/erc8004-pilot-v0/README.md) | Reused adapter protocol, local registry execution and separately versioned role policies. |
+| [PR #12/#13 integration](research/pr12-pr13-integration-v1/REPORT.md) | Bounded generation, evidence-level mapping and source drift; explicit preservation transition without Core changes. |
 
 For academic context, read the [paper draft](research/ACADEMIC_PAPER_DRAFT.md),
 [integration addendum](research/integration/ACADEMIC_PAPER_DRAFT.md) and
