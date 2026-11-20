@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: build/documentation-replay
+        working-directory: build/base15/build/documentation-replay
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -20,7 +20,7 @@ jobs:
           node-version: '22.15.0'
       - name: Verify documentation transition and prepare identical executable tree
         working-directory: .
-        run: python -B tools/documentation_refresh/replay.py prepare
+        run: python -B tools/second_backend_integration/replay.py prepare
       - run: python -B tools/verify_artifacts.py
       - run: python -B tools/agent_harness.py prepare
       - run: python -B research/formal-v1/prepare_crypto.py
@@ -30,11 +30,12 @@ jobs:
       - name: Recheck current documentation transition
         if: always()
         working-directory: .
-        run: python -B tools/documentation_refresh/replay.py check
+        run: python -B tools/second_backend_integration/replay.py check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: agent-harness-supplemental-review
           path: |
-            build/documentation-replay/build/harness-review/validation
-            build/documentation-refresh/REPLAY.json
+            build/base15/build/documentation-replay/build/harness-review/validation
+            build/base15/build/documentation-refresh/REPLAY.json
+            build/second-backend-integration/REPLAY.json
