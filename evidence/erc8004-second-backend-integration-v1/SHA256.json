@@ -1,0 +1,19 @@
+{
+  "files": {
+    "evidence/erc8004-second-backend-integration-v1/EVIDENCE.zip": {
+      "bytes": 21050580,
+      "sha256": "c2578a9325b853698c091a2c532af8610e171422fd7d8531131e99e584b7aaed"
+    },
+    "evidence/erc8004-second-backend-integration-v1/RESULTS.json": {
+      "bytes": 403473,
+      "sha256": "f389450adcc219b722bd445e4c30b0206ad14994d5887665c64e49d87781bd92"
+    },
+    "research/erc8004-second-backend-integration-v1/REPORT.md": {
+      "bytes": 18871,
+      "sha256": "3e51fe86aa288d7e6bd51e45c9d448ec6ccaef4c8d4e9adfee81d21a5b3a5c79"
+    }
+  },
+  "schema": "veca-second-backend-integration-artifacts-v1",
+  "self_binding": "This manifest is bound by artifacts.sha256.json and the reviewed Git commit.",
+  "source_commit": "169fe90d81c94919ccc3eac4c218d69c1c685f8f"
+}
