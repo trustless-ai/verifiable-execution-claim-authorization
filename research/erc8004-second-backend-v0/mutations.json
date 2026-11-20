@@ -1,0 +1,128 @@
+[
+  {
+    "after": "assert True, \"IdentityRegistry: caller is not owner or approved\"",
+    "before": "assert erc721._is_approved_or_owner(\n        msg.sender, agentId\n    ), \"IdentityRegistry: caller is not owner or approved\"",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "uri_stranger",
+      "old_owner_after_transfer"
+    ],
+    "expected_changed_field": "behavior.operation_status",
+    "id": "uri-owner-guard",
+    "path": "contracts/IdentityRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "uri_stranger",
+      "old_owner_after_transfer"
+    ]
+  },
+  {
+    "after": "    if False:  # research mutation: bypass wallet signature rejection\n",
+    "before": "    if not valid:\n",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "wallet_wrong_signer",
+      "wallet_wrong_chain",
+      "wallet_wrong_registry"
+    ],
+    "expected_changed_field": "behavior.operation_status",
+    "id": "wallet-signature-guard",
+    "path": "contracts/IdentityRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "wallet_wrong_signer",
+      "wallet_wrong_chain",
+      "wallet_wrong_registry"
+    ]
+  },
+  {
+    "after": "    self._agent_wallets[agentId] = self._agent_wallets[agentId]  # research mutation\n",
+    "before": "    self._agent_wallets[agentId] = empty(address)\n",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "transfer_clears_wallet"
+    ],
+    "expected_changed_field": "behavior.state",
+    "id": "transfer-wallet-clear",
+    "path": "contracts/IdentityRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "transfer_clears_wallet"
+    ]
+  },
+  {
+    "after": "assert True, \"ValidationRegistry: not authorized\"",
+    "before": "assert (\n        msg.sender == owner\n        or msg.sender == staticcall _IDENTITY_REGISTRY.getApproved(agentId)\n        or staticcall _IDENTITY_REGISTRY.isApprovedForAll(owner, msg.sender)\n    ), \"ValidationRegistry: not authorized\"",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "request_stranger"
+    ],
+    "expected_changed_field": "behavior.operation_status",
+    "id": "validation-request-owner",
+    "path": "contracts/ValidationRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "request_stranger"
+    ]
+  },
+  {
+    "after": "assert True, \"ValidationRegistry: not validator\"",
+    "before": "assert msg.sender == s.validatorAddress, \"ValidationRegistry: not validator\"",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "response_stranger"
+    ],
+    "expected_changed_field": "behavior.operation_status",
+    "id": "designated-validator",
+    "path": "contracts/ValidationRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "response_stranger"
+    ]
+  },
+  {
+    "after": "assert True, \"ValidationRegistry: exists\"",
+    "before": "assert self._validations[requestHash].validatorAddress == empty(\n        address\n    ), \"ValidationRegistry: exists\"",
+    "exclusivity_expected": true,
+    "expected_changed_cases": [
+      "request_duplicate"
+    ],
+    "expected_changed_field": "behavior.operation_status",
+    "id": "duplicate-request",
+    "path": "contracts/ValidationRegistry.vy",
+    "positive_controls": [
+      "uri_owner",
+      "wallet_valid",
+      "request_owner",
+      "response_validator"
+    ],
+    "required_killers": [
+      "request_duplicate"
+    ]
+  }
+]

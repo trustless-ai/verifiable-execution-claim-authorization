@@ -1,0 +1,352 @@
+{
+  "authorization_populations_per_run": {
+    "REFUTED": 20,
+    "UNVERIFIABLE": 1,
+    "VERIFIED": 8
+  },
+  "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+  "branch": "research/erc8004-second-backend-v0",
+  "campaigns": {
+    "normal": {
+      "authorization_credential": false,
+      "independent_organizational_review": "NOT_ESTABLISHED",
+      "mutations": [
+        {
+          "changed_cases": [
+            "uri_stranger",
+            "old_owner_after_transfer"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "uri-owner-guard",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "uri_stranger",
+            "old_owner_after_transfer"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "be46e893d6463d3ba7534ddb974e182e6afde53e0ff0c85d7a25f313ced7a785",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "wallet_wrong_signer",
+            "wallet_wrong_chain",
+            "wallet_wrong_registry"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "wallet-signature-guard",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "wallet_wrong_signer",
+            "wallet_wrong_chain",
+            "wallet_wrong_registry"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "cae2e2befd6f5ed94081b65574ce42f8b51422a8ad9d6d83960473fa706e23b3",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "transfer_clears_wallet"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.state",
+          "id": "transfer-wallet-clear",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "transfer_clears_wallet"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "e51697479b44247fc186acfa4f55af9e29a0dfeaaa6ff2c1a497224fef3ef572",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "request_stranger"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "validation-request-owner",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "request_stranger"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "c3fd66005cd3c412d1dfde9ebf88646c87933a51d793bbf13b98f6fa7a117b91",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "response_stranger"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "designated-validator",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "response_stranger"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "2ed495d327d523ea8f0e5fe4a1e6b6e591ad38c0645efcc1494bfab2dd189f81",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "request_duplicate"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "duplicate-request",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "request_duplicate"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "4d0a09c7d3c413e86664cf2ffb00f4d200249d6c1f6ab617063321e2cb4db4b1",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        }
+      ],
+      "passed": true,
+      "public_network_execution": "NOT_RUN",
+      "same_semantics": true,
+      "schema": "erc8004-second-backend.pilot.v0",
+      "semantic_sha256": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+      "solidity_cases": 29,
+      "vyper_cases": 29
+    },
+    "optimized": {
+      "authorization_credential": false,
+      "independent_organizational_review": "NOT_ESTABLISHED",
+      "mutations": [
+        {
+          "changed_cases": [
+            "uri_stranger",
+            "old_owner_after_transfer"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "uri-owner-guard",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "uri_stranger",
+            "old_owner_after_transfer"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "be46e893d6463d3ba7534ddb974e182e6afde53e0ff0c85d7a25f313ced7a785",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "wallet_wrong_signer",
+            "wallet_wrong_chain",
+            "wallet_wrong_registry"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "wallet-signature-guard",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "wallet_wrong_signer",
+            "wallet_wrong_chain",
+            "wallet_wrong_registry"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "cae2e2befd6f5ed94081b65574ce42f8b51422a8ad9d6d83960473fa706e23b3",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "transfer_clears_wallet"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.state",
+          "id": "transfer-wallet-clear",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "transfer_clears_wallet"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "source_mutated_sha256": "e51697479b44247fc186acfa4f55af9e29a0dfeaaa6ff2c1a497224fef3ef572",
+          "source_restored_sha256": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "request_stranger"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "validation-request-owner",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "request_stranger"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "c3fd66005cd3c412d1dfde9ebf88646c87933a51d793bbf13b98f6fa7a117b91",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "response_stranger"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "designated-validator",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "response_stranger"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "2ed495d327d523ea8f0e5fe4a1e6b6e591ad38c0645efcc1494bfab2dd189f81",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        },
+        {
+          "changed_cases": [
+            "request_duplicate"
+          ],
+          "classification": "KILLED",
+          "exit_code": 1,
+          "expected_changed_field": "behavior.operation_status",
+          "id": "duplicate-request",
+          "positive_controls_passed": true,
+          "required_killers": [
+            "request_duplicate"
+          ],
+          "restoration_passed": true,
+          "runtime_code_changed": true,
+          "source_before_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "source_mutated_sha256": "4d0a09c7d3c413e86664cf2ffb00f4d200249d6c1f6ab617063321e2cb4db4b1",
+          "source_restored_sha256": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+          "unexpected_changes": []
+        }
+      ],
+      "passed": true,
+      "public_network_execution": "NOT_RUN",
+      "same_semantics": true,
+      "schema": "erc8004-second-backend.pilot.v0",
+      "semantic_sha256": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+      "solidity_cases": 29,
+      "vyper_cases": 29
+    },
+    "repeat": {
+      "authorization_credential": false,
+      "independent_organizational_review": "NOT_ESTABLISHED",
+      "mutations": [],
+      "passed": true,
+      "public_network_execution": "NOT_RUN",
+      "same_semantics": true,
+      "schema": "erc8004-second-backend.pilot.v0",
+      "semantic_sha256": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+      "solidity_cases": 29,
+      "vyper_cases": 29
+    }
+  },
+  "cases_per_implementation": 29,
+  "cloud_or_public_chain_execution": "NOT_RUN",
+  "core_git_objects": {
+    "core_related_files": 4653,
+    "full_host_baseline_files": 12828,
+    "passed": true,
+    "upstream_commit": "9dd36e882dd372f264b77b179130948aa5adcbde",
+    "vendored_files": 13
+  },
+  "fresh_checkout": {
+    "status": "NOT_RUN"
+  },
+  "implementations": {
+    "solidity": "b9e466c250744a7e06b13dff9d3c2844ed64f825",
+    "vyper": "661278f72d312a2cef0cbaea32b89d3842996967"
+  },
+  "independent_human_organizational_review": "NOT_ESTABLISHED",
+  "integration_status": "NOT_READY_FOR_PR_PRESERVATION_TRANSITION_REQUIRED",
+  "legacy_inventory": "EXPECTED_REFUSAL_NEW_ADDITIONS_NOT_IN_OLD_INVENTORY",
+  "negative_controls": [
+    {
+      "adapter_exit": 1,
+      "control": "changed-source",
+      "error": "ValueError: adapter exited without a completed observation: 1",
+      "passed": true,
+      "verdict": "UNVERIFIABLE"
+    },
+    {
+      "adapter_exit": 1,
+      "control": "extra-source",
+      "error": "ValueError: adapter exited without a completed observation: 1",
+      "passed": true,
+      "verdict": "UNVERIFIABLE"
+    },
+    {
+      "adapter_exit": 1,
+      "control": "missing-source",
+      "error": "ValueError: adapter exited without a completed observation: 1",
+      "passed": true,
+      "verdict": "UNVERIFIABLE"
+    },
+    {
+      "adapter_exit": 7,
+      "control": "crash-not-killed-or-pass",
+      "passed": true,
+      "verdict": "UNVERIFIABLE"
+    },
+    {
+      "control": "unsupported-profile",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "control": "existing-operation-loop-identical",
+      "passed": true,
+      "sha256": "fdce8676ae4fbf2613c787617585dafe89a945ba69fc7323a235481bf899a225"
+    }
+  ],
+  "production": "HOLD",
+  "schema": "erc8004-second-backend.results.v0",
+  "semantic_sha256": "837dbe977cb3bf66470ffe7ed2b4311e001776bbed95057f3b366d16af25e211",
+  "semantics_equal_across_backends_and_modes": true,
+  "verdict": "GO_SCOPED_RESEARCH"
+}

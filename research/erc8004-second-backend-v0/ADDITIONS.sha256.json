@@ -1,0 +1,28 @@
+{
+  "base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+  "excludes": [
+    "this inventory itself"
+  ],
+  "files": {
+    "evidence/erc8004-second-backend-v0/EVIDENCE.zip": "b8e1e1391eb4b7b32cdad6439daf69ee32a904535c978e88f584686bb10474f7",
+    "evidence/erc8004-second-backend-v0/RESULTS.json": "0ace18b2345b7032f59d8092596cb022c803f03118338a50d8d7ac50df43ef9d",
+    "evidence/erc8004-second-backend-v0/SHA256.json": "33d704498449412070bae13bd3eccc4eb5867f16ad3dd4b4adc4ce3482c1bbf4",
+    "research/erc8004-second-backend-v0/CANDIDATE_AUDIT.md": "c629f4e62d55f85635844e04b452035f6112949e3c97f0008afae9dbe9c81a4f",
+    "research/erc8004-second-backend-v0/README.md": "55b1ce5e06bb1525ea050249b23f1ba4c29fa3f8b710d83efcc5f23e94a0754e",
+    "research/erc8004-second-backend-v0/RESULTS.md": "63f169c8082d38e63d17c84174dab4ab7005b494ccb6e72f3969fc0a2a5c859e",
+    "research/erc8004-second-backend-v0/adapter.json": "0ac26056559c8778c5cda1c035524613aef49bfcc11a0190fa9016c7cef65569",
+    "research/erc8004-second-backend-v0/mutations.json": "69bd368f647e55b504154da3b009054c53bd50d608f27f0a95d6e39af4e5a4ee",
+    "research/erc8004-second-backend-v0/python-wheels.json": "86b7ee3c21ba6cd195c5b15551b15e64f5d3b96a21277950ad7f18353723b483",
+    "research/erc8004-second-backend-v0/requirements.txt": "e13e5ea3daeb1fafdbfd7eb18191b4aa119b832339330b04340ca8b20cb82a16",
+    "research/erc8004-second-backend-v0/source-lock.json": "389f3fcac9d8919863aacb27845657667ffd16a182880ff4315a7e5aaf1b381d",
+    "tools/erc8004_second_backend/adapter.py": "9a729309683c28997b5a1c99fff8f781f5f4ee735f57795d0d04b8a8344f3230",
+    "tools/erc8004_second_backend/common.py": "d75e91d2bca4fa389bceffe846163d07a092140b7c78c67d2ff31a28ce986ca4",
+    "tools/erc8004_second_backend/evm.mjs": "ab4c20386fd8d6950205d94ba7e77bcdbd39a2b92eebd43e353c194895c5ca4c",
+    "tools/erc8004_second_backend/negative_controls.py": "097899292087d31551a2d01f3e325633421c2e3cce43293d9edc3b97cf31a85d",
+    "tools/erc8004_second_backend/prepare.py": "8f2396f96e2fd42afc0374ce69fc33c0997d8b7fa2ee0831184003888595b9eb",
+    "tools/erc8004_second_backend/preservation.py": "855a5639225d544f9f2148ad42583e717027a77a99eb2a3d39184f2f975f874b",
+    "tools/erc8004_second_backend/validate.py": "e002b0277c019eb53cbcf0233aa1480438883fe5af3a517bc675bab3021f9b04"
+  },
+  "schema": "additive-research-inventory.v0",
+  "trust_root": "reviewed Git commit; not this mutable manifest"
+}

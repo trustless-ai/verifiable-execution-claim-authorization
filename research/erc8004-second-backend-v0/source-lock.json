@@ -1,0 +1,36 @@
+{
+  "commit": "661278f72d312a2cef0cbaea32b89d3842996967",
+  "compiler": {
+    "evm": "shanghai",
+    "optimize": "gas",
+    "snekmate": "0.1.2",
+    "vyper": "0.4.3"
+  },
+  "existing_driver_sha256": "995e957138979c936a29d1251c357a3ca2e8d8a09b46aa48ab2dec7221be1193",
+  "existing_suite_sha256": "f1d3f128c09b3150de0c4dbfa5676c41a528f686894e84f40daf2e272141c321",
+  "files": {
+    ".gitignore": "c5d30b842612c2d886e2bf53b319d2ebce5244a814a1f0a6479b7dc5863a69ab",
+    ".pre-commit-config.yaml": "f57a57e20122219843e3503979923bb4173536a8d04e177ee2d35993b04f5da1",
+    "LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "README.md": "379a91c2a71b5d5a53e2ae02b57d4d2647ea5974b4324cedd03c23fe6966a504",
+    "SPEC_NOTES.md": "6ce8efc1a4c946575c415bb3663308baae73db35f2bbfef4adcd53fa4c62f862",
+    "contracts/IdentityRegistry.vy": "d2911212fa53def1d29c24b78a4f1f2a44b20d600a31050f4035a2385e13d689",
+    "contracts/ReputationRegistry.vy": "c22350b89121730bd452280a707b5b4fc2941df291cd6f6f1d9825fceaeaa360",
+    "contracts/ValidationRegistry.vy": "4e57e305db1b3ddf73422aa15018dc2b1c2eb598416f4b95f27b6ff2f09a3922",
+    "contracts/interfaces/IIdentityRegistry.vyi": "69e3cc097719a4025baac46e42a53339c8ca24a4b9d69d58349b4c889578b9f1",
+    "moccasin.toml": "663c7ebe78f3eac20bf19395f504bb63983d9dcbc19e9f948e8444a89952b56e",
+    "pyproject.toml": "dc9fe3308b5c7b9c964122bd98e2047fdfe4bec8fbc36adf2bbc3b68a685566b",
+    "script/deploy.py": "dcb6dfc5a08eba86728301da1d787b2dc5cc94d21e80037fda3b900af5ac1b53",
+    "tests/conftest.py": "167665ec9aca61a366d5e49ded07243069c696fbde5287aa6dc85a88652b4b87",
+    "tests/test_identity_registry.py": "dfd0092fce65d1bf541f484ba60d5faf944d49a00bfbb5cea77dc8480f07741d",
+    "tests/test_reputation_registry.py": "c2f7f713d5819d33b40560e0ec3a7ca2c08e66a0de3d9312228168eff52ae620",
+    "tests/test_validation_registry.py": "046609cdf45c14407d89da7737107776578c930249ba1fcb2797db83efccf6fe",
+    "vyper-logo-dark.png": "a7a8eb75c2d3adba724d0860ac33eefaa5483754c17088f7be74bbc4e174392c",
+    "vyper-logo.png": "54ed73434e725a06f96a8fac00df375dcbf770c85e9f244561596b8ad0b90386"
+  },
+  "host_base": "4b6d7ef9aabd23932668711ee1d6cf774d9844d7",
+  "independence": "Different upstream language/code history; reference-informed, not clean-room; shared local EVM/observer/policy/grader",
+  "license": "AGPL-3.0-only",
+  "repository": "vyperlang/erc-8004-vyper",
+  "schema": "erc8004-second-backend.source-lock.v0"
+}
