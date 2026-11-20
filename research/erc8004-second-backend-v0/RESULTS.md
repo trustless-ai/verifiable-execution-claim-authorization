@@ -53,7 +53,7 @@ rejected before observation. Failures/crashes are not counted as semantic kills.
 
 ## Fresh checkout and preservation
 
-Fresh committed-checkout replay: NOT_RUN at this source checkpoint; final closure records the subsequent run separately.
+Fresh clean worktree at `34acbaf2d8881e0b4241ac0246a1779a952c6615`: both backends 29/29, six physical mutations KILLED with restoration, six controls PASS. The executed source/config bytes were checked against that commit.
 
 `ERC8404_CORE_BYTES_UNCHANGED: PASS`. Core is not substituted into, or used by,
 the ERC8004 registry comparison. Its original conformance adapters were executed

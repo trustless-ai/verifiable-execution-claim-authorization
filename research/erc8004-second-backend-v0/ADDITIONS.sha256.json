@@ -4,12 +4,12 @@
     "this inventory itself"
   ],
   "files": {
-    "evidence/erc8004-second-backend-v0/EVIDENCE.zip": "b8e1e1391eb4b7b32cdad6439daf69ee32a904535c978e88f584686bb10474f7",
-    "evidence/erc8004-second-backend-v0/RESULTS.json": "0ace18b2345b7032f59d8092596cb022c803f03118338a50d8d7ac50df43ef9d",
-    "evidence/erc8004-second-backend-v0/SHA256.json": "33d704498449412070bae13bd3eccc4eb5867f16ad3dd4b4adc4ce3482c1bbf4",
+    "evidence/erc8004-second-backend-v0/EVIDENCE.zip": "44803245a202c92836fa4cc83ac66b2e8b035e4bc9d5858c649357288ee54a83",
+    "evidence/erc8004-second-backend-v0/RESULTS.json": "4a2d2aa3f5fba335b10cceec4956732e11c28f28d1bd35879b446b31f56fb06c",
+    "evidence/erc8004-second-backend-v0/SHA256.json": "a818d601d714daa3f9f06ea6aa28c8cc2c38284a6311c2a4302394b59b654f1d",
     "research/erc8004-second-backend-v0/CANDIDATE_AUDIT.md": "c629f4e62d55f85635844e04b452035f6112949e3c97f0008afae9dbe9c81a4f",
     "research/erc8004-second-backend-v0/README.md": "55b1ce5e06bb1525ea050249b23f1ba4c29fa3f8b710d83efcc5f23e94a0754e",
-    "research/erc8004-second-backend-v0/RESULTS.md": "63f169c8082d38e63d17c84174dab4ab7005b494ccb6e72f3969fc0a2a5c859e",
+    "research/erc8004-second-backend-v0/RESULTS.md": "79e7f78f2271bd59d60a09f74c242a36546d61bbc62d46cc87dde23b61b3018b",
     "research/erc8004-second-backend-v0/adapter.json": "0ac26056559c8778c5cda1c035524613aef49bfcc11a0190fa9016c7cef65569",
     "research/erc8004-second-backend-v0/mutations.json": "69bd368f647e55b504154da3b009054c53bd50d608f27f0a95d6e39af4e5a4ee",
     "research/erc8004-second-backend-v0/python-wheels.json": "86b7ee3c21ba6cd195c5b15551b15e64f5d3b96a21277950ad7f18353723b483",
