@@ -5,6 +5,9 @@ permissions:
 jobs:
   native-and-crypto-replay:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: build/erc8378-baseline
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -15,6 +18,9 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22.15.0'
+      - name: Authenticate current ERC8378 transition and prepare baseline
+        working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py prepare
       - run: python -B tools/verify_artifacts.py
       - run: python -B research/formal-v1/prepare_crypto.py
       - run: npm ci --ignore-scripts --no-audit --no-fund --prefix build/formal-v1/crypto
@@ -28,8 +34,14 @@ jobs:
       - run: python -B tools/v2/check_snapshot.py
       - run: python -B tools/v2/validate_survivors.py
       - run: python -B tools/verify_artifacts.py
+      - name: Recheck current ERC8378 transition and baseline bytes
+        if: always()
+        working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: real-artifact-v2-replay
-          path: build/v2
+          path: |
+            build/erc8378-baseline/build/v2
+            build/erc8378-ci/CURRENT_BINDING.json

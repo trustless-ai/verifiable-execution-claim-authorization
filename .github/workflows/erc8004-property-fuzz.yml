@@ -8,7 +8,7 @@ jobs:
     timeout-minutes: 60
     defaults:
       run:
-        working-directory: build/documentation-replay
+        working-directory: build/erc8378-baseline/build/documentation-replay
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -19,24 +19,32 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22.15.0'
-      - name: Verify documentation transition and prepare identical executable tree
+      - name: Authenticate current ERC8378 transition and prepare baseline
         working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py prepare
+      - name: Verify documentation transition and prepare identical executable tree
+        working-directory: build/erc8378-baseline
         run: python -B tools/documentation_refresh/replay.py prepare
       - run: python -B tools/verify_artifacts.py
       - run: python -B tools/agent_harness.py prepare
       - run: python -B tools/erc8004/prepare.py
       - run: python -B research/formal-v1/prepare_crypto.py
       - run: npm ci --ignore-scripts --no-audit --no-fund
-        working-directory: build/documentation-replay/build/formal-v1/crypto
+        working-directory: build/erc8378-baseline/build/documentation-replay/build/formal-v1/crypto
       - run: python -B tools/pr12_pr13_integration/fuzz_validate.py
       - name: Recheck current documentation transition
         if: always()
-        working-directory: .
+        working-directory: build/erc8378-baseline
         run: python -B tools/documentation_refresh/replay.py check
+      - name: Recheck current ERC8378 transition and baseline bytes
+        if: always()
+        working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: erc8004-property-replay
           path: |
-            build/documentation-replay/build/property-replay
-            build/documentation-refresh/REPLAY.json
+            build/erc8378-baseline/build/documentation-replay/build/property-replay
+            build/erc8378-baseline/build/documentation-refresh/REPLAY.json
+            build/erc8378-ci/CURRENT_BINDING.json
