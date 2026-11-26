@@ -35,7 +35,7 @@ def linux_tools(dest, env):
         t.require(len(matches) == 1, 'forge_archive_member')
         (tools/'forge').write_bytes(archive.extractfile(matches[0]).read())
     (tools/'forge').chmod(0o755)
-    solc = download('https://binaries.soliditylang.org/linux-amd64/solc-linux-amd64-v0.8.30+commit.73712a01',
+    solc = download('https://raw.githubusercontent.com/ethereum/solc-bin/762a732061b3fdb0cd076f29a9be6d8c3cde293e/linux-amd64/solc-linux-amd64-v0.8.30+commit.73712a01',
                     'f3e987dc6ecebd4bd350c48edcbc320b46cf9e3109bd3fc3d88f1acaf4c428f7')
     (tools/'solc').write_bytes(solc)
     (tools/'solc').chmod(0o755)
