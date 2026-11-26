@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: build/documentation-replay
+        working-directory: build/erc8378-baseline/build/documentation-replay
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -18,8 +18,11 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22.15.0'
-      - name: Verify documentation transition and prepare identical executable tree
+      - name: Authenticate current ERC8378 transition and prepare baseline
         working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py prepare
+      - name: Verify documentation transition and prepare identical executable tree
+        working-directory: build/erc8378-baseline
         run: python -B tools/documentation_refresh/replay.py prepare
       - run: python -B tools/verify_artifacts.py
       - run: python -B -m unittest discover -s tests/baseline_reconciliation -v
@@ -31,12 +34,17 @@ jobs:
       - run: python -B tools/verify_artifacts.py
       - name: Recheck current documentation transition
         if: always()
-        working-directory: .
+        working-directory: build/erc8378-baseline
         run: python -B tools/documentation_refresh/replay.py check
+      - name: Recheck current ERC8378 transition and baseline bytes
+        if: always()
+        working-directory: .
+        run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py check
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
           name: baseline-reconciliation-replay
           path: |
-            build/documentation-replay/build/baseline-reconciliation
-            build/documentation-refresh/REPLAY.json
+            build/erc8378-baseline/build/documentation-replay/build/baseline-reconciliation
+            build/erc8378-baseline/build/documentation-refresh/REPLAY.json
+            build/erc8378-ci/CURRENT_BINDING.json

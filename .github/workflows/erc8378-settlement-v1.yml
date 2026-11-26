@@ -1,0 +1,32 @@
+name: ERC8378 current verifier-gated settlement V1
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  current-settlement-and-transition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -B tools/verify_artifacts.py
+      - run: python -B experiments/erc8378-rvr-veca-v1/ci/transition.py check
+      - run: python -B -m unittest discover -s experiments/erc8378-rvr-veca-v1/ci -p 'test_*.py' -v
+      - run: python -B -O -m unittest discover -s experiments/erc8378-rvr-veca-v1/ci -p 'test_*.py' -v
+      - run: python -B -m pip install -r experiments/erc8378-rvr-veca-v1/requirements-replay.txt
+      - run: python -B experiments/erc8378-rvr-veca-v1/ci/replay.py --linux-tools
+      - name: Recheck current source and frozen Core after replay
+        if: always()
+        run: |
+          python -B experiments/erc8378-rvr-veca-v1/ci/transition.py prepare
+          python -B tools/verify_artifacts.py
+          python -B build/erc8378-baseline/tools/erc8404/integrity.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: erc8378-current-settlement-v1
+          path: build/erc8378-ci/public
