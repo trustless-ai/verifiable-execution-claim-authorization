@@ -63,15 +63,18 @@ Read the [engine contract](research/integration/CLAIM_AWARE_ENGINE.md),
 
 ## Current integrated state
 
-As of **2026-11-19**, [PR #14](https://github.com/trustless-ai/verifiable-execution-claim-authorization/pull/14)
-has merged the PR #12/#13 integration into `main`, which already contained the
-ERC-8404 harness, ERC-8004 pilot, role policies and supplemental review controls.
-The verified merge checkpoint is
-[`4b6d7ef9aabd23932668711ee1d6cf774d9844d7`](https://github.com/trustless-ai/verifiable-execution-claim-authorization/commit/4b6d7ef9aabd23932668711ee1d6cf774d9844d7).
-Its Git tree is identical to the reviewed candidate
-`92220f4e64e7161c949dcccb4356bee9294600c3`.
-PR #12 and #13 are incorporated through this integration; they must not be merged
-again separately. This is a dated checkpoint, not a promise that `main` never changes.
+As of **2026-11-20**, PR #14 integrated PR #12/#13 and PR #15 updated the
+project documentation. The verified main baseline for this candidate is
+[`29155372c6a16f23d1bc2091f2f3671c51e0da4c`](https://github.com/trustless-ai/verifiable-execution-claim-authorization/commit/29155372c6a16f23d1bc2091f2f3671c51e0da4c).
+PR #12/#13 must not be merged separately again.
+
+This candidate integrates the [second-backend pilot](research/erc8004-second-backend-integration-v1/README.md):
+the same existing 29-case ERC-8004 profile against pinned Solidity and Vyper code,
+through the existing harness and grader. Its separate [integration report](research/erc8004-second-backend-integration-v1/REPORT.md)
+records the current candidate's executions and preservation checks. The Vyper port
+is reference-informed; shared EVM, observer, policy and grader are not independent
+implementations of those verification layers. Historical pilot reports retain
+their original local-only status; they do not describe this later integration.
 
 The [integration report](research/pr12-pr13-integration-v1/REPORT.md) records the
 executed source candidate, closing report/evidence-only changes, historical
@@ -97,6 +100,7 @@ not a new execution caused by reading this page.
 | --- | --- | --- |
 | [ERC-8404 harness](conformance/agent-harness-v0/README.md) | 18 cases; 12 external-consumer mutants KILLED | Executes the pinned Core; conformance PASS is not payment permission |
 | [ERC-8004 registry pilot](conformance/erc8004-pilot-v0/README.md) | 29 cases; 17 mutants KILLED | Local EVM observations of pinned contracts, not authenticated public-chain execution |
+| [Solidity/Vyper comparison](research/erc8004-second-backend-integration-v1/README.md) | Same 29 cases per backend; 6 separate Vyper mutants; normal/repeat/-O and source controls | Finite same-profile agreement; reference-informed Vyper port; shared observer/EVM/policy/grader, no clean-room or human-review claim |
 | [Role policy v1](research/erc8004-role-policy-v1/README.md) | 26 cases; 7 mutants KILLED | Request-time owner/operator/token-approval separation under an external research policy |
 | [Role policy v2](research/erc8004-role-policy-v2/README.md) | 50 cases; 5 mutants KILLED | Also binds request-block agentWallet calls; different addresses do not prove independent controllers |
 | [Supplemental harness review](conformance/agent-harness-review-v0/README.md) | 5 cases; 4 isolated mutants KILLED | The historical comparison remains separately 1 KILLED / 4 SURVIVED |
@@ -143,13 +147,13 @@ unchanged. Additional authorization rules live in external research consumers.
 ## Reproduce
 
 Clone the complete Git history: integrity checks need pinned ancestor commits.
-The pinned replay environment uses Python **3.12**. The setup below checks this
-checkout's exact documentation transition, then creates an isolated replay worktree
-with the historical README and inventory. All existing executable source, fixtures,
-Core and dependency pins must match this checkout byte-for-byte before that replay
-is permitted. Historical guards remain unchanged and run against their own baseline.
-The remaining replay sections run inside `build/documentation-replay/`.
-See the [documentation transition contract](research/documentation-refresh-v1/README.md).
+The pinned legacy replay environment uses Python **3.12**. The setup checks the
+current integration before preparing a PR15 worktree and its original historical
+replay worktree. Existing sources, Core, fixtures and dependency pins must remain
+identical. Old guards execute unchanged against their own exact baselines.
+The following **legacy** replay sections run in `build/base15/build/documentation-replay/`.
+The **new Solidity/Vyper campaign runs at the current checkout root**, not in a
+historical view. See the [integration contract](research/erc8004-second-backend-integration-v1/README.md).
 
 ### Lightweight synthetic baseline
 
@@ -157,8 +161,8 @@ See the [documentation transition contract](research/documentation-refresh-v1/RE
 git clone https://github.com/trustless-ai/verifiable-execution-claim-authorization.git
 cd verifiable-execution-claim-authorization
 python -B tools/verify_artifacts.py
-python -B tools/documentation_refresh/replay.py prepare
-cd build/documentation-replay
+python -B tools/second_backend_integration/replay.py prepare
+cd build/base15/build/documentation-replay
 python -B tools/verify_artifacts.py
 python -B tools/validate.py
 ```
@@ -241,17 +245,61 @@ technical text uses LF. This suite executes local EVM/mock-token tests, authoriz
 mutations, integrity controls and semantic determinism checks. It does not broadcast
 transactions or require production keys or real funds. Logs go to `build/escrow/ci/`.
 
-Do not regenerate manifests to hide unexplained mismatches. Both previous root
-README versions remain byte-for-byte in [the original snapshot](research/history/README-3d55a845.md)
-and [the merged-PR14 snapshot](research/history/README-4b6d7ef9.md); their relative
-links refer to the original root location. The
-[versioned documentation transition](research/documentation-refresh-v1/README.md)
-allows only the exact new README and mechanical CI routing changes. It verifies
-all other historical files and the exact added-file set. Existing guards and
-historical inventories are not rewritten. CI records the current candidate and
-the separate replay worktree identity; no old CI result is relabelled as a new run.
-After replay, run `python -B tools/documentation_refresh/replay.py check` from the
-current checkout root to verify both trees again.
+### Solidity and Vyper: current candidate
+
+From the **current checkout root**, on Windows x64 with Python **3.12.10** and
+Node **22.15.0**:
+
+```powershell
+python -B tools/verify_artifacts.py
+python -B tools/second_backend_integration/replay.py check
+python -B -m unittest discover -s tests/second_backend_integration -v
+python -B tools/second_backend_integration/ci.py
+```
+
+The campaign prepares byte-pinned dependencies, executes both real backends in
+normal/repeat/-O modes, runs six Vyper mutations with restoration, compares exact
+semantic outputs and checks source/transport failures. Results are written under
+`build/second-backend-integration/campaign/`. These six Vyper mutants are separate
+from the older six Solidity fuzz mutants.
+
+Do not regenerate old manifests to conceal mismatches. The exact
+[PR15 README snapshot](research/history/README-29155372.md), earlier snapshots,
+all old guards, Core, pilot evidence and source locks remain unchanged. The new
+[versioned transition](research/erc8004-second-backend-integration-v1/README.md)
+enumerates permitted README/workflow changes and exact additions. CI records
+current and historical execution identities separately. After replay, run
+`python -B tools/second_backend_integration/replay.py check` from the current root.
+
+### Manifest consistency and historical identity
+
+`artifacts.sha256.json` checks that files match the supplied manifest; it is not
+an independent proof of historical immutability. The transition permits the four
+report artifacts (`REPORT.md`, `RESULTS.json`, `EVIDENCE.zip` and `SHA256.json` in
+the second-backend integration report/evidence directories) to take their hashes
+from that manifest. Changing those reports and recomputing the manifest can
+therefore pass the internal checks. Historical identity requires an independently
+known, pinned exact Git commit SHA and comparison with its Git objects. A SHA
+self-reported by the same package is insufficient. Preserve full Git history and
+the reviewed commit `d15b0683c9ee695671b81d22fa60773b707ee4d7`
+(tree `69767a67322aae0f806c409d23ae1eac1dbe8ea0`).
+
+### External review scope
+
+Tiago Merlini's clean-clone review of that exact commit, as reported to the
+maintainer, ran on **macOS ARM64**: both backends 29/29 in normal/repeat/-O,
+6/6 Vyper mutations plus an additional wallet-signature-guard mutation detected,
+6/6 negative, 16/16 transition and 13/13 documentation controls, Core integrity
+PASS, and matching archive SHA-256 and 12,868 Git blobs. These are reviewer-reported
+results for `d15b0683`, not a replay or review of later documentation commits.
+
+The review used three platform-native wheels, not the exact Windows wheel hash
+pins. The repository's corresponding version pins are **cbor2 5.9.0**,
+**immutables 0.21** and **pycryptodome 3.24.1**; the forwarded review summary does
+not supply the macOS wheel filenames/hashes, so this note does not attest those
+artifact identities. In that independent review, inherited campaigns, escrow and
+Windows exact-pin replay were **NOT RUN**. No source/dependency lock is relaxed
+by this portability observation. Production remains **HOLD**.
 
 ## Evidence boundaries and next work
 
@@ -269,11 +317,11 @@ adapter is **PARTIALLY_COMPATIBLE** with the existing contract.
   expiration/revocation policy at execution time. Production signing-service
   compatibility and authenticated payer/state inputs remain unestablished.
 
-The reusable bounded harness interface is implemented. Next work is independent
-replay and an independently authored backend for the same selected profile, then
-explicitly scoped work on missing authenticated external bindings. Reuse across
-two different ERC profiles does not establish interoperability between independent
-implementations of one ERC. Scientific novelty and end-to-end external success
+The bounded harness and the first same-profile Solidity/Vyper comparison are
+implemented. Next work is external replay/review, then a separately versioned
+profile for a specific uncovered semantic difference or authenticated external
+binding. The current 29 cases do not establish equivalence for every input or
+independence of the shared observer, policy and grader. Scientific novelty and end-to-end external success
 are not claimed. Read the
 [integration limitations](research/integration/LIMITATIONS.md),
 [escrow limitations](research/escrow-v0/LIMITATIONS.md) and
