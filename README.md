@@ -271,6 +271,36 @@ enumerates permitted README/workflow changes and exact additions. CI records
 current and historical execution identities separately. After replay, run
 `python -B tools/second_backend_integration/replay.py check` from the current root.
 
+### Manifest consistency and historical identity
+
+`artifacts.sha256.json` checks that files match the supplied manifest; it is not
+an independent proof of historical immutability. The transition permits the four
+report artifacts (`REPORT.md`, `RESULTS.json`, `EVIDENCE.zip` and `SHA256.json` in
+the second-backend integration report/evidence directories) to take their hashes
+from that manifest. Changing those reports and recomputing the manifest can
+therefore pass the internal checks. Historical identity requires an independently
+known, pinned exact Git commit SHA and comparison with its Git objects. A SHA
+self-reported by the same package is insufficient. Preserve full Git history and
+the reviewed commit `d15b0683c9ee695671b81d22fa60773b707ee4d7`
+(tree `69767a67322aae0f806c409d23ae1eac1dbe8ea0`).
+
+### External review scope
+
+Tiago Merlini's clean-clone review of that exact commit, as reported to the
+maintainer, ran on **macOS ARM64**: both backends 29/29 in normal/repeat/-O,
+6/6 Vyper mutations plus an additional wallet-signature-guard mutation detected,
+6/6 negative, 16/16 transition and 13/13 documentation controls, Core integrity
+PASS, and matching archive SHA-256 and 12,868 Git blobs. These are reviewer-reported
+results for `d15b0683`, not a replay or review of later documentation commits.
+
+The review used three platform-native wheels, not the exact Windows wheel hash
+pins. The repository's corresponding version pins are **cbor2 5.9.0**,
+**immutables 0.21** and **pycryptodome 3.24.1**; the forwarded review summary does
+not supply the macOS wheel filenames/hashes, so this note does not attest those
+artifact identities. In that independent review, inherited campaigns, escrow and
+Windows exact-pin replay were **NOT RUN**. No source/dependency lock is relaxed
+by this portability observation. Production remains **HOLD**.
+
 ## Evidence boundaries and next work
 
 The demonstrated chain is **LABORATORY_VERIFIED / PARTIAL_CHAIN_VERIFIED**; the escrow
